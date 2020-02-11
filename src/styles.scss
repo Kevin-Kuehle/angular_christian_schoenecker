@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+:root {
+  --light-color: rgba(225, 223, 223, 1);
+  --akzent-color: rgba(39, 152, 72, 1);
+  --secondary-color: rgba(140, 29, 29, 1);
+  --site-width: 1200px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--site-width);
+  margin: 0 auto;
+  padding: 0 0.4rem;
+}
