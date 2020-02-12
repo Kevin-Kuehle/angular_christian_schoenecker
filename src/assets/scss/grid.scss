@@ -20,7 +20,7 @@ $bp-context: 16px;
 }
 
 // Map
-$breakpoints : ('xs': em(456px, $bp-context),
+$breakPoints :('xs': em(456px, $bp-context),
   'sm': em(640px, $bp-context),
   'md': em(752px, $bp-context),
   'lg': em(992px, $bp-context),
@@ -30,8 +30,8 @@ $breakpoints : ('xs': em(456px, $bp-context),
 
 
 @mixin BreakPoint($Point) {
-  @if map-has-key($BreakPoints, $Point) {
-    @media (max-width: map-get($BreakPoints, $Point)) {
+  @if map-has-key($breakPoints, $Point) {
+    @media (max-width: map-get($breakPoints, $Point)) {
       @content;
     }
   }

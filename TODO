@@ -1,11 +1,15 @@
 Goal:
   ☐ Schriften implementieren
   ☐ Farben
-  ☐ Fluid-Type
+  ✔ Fluid-Type @done(20-02-12 13:50)
   ☐ Header
   ☐ Routing anlegen
   ☐ grund HTML Struktur schaffen
-  ☐ Grid system
-  ☐ Breakpoints
+  ✔ Grid system @done(20-02-12 13:50)
+  ✔ Breakpoints @done(20-02-12 13:50)
   ✔ Assets bereit stellen @done(20-02-11 12:56)
+  ☐ balken entfernen
+  ☐ menu hover effekt
+  ☐ socials hover effekt
+  
 

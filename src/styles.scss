@@ -1,5 +1,7 @@
 @import 'assets/scss/grid.scss';
 @import 'assets/scss/fluid-type.scss';
+@import 'assets/scss/animations.scss';
+
 
 * {
   padding: 0;
@@ -12,6 +14,17 @@
   --akzent-color: rgba(39, 152, 72, 1);
   --secondary-color: rgba(140, 29, 29, 1);
   --site-width: 1200px;
+  --title-font: 'Sarabun', sans-serif;
+  --main-font: 'Open Sans', sans-serif;
+}
+
+$akzent-color: rgba(39, 152, 72, 1);
+$secondary-color: var(--secondary-color);
+
+html,
+body {
+  font-family: var(--main-font);
+  height: 100%;
 }
 
 .container {
@@ -20,3 +33,5 @@
   margin: 0 auto;
   padding: 0 0.4rem;
 }
+
+@import 'assets/scss/typography.scss';
