@@ -1,10 +1,11 @@
-Tag 1:
+Goal:
   ☐ Schriften implementieren
   ☐ Farben
   ☐ Fluid-Type
   ☐ Header
   ☐ Routing anlegen
   ☐ grund HTML Struktur schaffen
+  ☐ Grid system
+  ☐ Breakpoints
   ✔ Assets bereit stellen @done(20-02-11 12:56)
 
-Tag 2:
