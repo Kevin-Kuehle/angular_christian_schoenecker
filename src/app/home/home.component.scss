@@ -1,4 +1,5 @@
 @import '../../assets/scss/grid.scss';
+@import '../../assets/scss/fluid-type.scss';
 
 .site-opening {
   width: 100%;
@@ -8,9 +9,13 @@
   left: 0;
   background-image: url('../../assets/images/png/header_background.png');
   background-repeat: no-repeat;
-
   background-position: 50vw 0;
   background-size: auto 100%;
+
+  @include BreakPoint(md) {
+    background-position: 5vw 25vh;
+    background-size: 90vw auto;
+  }
 }
 
 
@@ -21,25 +26,64 @@
   grid-template-areas: ".""title""nav";
   height: 100%;
 
+  @include BreakPoint(lg) {
+    grid-template-rows: 5% 20% auto;
 
+  }
 
   .title {
     grid-area: title;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     h1 {
       color: white;
-      transform: translateX(33px);
+      transform: translateX(6%);
+      @include fluid-type('font-size', $min-ScreenSize, $max-ScreenSize, 28px, 58px);
 
       b {
         color: var(--dark-color);
+      }
+
+      @include BreakPoint(md) {
+        color: var(--dark-color);
+        transform: initial;
       }
     }
   }
 
   .navigationBar {
     grid-area: nav;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+  }
+}
+
+ul.secondaryMenu {
+  transform: translateX(-90%);
+
+  li {
+    list-style-image: url('../../assets/images/svg/list_arrow.svg');
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      position: relative;
+      left: 5px;
+      font-size: em(18px, 16px);
+      font-weight: 600;
+      font-family: var(--title-font);
+      color: var(--dark-color);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }

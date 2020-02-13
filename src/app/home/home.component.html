@@ -3,8 +3,9 @@
     <div class="GridContainer">
       <div class="title">
         <h1><b>Christian</b> Schönecker</h1>
+
       </div>
-      <div class="navigationBar">
+      <div *ngIf='!isTriggered' class="navigationBar">
         <ul class="secondaryMenu">
           <li> <a> {{ 'Biografie' | uppercase }} </a> </li>
           <li> <a> {{ 'Aktuelles' | uppercase }} </a> </li>
