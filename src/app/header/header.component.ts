@@ -9,7 +9,7 @@ export class HeaderComponent implements OnInit {
 
   public isMobile = false;
   public siteWidth;
-  private mobileWidt = 890;
+  private mobileWidt = 992;
 
   constructor() { }
 
@@ -17,8 +17,6 @@ export class HeaderComponent implements OnInit {
     this.checkSiteWidth();
     this.siteWidthController();
   }
-
-
 
   checkSiteWidth() {
     this.siteWidth = window.innerWidth;
@@ -38,6 +36,4 @@ export class HeaderComponent implements OnInit {
 
     });
   }
-
-
 }

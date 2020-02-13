@@ -1,6 +1,16 @@
 <header class="header">
   <div class="container grid ">
-    <ul class="main-menu">
+    <div *ngIf='isMobile' class="mobileButton">
+
+      <svg enable-background="new 0 0 384 384" version="1.1" viewBox="0 0 384 384" xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect y="277.33" width="384" height="42.667" />
+        <rect y="170.67" width="384" height="42.667" />
+        <rect y="64" width="384" height="42.667" />
+      </svg>
+
+    </div>
+    <ul *ngIf='!isMobile' class="main-menu">
       <li> <a>{{ 'Biogafie' | uppercase }}</a> </li>
       <li> <a>{{ 'Aktuell' | uppercase }}</a> </li>
       <li> <a>{{ 'Vita' | uppercase }}</a> </li>
@@ -17,5 +27,4 @@
     </div>
   </div>
 </header>
-<h1>Hallo Welt</h1>
-
+<h1>{{ isMobile }}</h1>
