@@ -68,6 +68,15 @@ ul.secondaryMenu {
   li {
     list-style-image: url('../../assets/images/svg/list_arrow.svg');
     margin-bottom: 10px;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      transform: translateX(5px);
+
+      a {
+        color: var(--akzent-color);
+      }
+    }
 
     &:last-child {
       margin-bottom: 0;

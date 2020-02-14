@@ -10,6 +10,31 @@
   z-index: 100;
 }
 
+// Test
+.container {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+}
+
+.container::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  background: transparent;
+}
+
+// /test
+
+
+
 ac-root {
   display: grid;
   grid-template-rows: auto auto auto;
@@ -45,6 +70,11 @@ ac-root {
 
 $akzent-color: rgba(39, 152, 72, 1);
 $secondary-color: var(--secondary-color);
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
 
 html,
 body {

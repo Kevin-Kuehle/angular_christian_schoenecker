@@ -1,0 +1,62 @@
+@import '../../assets/scss/grid.scss';
+
+.GridContainer {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 25px;
+
+  .title {
+    grid-area: title;
+    grid-area: title;
+    grid-column: 1/ span 12;
+    grid-row: 1/2;
+  }
+
+  .text {
+    grid-area: body;
+    grid-column: 1 /span 9;
+    grid-row: 2/3;
+  }
+
+  .image {
+    grid-area: img;
+    grid-column: -4 / span 3;
+    grid-row: 2/3;
+
+    width: 100%;
+    height: auto;
+    background-image: url('http://unsplash.it/300/300?random&gravity=center');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  @include BreakPoint(lg) {
+
+    grid-template-rows: auto 320px auto;
+    grid-template-columns: 100%;
+    justify-content: center;
+
+    .title {
+      grid-column: 1/-1;
+    }
+
+    .image {
+      grid-row: 2 / span 1;
+      grid-column: 1/-1;
+      max-width: 320px;
+      display: block;
+      justify-self: center;
+      margin-bottom: 2rem;
+
+    }
+
+    .text {
+      grid-row: 3/ span 1;
+      grid-column: 1/-1;
+
+    }
+  }
+}

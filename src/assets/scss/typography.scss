@@ -1,5 +1,15 @@
 @import '../../assets/scss/grid.scss';
 
+$shrinkFactor: 0.8;
+
+
+p {
+  margin-bottom: 1rem;
+  font-family: var(--main-font);
+  font-size: em(16px, 16px);
+  line-height: em(29px, 16px);
+}
+
 h1,
 h2,
 h3,
@@ -19,4 +29,60 @@ h1 {
   b {
     font-weight: bold;
   }
+}
+
+h2 {
+  @include fluid-type('font-size', $min-ScreenSize, $max-ScreenSize, 38px*$shrinkFactor, 38px);
+  color: var(--dark-color);
+  position: relative;
+  margin-bottom: 137px;
+  @include fluid-type('margin-top', $min-ScreenSize, $max-ScreenSize, 25px, 70px);
+
+  &::after {
+    content: '';
+    width: 46px;
+    display: block;
+    height: 7px;
+    position: absolute;
+    background-color: var(--akzent-color);
+    z-index: 1740;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%) translateY(85px);
+  }
+}
+
+
+
+.button {
+  width: 192px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: darken(grey, 20%);
+  color: var(--light-color);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  font-family: var(--main-font);
+  font-size: em(16px, 16px);
+  border: none;
+  @include animation-1;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  b {
+    margin-right: 0.3rem;
+  }
+
+  &.btn-1 {
+    background-color: var(--akzent-color);
+
+    &:hover {
+      background-color: lighten($akzent-color, 2%);
+    }
+  }
+
 }
