@@ -24,7 +24,7 @@
     grid-area: img;
     grid-column: -4 / span 3;
     grid-row: 2/3;
-
+    max-height: 320px;
     width: 100%;
     height: auto;
     background-image: url('http://unsplash.it/300/300?random&gravity=center');
@@ -47,9 +47,11 @@
       grid-row: 2 / span 1;
       grid-column: 1/-1;
       max-width: 320px;
+
       display: block;
       justify-self: center;
       margin-bottom: 2rem;
+
 
     }
 
@@ -59,4 +61,20 @@
 
     }
   }
+}
+
+.hideBox {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .9s ease;
+
+
+
+  &.open {
+    max-height: 3000px;
+    border-top: 1px solid var(--akzent-color);
+    padding-top: 2.2rem;
+    margin-top: 2.2rem;
+  }
+
 }

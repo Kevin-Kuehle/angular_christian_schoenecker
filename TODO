@@ -12,9 +12,12 @@ Goal:
   ✔ menu hover effekt @done(20-02-13 15:17)
   ✔ socials hover effekt @done(20-02-13 15:18)
 
-
-
-
+Große dinge die noch fehlen:
+  ☐ Mobile Menü
+  ☐ Backend Anbindung
+  ☐ Login System
+  ☐ Bearbeitungs System
+  ☐ Datenbank
 
 Biografie Section:
   ☐ Bild
@@ -24,6 +27,11 @@ Biografie Section:
   ☐ abstände in der mobile Ansicht sehr groß
   ☐ "siteOpening" 100vh nicht in der Mobilen Ansicht verwenden
 
+
+
+Fragen:
+
+  ☐ kann ich mit einem (click) event auf ein html element eine klasse auf ein referenz element übertragen ?
 
 
 

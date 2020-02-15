@@ -35,7 +35,7 @@ h2 {
   @include fluid-type('font-size', $min-ScreenSize, $max-ScreenSize, 38px*$shrinkFactor, 38px);
   color: var(--dark-color);
   position: relative;
-  margin-bottom: 137px;
+  @include fluid-type('margin-bottom', $min-ScreenSize, $max-ScreenSize, 90px, 137px);
   @include fluid-type('margin-top', $min-ScreenSize, $max-ScreenSize, 25px, 70px);
 
   &::after {
@@ -49,7 +49,22 @@ h2 {
     left: 50%;
     bottom: 100%;
     transform: translateX(-50%) translateY(85px);
+
+
+    @include BreakPoint(md) {
+      transform: translateX(-50%) translateY(65px);
+    }
   }
+}
+
+h3 {
+  color: var(--akzent-color);
+  text-align: left;
+  @include fluid-type('font-size', $min-ScreenSize, $max-ScreenSize, 32px*$shrinkFactor, 32px);
+  margin-bottom: 1rem;
+  margin-top: 1em;
+  text-transform: uppercase;
+
 }
 
 
@@ -64,6 +79,7 @@ h2 {
   flex-flow: row nowrap;
   justify-content: center;
   align-content: center;
+  align-items: center;
   font-family: var(--main-font);
   font-size: em(16px, 16px);
   border: none;
