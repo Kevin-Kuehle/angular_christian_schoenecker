@@ -1,5 +1,14 @@
-<footer class="footer">
-  <div class="container center">
-    <p>Footer</p>
+<footer class="footer" [class.isMobile]="isMobile">
+  <div *ngIf="!isMobile" class="container center">
+    <div class="flex-container">
+      <div class="logo"><span class="name"> <b>Christian</b>Schönecker </span></div>
+      <div class="footer-menu-container">
+        <ul class="footer-menu">
+          <li><a> {{ 'Impessum' }} </a></li>
+          <li><a> {{ 'Datenschutz' }} </a></li>
+        </ul>
+
+      </div>
+    </div>
   </div>
 </footer>

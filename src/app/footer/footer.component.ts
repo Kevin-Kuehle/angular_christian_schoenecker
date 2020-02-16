@@ -1,3 +1,4 @@
+import { MobileHandlerService } from './../mobile-handler.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  isMobile: boolean;
+
+  constructor(private data: MobileHandlerService) { }
 
   ngOnInit(): void {
+
+    this.data.isMobile.subscribe(message => this.isMobile = message);
   }
 
 }
