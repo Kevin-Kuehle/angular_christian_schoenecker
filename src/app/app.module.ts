@@ -12,6 +12,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { NewsComponent } from './news/news.component';
 import { EventsComponent } from './events/events.component';
 
+import { AccordionModule } from 'primeng/accordion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,8 +28,9 @@ import { EventsComponent } from './events/events.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-
+    HttpClientModule,
+    AccordionModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
