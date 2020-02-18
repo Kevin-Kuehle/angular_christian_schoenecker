@@ -93,12 +93,21 @@ h3 {
     margin-right: 0.3rem;
   }
 
+  &.center {
+    margin: 0 auto;
+  }
+
   &.btn-1 {
     background-color: var(--akzent-color);
 
     &:hover {
       background-color: lighten($akzent-color, 2%);
     }
+  }
+
+  &.spaceArround {
+    @include fluid-type('margin-top', $min-ScreenSize, $max-ScreenSize, 1rem, 2rem);
+    @include fluid-type('margin-bottom', $min-ScreenSize, $max-ScreenSize, 1rem, 2rem);
   }
 
 }

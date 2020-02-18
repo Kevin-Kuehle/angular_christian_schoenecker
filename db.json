@@ -1,0 +1,54 @@
+{
+  "news": [
+    {
+      "title": "1 Statistenrolle in einer Serie auf \"Das Erste\"",
+      "releaseDate": "01.01.2020",
+      "content": "Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz!\" quäkt Jürgen.",
+      "showPost": 1
+    },
+    {
+      "title": "2  Serie auf \"Das Erste\"",
+      "releaseDate": "25.01.2020",
+      "content": "Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz!\" quäkt Jürgen.",
+      "showPost": 1
+    },
+    {
+      "title": "3 in einer Serie auf \"Das Erste\"",
+      "releaseDate": "2.02.2020",
+      "content": "Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz!\" quäkt Jürgen.",
+      "showPost": 1
+    },
+    {
+      "title": "4  HHEHEH Statistenrolle in einer Serie auf \"Das Erste\"",
+      "releaseDate": "20.02.2020",
+      "content": "Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz!\" quäkt Jürgen.",
+      "showPost": 1
+    }
+  ],
+  "events": [
+    {
+      "eventDate": "01.03.2020",
+      "eventBeginning": "22Uhr",
+      "eventName": "König der Löwen und das Dschungelbuch",
+      "eventAdress": "Waldsassener Straße 29, 12279 Berlin",
+      "releaseDate": "14.02.2020",
+      "showPost": 1
+    },
+    {
+      "eventDate": "11.03.2020",
+      "eventBeginning": "18Uhr",
+      "eventName": "Held der Sieben Zwerge",
+      "eventAdress": "Lamboallee 23 12234, berlin",
+      "releaseDate": "17.02.2020",
+      "showPost": 1
+    },
+    {
+      "eventDate": "18.03.2020",
+      "eventBeginning": "19Uhr",
+      "eventName": "Das Meer und die Sonnenuntergänge",
+      "eventAdress": "Sunshine Chaussee 33 14352, Berlin",
+      "releaseDate": "22.02.2020",
+      "showPost": 1
+    }
+  ]
+}

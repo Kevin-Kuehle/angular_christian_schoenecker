@@ -1,0 +1,71 @@
+table.tableEvents {
+  width: 100%;
+  min-width: 900px;
+  overflow-x: scroll;
+
+
+  th,
+  td {
+    text-align: center;
+  }
+
+  th {
+    font-family: var(--title-font);
+    font-size: 18px;
+    align-self: flex-end;
+    padding-bottom: 0.4rem;
+  }
+
+  tr {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 53px;
+    background-color: rgba(39, 152, 72, 0.19);
+    margin-bottom: 3px;
+
+    &:nth-of-type(even) {
+      background-color: rgba(0, 0, 0, 0.10);
+    }
+
+    &:nth-of-type(1) {
+      background-color: initial !important;
+    }
+
+    :nth-child(1) {
+      flex: 0 2 140px;
+    }
+
+    :nth-child(2) {
+      flex: 0 1 140px;
+    }
+
+    :nth-child(3) {
+      flex: 1;
+    }
+
+    :nth-child(4) {
+      flex: 0 1 180px;
+    }
+  }
+}
+
+table.testTable {
+  overflow-x: scroll;
+  display: table;
+  width: 1200px;
+
+  tr {
+    display: block;
+    width: 100%;
+    border: 1px red dotted;
+
+    th,
+    td {
+      width: 400px;
+      text-align: center;
+    }
+  }
+}

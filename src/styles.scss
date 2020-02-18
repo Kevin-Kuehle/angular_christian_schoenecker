@@ -1,6 +1,7 @@
 @import 'assets/scss/grid.scss';
 @import 'assets/scss/fluid-type.scss';
 @import 'assets/scss/animations.scss';
+@import 'assets/scss/helper.scss';
 
 
 * {
@@ -11,25 +12,25 @@
 }
 
 // Test
-.container {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */
-}
+// .container {
+  //   overflow-y: scroll;
+  //   scrollbar-width: none;
+  //   /* Firefox */
+  //   -ms-overflow-style: none;
+  //   /* Internet Explorer 10+ */
+  // }
 
-.container::-webkit-scrollbar {
-  /* WebKit */
-  width: 0;
-  height: 0;
-}
+// .container::-webkit-scrollbar {
+  //   /* WebKit */
+  //   width: 0;
+  //   height: 0;
+  // }
 
-::-webkit-scrollbar {
-  display: none;
-  width: 0px;
-  background: transparent;
-}
+  // ::-webkit-scrollbar {
+  //   display: none;
+  //   width: 0px;
+  //   background: transparent;
+  // }
 
 // /test
 
@@ -72,7 +73,6 @@ $akzent-color: rgba(39, 152, 72, 1);
 $secondary-color: var(--secondary-color);
 
 html {
-  overflow: scroll;
   overflow-x: hidden;
 }
 
@@ -87,6 +87,11 @@ body {
   max-width: var(--site-width);
   margin: 0 auto;
   padding: 0 1rem;
+  overflow-x: hidden;
+
+  >* {
+    overflow-x: hidden;
+  }
 
   &.center {
     display: flex;
@@ -100,6 +105,11 @@ body {
   &.topSpace {
     padding-top: 4.5rem;
   }
+}
+
+section {
+  @include fluid-type('margin-top', $min-ScreenSize, $max-ScreenSize, 30px, 120px);
+  @include fluid-type('margin-vottom', $min-ScreenSize, $max-ScreenSize, 30px, 120px);
 }
 
 @import 'assets/scss/typography.scss';

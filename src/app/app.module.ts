@@ -8,17 +8,25 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BiografieComponent } from './biografie/biografie.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { NewsComponent } from './news/news.component';
+import { EventsComponent } from './events/events.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    BiografieComponent
+    BiografieComponent,
+    NewsComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
