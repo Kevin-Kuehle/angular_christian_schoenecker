@@ -14,6 +14,7 @@ import { EventsComponent } from './events/events.component';
 
 import { AccordionModule } from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     HttpClientModule,
     AccordionModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

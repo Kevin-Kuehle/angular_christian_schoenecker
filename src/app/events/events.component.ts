@@ -1,6 +1,7 @@
 import { DatabaseService } from './../database.service';
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'ac-events',
   templateUrl: './events.component.html',
@@ -14,7 +15,9 @@ export class EventsComponent implements OnInit {
   constructor(private data: DatabaseService) { }
 
   ngOnInit(): void {
-    this.data.getAllNews().subscribe(data => this.events = data);
+    this.data.getAllEvents().subscribe(data => this.events = data);
   }
 
 }
+
+
