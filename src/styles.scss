@@ -13,24 +13,24 @@
 
 // Test
 // .container {
-  //   overflow-y: scroll;
-  //   scrollbar-width: none;
-  //   /* Firefox */
-  //   -ms-overflow-style: none;
-  //   /* Internet Explorer 10+ */
-  // }
+//   overflow-y: scroll;
+//   scrollbar-width: none;
+//   /* Firefox */
+//   -ms-overflow-style: none;
+//   /* Internet Explorer 10+ */
+// }
 
 // .container::-webkit-scrollbar {
-  //   /* WebKit */
-  //   width: 0;
-  //   height: 0;
-  // }
+//   /* WebKit */
+//   width: 0;
+//   height: 0;
+// }
 
-  // ::-webkit-scrollbar {
-  //   display: none;
-  //   width: 0px;
-  //   background: transparent;
-  // }
+// ::-webkit-scrollbar {
+//   display: none;
+//   width: 0px;
+//   background: transparent;
+// }
 
 // /test
 
@@ -61,6 +61,7 @@ ac-root {
   --dark-color: rgba(72, 72, 72, 1);
   --akzent-color: rgba(39, 152, 72, 1);
   --secondary-color: rgba(140, 29, 29, 1);
+  --site-background-color:rgb(250, 250, 244);
   --site-width: 1200px;
   --title-font: 'Sarabun',
   sans-serif;
@@ -80,6 +81,7 @@ html,
 body {
   font-family: var(--main-font);
   height: 100%;
+  background-color: var(--site-background-color);
 }
 
 .container {

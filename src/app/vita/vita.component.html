@@ -1,0 +1,25 @@
+<section class="vita">
+  <div class="title">
+    <h2>{{'Vita' | uppercase}}</h2>
+  </div>
+  <div class="container">
+    <div class="vita-container">
+
+      <p-dataView [value]="vitas">
+
+        <ng-template let-vita pTemplate="listItem">
+          <div>
+            {{vita.year}}
+          </div>
+        </ng-template>
+
+        <ng-template let-vita pTemplate="gridItem">
+          <div class="ui-g-12 ui-md-3">
+            {{vita.place}}
+          </div>
+        </ng-template>
+
+      </p-dataView>
+    </div>
+  </div>
+</section>

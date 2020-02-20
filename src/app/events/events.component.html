@@ -6,7 +6,7 @@
       </h2>
     </div>
     <div class="table">
-      <p-table [value]="events" class="tableEvents" [scrollable]="true" [resizableColumns]="true">
+      <p-table [value]="events" class="tableEvents" [paginator]="true" [rows]="6" [scrollable]="true" [resizableColumns]="true">
         <ng-template pTemplate="header">
           <tr>
             <th>Datum</th>

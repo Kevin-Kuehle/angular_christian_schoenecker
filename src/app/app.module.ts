@@ -15,6 +15,9 @@ import { EventsComponent } from './events/events.component';
 import { AccordionModule } from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableModule } from 'primeng/table';
+import { VitaComponent } from './vita/vita.component';
+import { VirtualScrollerModule } from 'primeng/virtualscroller';
+import { DataViewModule } from 'primeng/dataview';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { TableModule } from 'primeng/table';
     FooterComponent,
     BiografieComponent,
     NewsComponent,
-    EventsComponent
+    EventsComponent,
+    VitaComponent
+
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,9 @@ import { TableModule } from 'primeng/table';
     HttpClientModule,
     AccordionModule,
     BrowserAnimationsModule,
-    TableModule
+    TableModule,
+    VirtualScrollerModule,
+    DataViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

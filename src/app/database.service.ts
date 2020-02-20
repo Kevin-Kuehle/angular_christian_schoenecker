@@ -12,11 +12,15 @@ export class DatabaseService {
 
 
   getAllNews() {
-    console.log('get news');
     return this.http.get(`${this.baseUrl}/news`);
   }
   getAllEvents() {
-    console.log('get events');
     return this.http.get(`${this.baseUrl}/events`);
   }
+
+  getVitaData() {
+    return this.http.get(`${this.baseUrl}/vita`);
+  }
+
+
 }
