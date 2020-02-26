@@ -19,6 +19,7 @@ import { VitaComponent } from './vita/vita.component';
 import { VirtualScrollerModule } from 'primeng/virtualscroller';
 import { DataViewModule } from 'primeng/dataview';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { PersonalDataComponent } from './personal-data/personal-data.component';
     BrowserAnimationsModule,
     TableModule,
     VirtualScrollerModule,
-    DataViewModule
+    DataViewModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

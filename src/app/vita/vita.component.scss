@@ -31,8 +31,21 @@ section.vita {
 
 .vitaListBox {
   margin: 0 !important;
+  padding: 1.5rem 2rem;
+
+  .year {
+    font-size: 1.4rem;
+  }
 
   &:nth-last-of-type(even) {
     background-color: hsla(121, 5%, 14%, 1)
   }
+}
+
+.overlayPanelBox {
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  width: 50vw;
+  height: 20vh;
 }

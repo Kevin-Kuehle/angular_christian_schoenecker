@@ -9,19 +9,25 @@
   <div class="container">
     <div class="vita-container">
 
-      <p-dataView [value]="vitas" [paginator]="true" [rows]="10">
-        <p-header> {{ 'Christian Schöneecker Lebenslauf' | titlecase }} <p-dataViewLayoutOptions>
+      <p-dataView [value]="vitas" [paginator]="true" [rows]="5">
+        <p-header> {{ 'Christian Schönecker Lebenslauf' | titlecase }} <p-dataViewLayoutOptions>
           </p-dataViewLayoutOptions>
         </p-header>
 
         <ng-template let-vita pTemplate="listItem">
           <div class="p-grid vitaListBox">
-            <div class="p-col ">{{ vita.year }}</div>
+            <div class="p-col year">{{ vita.year }}</div>
             <div class="p-col ">{{ vita.jobName }}</div>
             <div class="p-col ">{{ vita.place}}</div>
-            <div class="p-col-6 ">{{ vita.shortDescription }}</div>
-            <div class="p-col ">{{ vita.jobStart }}</div>
-            <div class="p-col ">{{ vita.jobEnd }}</div>
+            <div class="p-col ">
+              <p-dialog header="Title" [(visible)]="display" styleClass="vitaDialog" >
+                    {{ vita.longDescription }}
+              </p-dialog>
+
+<button class="button btn-1" type="button" (click)="showDialog()" pButton icon="pi pi-info-circle" label="Show">Mehr Infos</button>
+
+
+            </div>
           </div>
         </ng-template>personal Data
         <ng-template let-vita pTemplate="gridItem">

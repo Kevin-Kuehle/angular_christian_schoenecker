@@ -54,3 +54,8 @@ body .ui-dataview .ui-dataview-content {
   background-color: hsla(-239, -190%, 10%, 1);
   color: white;
 }
+
+.vitaDialog {
+  width: 90vw;
+  max-width: var(--site-width);
+}
