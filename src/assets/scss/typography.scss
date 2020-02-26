@@ -8,6 +8,11 @@ p {
   font-family: var(--main-font);
   font-size: em(16px, 16px);
   line-height: em(29px, 16px);
+
+
+  &.light {
+    color: var(--light-color);
+  }
 }
 
 h1,
@@ -53,6 +58,14 @@ h2 {
 
     @include BreakPoint(md) {
       transform: translateX(-50%) translateY(65px);
+    }
+  }
+
+  &.light {
+    color: var(--light-color);
+
+    &::after {
+      background-color: var(--light-color);
     }
   }
 }
@@ -102,6 +115,14 @@ h3 {
 
     &:hover {
       background-color: lighten($akzent-color, 2%);
+    }
+  }
+
+  &.btn-2 {
+    background-color: hsl(0%, 0%, 8%);
+
+    &:hover {
+      background-color: hsl(0%, 0%, 12%);
     }
   }
 

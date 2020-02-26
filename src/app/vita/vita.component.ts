@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class VitaComponent implements OnInit {
 
   public vitas;
-  display: boolean = false;
+  public display = false;
 
 
   constructor(private database: DatabaseService) { }

@@ -1,6 +1,13 @@
 @import '../../assets/scss/fluid-type.scss';
 @import '../../assets/scss/grid.scss';
 
+
+section.news {
+  background-color: var(--akzent-color);
+  @include fluid-type('padding-bottom', $min-ScreenSize, $max-ScreenSize, 1rem, 6rem);
+}
+
+
 .news-container {
   display: flex;
   flex-flow: column nowrap;
@@ -24,7 +31,7 @@
 
   .title {
     h3 {
-      color: var(--dark-color);
+      color: var(--light-color);
       text-transform: none;
       text-align: center;
       @include fluid-type('font-size', $min-ScreenSize, $max-ScreenSize, 22px, 26px);
