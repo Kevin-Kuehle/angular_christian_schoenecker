@@ -18,6 +18,7 @@ import { TableModule } from 'primeng/table';
 import { VitaComponent } from './vita/vita.component';
 import { VirtualScrollerModule } from 'primeng/virtualscroller';
 import { DataViewModule } from 'primeng/dataview';
+import { PersonalDataComponent } from './personal-data/personal-data.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DataViewModule } from 'primeng/dataview';
     BiografieComponent,
     NewsComponent,
     EventsComponent,
-    VitaComponent
+    VitaComponent,
+    PersonalDataComponent
 
   ],
   imports: [

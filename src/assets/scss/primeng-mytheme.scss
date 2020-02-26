@@ -29,3 +29,28 @@ body {
     }
   }
 }
+
+
+
+body .ui-dataview .ui-dataview-header {
+  background-color: hsl(118%, 40%, 30%);
+  color: white;
+  border: none;
+
+  p-header {
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    justify-content: space-between;
+    justify-items: start;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+body .ui-dataview .ui-dataview-content {
+  padding: 0 !important;
+  border: none;
+  background-color: hsla(-239, -190%, 10%, 1);
+  color: white;
+}

@@ -2,23 +2,30 @@
   <div class="title">
     <h2>{{'Vita' | uppercase}}</h2>
   </div>
+
+
+
+
   <div class="container">
     <div class="vita-container">
 
-      <p-dataView [value]="vitas">
+      <p-dataView [value]="vitas" [paginator]="true" [rows]="10">
+        <p-header> {{ 'Christian Schöneecker Lebenslauf' | titlecase }} <p-dataViewLayoutOptions>
+          </p-dataViewLayoutOptions>
+        </p-header>
 
         <ng-template let-vita pTemplate="listItem">
-          <div>
-            {{vita.year}}
+          <div class="p-grid vitaListBox">
+            <div class="p-col ">{{ vita.year }}</div>
+            <div class="p-col ">{{ vita.jobName }}</div>
+            <div class="p-col ">{{ vita.place}}</div>
+            <div class="p-col-6 ">{{ vita.shortDescription }}</div>
+            <div class="p-col ">{{ vita.jobStart }}</div>
+            <div class="p-col ">{{ vita.jobEnd }}</div>
           </div>
-        </ng-template>
-
+        </ng-template>personal Data
         <ng-template let-vita pTemplate="gridItem">
-          <div class="ui-g-12 ui-md-3">
-            {{vita.place}}
-          </div>
         </ng-template>
-
       </p-dataView>
     </div>
   </div>

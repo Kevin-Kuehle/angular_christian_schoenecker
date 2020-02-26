@@ -1,7 +1,8 @@
 @import '../../assets/scss/fluid-type.scss';
 
 section.vita {
-  background-color: var(--darkblue);
+  background-color: hsl(0, 0%, 13%);
+  ;
   @include fluid-type('padding-top', $min-ScreenSize, $max-ScreenSize, 1rem, 1rem);
   @include fluid-type('padding-bottom', $min-ScreenSize, $max-ScreenSize, 3rem, 5rem);
 
@@ -12,5 +13,26 @@ section.vita {
     &::after {
       background-color: var(--light-color);
     }
+  }
+}
+
+.listFlex-Container {
+  display: flex;
+  flex-flow: column nowrap;
+
+
+  .list-row {
+    border: 1px red dotted;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 1rem;
+  }
+}
+
+.vitaListBox {
+  margin: 0 !important;
+
+  &:nth-last-of-type(even) {
+    background-color: hsla(121, 5%, 14%, 1)
   }
 }
