@@ -1,0 +1,31 @@
+body {
+  .ui-table {
+    th {
+      background: none !important;
+      color: var(--dark-color) !important;
+      border: none !important;
+    }
+
+    thead {
+      tr {
+        background: none !important;
+      }
+    }
+
+    tbody {
+      td {
+        border-color: rgba(0, 0, 0, 0.1) !important;
+      }
+    }
+  }
+
+  .ui-paginator {
+    background: none;
+    border: none;
+    padding-top: 0.5rem;
+
+    .ui-state-active {
+      background-color: var(--akzent-color) !important;
+    }
+  }
+}
