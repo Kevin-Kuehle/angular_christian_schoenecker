@@ -96,6 +96,7 @@ h3 {
   font-family: var(--main-font);
   font-size: em(16px, 16px);
   border: none;
+  z-index: 5;
   @include animation-1;
 
   &:hover {

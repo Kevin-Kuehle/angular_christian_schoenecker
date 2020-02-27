@@ -21,6 +21,8 @@ export class NewsComponent implements OnInit {
 
   }
 
+
+
   showMore() {
     this.toShow++;
   }

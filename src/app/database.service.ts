@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DatabaseService {
 
-  private baseUrl = 'http://localhost:3000';
+  // private baseUrl = 'http://localhost:3000';
+  private baseUrl = 'http://192.168.178.20:3000';
 
   constructor(private http: HttpClient) { }
 

@@ -58,4 +58,5 @@ body .ui-dataview .ui-dataview-content {
 .vitaDialog {
   width: 90vw;
   max-width: var(--site-width);
+  z-index: 12000 !important;
 }

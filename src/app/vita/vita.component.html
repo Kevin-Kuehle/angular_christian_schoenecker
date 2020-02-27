@@ -14,19 +14,19 @@
           </p-dataViewLayoutOptions>
         </p-header>
 
-        <ng-template let-vita pTemplate="listItem">
+        <ng-template ngFor let-vita pTemplate="listItem">
           <div class="p-grid vitaListBox">
-            <div class="p-col year">{{ vita.year }}</div>
-            <div class="p-col ">{{ vita.jobName }}</div>
-            <div class="p-col ">{{ vita.place}}</div>
+            <div class="p-col year"> {{ vita.year }}</div>
+            <div class="p-col ">{{ vita.jobName  }}</div>
+            <div class="p-col ">{{ vita.place }}</div>
             <div class="p-col ">
-              <p-dialog header="Title" [(visible)]="display" styleClass="vitaDialog" >
-                    {{ vita.longDescription }}
+              <p-dialog header="Mehr Informationen" [(visible)]="myIndex[vita.id].display" styleClass="vitaDialog">
+                {{ vita.year }}
+                <hr>
+                {{ vita.longDescription }}
               </p-dialog>
-
-<button class="button btn-1" type="button" (click)="showDialog()" pButton icon="pi pi-info-circle" label="Show">Mehr Infos</button>
-
-
+              <button class="button btn-1" type="button" (click)="showDialog( vita.id )" pButton
+                icon="pi pi-info-circle" label="Show">Mehr Infos</button>
             </div>
           </div>
         </ng-template>personal Data

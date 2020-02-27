@@ -3,15 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "concurrently --kill-others \" npm run json:server \"  \"  ng serve \"  ",
-    "dev:host": "concurrently --kill-others \" npm run json:server \"  \"  npm run start:host \"  ",
+    "dev:host": "concurrently --kill-others \" npm run json:server:host \"  \"  npm run start:host \"  ",
     "ng": "ng",
     "start": "ng serve",
     "json:server": "json-server --watch db.json",
-    "start:host": "ng serve --host 192.168.178.20",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "json:server:host": "json-server --watch db.json --host 192.168.178.20",
+    "start:host": "ng serve --host 192.168.178.20"
   },
   "private": true,
   "dependencies": {

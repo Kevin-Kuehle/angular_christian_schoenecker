@@ -29,14 +29,7 @@ section.vita {
   }
 
   &:nth-last-of-type(even) {
-    background-color: hsla(121, 5%, 14%, 1)
+    background-color: hsla(121, 5%, 14%, 1);
+    z-index: 5;
   }
-}
-
-.overlayPanelBox {
-  position: fixed;
-  top: 50%;
-  left: 25%;
-  width: 50vw;
-  height: 20vh;
 }

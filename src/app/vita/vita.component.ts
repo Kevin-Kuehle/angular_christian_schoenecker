@@ -11,6 +11,8 @@ export class VitaComponent implements OnInit {
 
   public vitas;
   public display = false;
+  public myIndex = [];
+  public counter = 1;
 
 
   constructor(private database: DatabaseService) { }
@@ -18,12 +20,27 @@ export class VitaComponent implements OnInit {
   ngOnInit(): void {
 
     this.database.getVitaData().subscribe((data) => {
-      this.vitas = data; console.log(this.vitas);
+      this.vitas = data;
+
+      for (const e of this.vitas) {
+
+        const object = {
+          index: this.counter,
+          display: false
+        };
+        this.myIndex.push(object);
+        this.counter++;
+      }
+      console.log(this.myIndex);
+
     });
 
   }
 
-  showDialog() {
-    this.display = true;
+  showDialog(index) {
+    console.log(index);
+    this.myIndex[index].display = true;
+    console.log(this.myIndex);
+
   }
 }
