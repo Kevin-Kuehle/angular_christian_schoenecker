@@ -1,5 +1,4 @@
 .table {
-
   * {
     border-color: rgba(0, 0, 0, 0.6);
   }
@@ -10,34 +9,39 @@
     border-bottom: 0;
   }
 
-
   tr {
     text-align: center;
     background-color: rgba(94, 168, 116, 0.05);
     border: none;
     font-weight: 600;
 
-    &:nth-of-type(even) {
-      background-color: rgba(94, 168, 116, 0.10);
+    td {
+      &.eventName {
+        text-align: left;
+      }
     }
+  }
 
-    :nth-of-type(1) {
-      width: 100px;
-    }
+  &:nth-of-type(even) {
+    background-color: rgba(94, 168, 116, 0.1);
+  }
 
-    :nth-of-type(2) {
-      width: 100px;
-    }
+  :nth-of-type(1) {
+    width: 100px;
+  }
 
-    :nth-of-type(3) {
-      width: 600px;
-      max-width: 500px !important;
-      min-width: 500px;
-    }
+  :nth-of-type(2) {
+    width: 100px;
+  }
 
-    :nth-of-type(4) {
-      width: 320px;
-      max-width: 90px;
-    }
+  :nth-of-type(3) {
+    width: 600px;
+    max-width: 500px !important;
+    min-width: 500px;
+  }
+
+  :nth-of-type(4) {
+    width: 320px;
+    max-width: 90px;
   }
 }

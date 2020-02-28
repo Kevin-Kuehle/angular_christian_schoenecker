@@ -1,3 +1,5 @@
+@import "../scss/grid.scss";
+
 body {
   .ui-table {
     th {
@@ -30,8 +32,6 @@ body {
   }
 }
 
-
-
 body .ui-dataview .ui-dataview-header {
   background-color: hsl(118%, 40%, 30%);
   color: white;
@@ -56,7 +56,35 @@ body .ui-dataview .ui-dataview-content {
 }
 
 .vitaDialog {
+  z-index: 6000;
   width: 90vw;
   max-width: var(--site-width);
   z-index: 12000 !important;
+
+  @include BreakPoint(md) {
+    height: auto;
+    max-height: 75vh;
+    top: 70px;
+    overflow-y: scroll;
+  }
+}
+
+.body .ui-widget {
+  position: fixed;
+  z-index: 5000;
+}
+
+body .ui-dialog .ui-dialog-titlebar {
+  background-color: hsl(130, 49%, 20%);
+  color: white;
+  border: none;
+
+}
+
+body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon {
+  color: white;
+
+  &:hover {
+    color: rgba(255, 68, 43, 0.884);
+  }
 }

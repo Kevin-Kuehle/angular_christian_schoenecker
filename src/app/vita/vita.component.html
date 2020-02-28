@@ -1,37 +1,36 @@
 <section class="vita">
   <div class="title">
-    <h2 class="light">{{'Vita' | uppercase}}</h2>
+    <h2 class="light">{{ "Vita" | uppercase }}</h2>
   </div>
-
-
-
 
   <div class="container">
     <div class="vita-container">
-
       <p-dataView [value]="vitas" [paginator]="true" [rows]="5">
-        <p-header> {{ 'Christian Schönecker Lebenslauf' | titlecase }} <p-dataViewLayoutOptions>
-          </p-dataViewLayoutOptions>
+        <p-header>
+          {{ "Christian Schönecker Lebenslauf" | titlecase }}
+          <p-dataViewLayoutOptions> </p-dataViewLayoutOptions>
         </p-header>
-
-        <ng-template ngFor let-vita pTemplate="listItem">
+        <ng-template let-vita let-i="rowIndex" pTemplate="listItem">
+          <p-dialog header="Mehr Informationen" [(visible)]="showBoxIndex[i].display" class="vitaDialog"
+            styleClass="vitaDialog">
+            {{ vita.description }}
+            <hr />
+            {{vita.year}}
+            {{ vita.longDescription }}
+          </p-dialog>
           <div class="p-grid vitaListBox">
-            <div class="p-col year"> {{ vita.year }}</div>
-            <div class="p-col ">{{ vita.jobName  }}</div>
-            <div class="p-col ">{{ vita.place }}</div>
-            <div class="p-col ">
-              <p-dialog header="Mehr Informationen" [(visible)]="myIndex[vita.id].display" styleClass="vitaDialog">
-                {{ vita.year }}
-                <hr>
-                {{ vita.longDescription }}
-              </p-dialog>
-              <button class="button btn-1" type="button" (click)="showDialog( vita.id )" pButton
-                icon="pi pi-info-circle" label="Show">Mehr Infos</button>
+            <div class="p-col-1 year">{{ vita.year }}</div>
+            <div class="p-col-2"> {{ vita.place }}</div>
+            <div class=" p-col-5">{{ vita.jobTitle }}</div>
+            <div class=" p-col ">{{ vita.role }}</div>
+            <div class=" p-col ">
+              <button class=" button btn-1" type="button" (click)="showDialog(i)" label="Show">
+                Mehr Infos
+              </button>
             </div>
           </div>
         </ng-template>personal Data
-        <ng-template let-vita pTemplate="gridItem">
-        </ng-template>
+        <ng-template let-vita pTemplate="gridItem"> </ng-template>
       </p-dataView>
     </div>
   </div>

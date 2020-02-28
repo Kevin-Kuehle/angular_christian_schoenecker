@@ -10,9 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class VitaComponent implements OnInit {
 
   public vitas;
-  public display = false;
-  public myIndex = [];
-  public counter = 1;
+  public showBoxIndex = [];
 
 
   constructor(private database: DatabaseService) { }
@@ -20,18 +18,19 @@ export class VitaComponent implements OnInit {
   ngOnInit(): void {
 
     this.database.getVitaData().subscribe((data) => {
-      this.vitas = data;
 
+      this.vitas = data;
       for (const e of this.vitas) {
 
         const object = {
-          index: this.counter,
+          id: e.id,
           display: false
         };
-        this.myIndex.push(object);
-        this.counter++;
+
+        this.showBoxIndex.push(object);
       }
-      console.log(this.myIndex);
+      console.log(this.showBoxIndex);
+      console.log(this.vitas);
 
     });
 
@@ -39,8 +38,7 @@ export class VitaComponent implements OnInit {
 
   showDialog(index) {
     console.log(index);
-    this.myIndex[index].display = true;
-    console.log(this.myIndex);
-
+    this.showBoxIndex[index].display = true;
+    console.log(this.showBoxIndex);
   }
 }
