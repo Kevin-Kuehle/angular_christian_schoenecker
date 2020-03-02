@@ -1,3 +1,4 @@
+import { DatabaseService } from './../database.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalDataComponent implements OnInit {
 
-  constructor() { }
+
+  public personData;
+
+  constructor(private db: DatabaseService) { }
 
   ngOnInit(): void {
-  }
 
+    this.db.getPersonData().subscribe(data => {
+      this.personData = data;
+      console.log(this.personData);
+
+    });
+  }
 }

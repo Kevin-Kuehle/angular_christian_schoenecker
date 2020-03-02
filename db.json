@@ -212,5 +212,63 @@
       "jobStart": "14.04.2015",
       "jobEnd": "14.04.2015"
     }
+  ],
+  "personData": [
+    {
+      "name": "Geburtsdatum",
+      "value": "15.01.1992"
+    },
+    {
+      "name": "Augenfarbe",
+      "value": "Blau"
+    },
+    {
+      "name": "Haarfarbe",
+      "value": "Blond"
+    },
+    {
+      "name": "Körpergröße",
+      "value": "178cm"
+    },
+    {
+      "name": "Konfektionsgröße",
+      "value": "40"
+    },
+    {
+      "name": "Wohnort",
+      "value": "Berlin"
+    },
+    {
+      "name": "Führerschein",
+      "value": "Ja"
+    },
+    {
+      "name": "Fremdsprachen",
+      "value": "Englisch"
+    },
+    {
+      "name": "Dialekte",
+      "value": "Berlinerisch"
+    },
+    {
+      "name": "Stimmlage",
+      "value": "Tief"
+    },
+    {
+      "name": "Schauspielerausbildung",
+      "value": "Nein"
+    },
+    {
+      "name": "Verband",
+      "value": "Nein"
+    },
+    {
+      "name": "Instrumente",
+      "value": "Schlagzeug"
+    },
+    {
+      "name": "Fähigkeiten",
+      "value": "Segelfliegen"
+    }
   ]
 }

@@ -1,1 +1,21 @@
-<p>personal-data works!</p>
+<section class="personal-data">
+  <div class="container">
+    <div class="title">
+      <h2>{{ 'Personen Daten' | uppercase }}</h2>
+    </div>
+    <div class="table-container">
+
+
+      <table class="personData">
+        <ng-template ngFor [ngForOf]="personData" let-data let-i="index" let-c="count">
+
+          <tr>
+            <td class="dataName">{{data.name}}</td>
+            <td class="dataValue">{{data.value}}</td>
+          </tr>
+
+        </ng-template>
+      </table>
+    </div>
+  </div>
+</section>

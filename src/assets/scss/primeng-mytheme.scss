@@ -75,7 +75,7 @@ body .ui-dataview .ui-dataview-content {
 }
 
 body .ui-dialog .ui-dialog-titlebar {
-  background-color: hsl(130, 49%, 20%);
+  background-color: var(--akzent-color-dark);
   color: white;
   border: none;
 
@@ -85,6 +85,6 @@ body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon {
   color: white;
 
   &:hover {
-    color: rgba(255, 68, 43, 0.884);
+    color: var(--warn-color);
   }
 }

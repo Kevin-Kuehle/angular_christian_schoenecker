@@ -1,0 +1,88 @@
+@import './../../assets/scss/grid.scss';
+
+section.personal-data {
+  width: 100%;
+}
+
+
+table.personData {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border-spacing: 0;
+  margin: 0 auto;
+  border-top: 6px solid var(--akzent-color);
+
+  @include BreakPoint(lg) {
+    flex-flow: column;
+  }
+
+
+  tr {
+    flex: 0 0 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: hsl(0, 0, 95%);
+    border-bottom: 1px solid hsl(0, 0, 88%);
+
+
+    &:nth-of-type(odd) {
+      border-right: 5px solid hsl(0, 0, 99%);
+    }
+
+    &:last-of-type {
+      margin-right: auto;
+    }
+
+    @include BreakPoint(lg) {
+      border-right: initial;
+
+      &:nth-of-type(even) {
+        background-color: hsl(0, 0, 98%);
+      }
+
+      &:nth-of-type(odd) {
+        border-right: initial;
+      }
+
+      &:last-of-type {
+        margin-right: initial;
+      }
+    }
+
+    td {
+      padding: 0.8rem 2rem;
+      border-collapse: separate;
+      font-family: var(--main-font);
+      position: relative;
+
+
+      &.dataName {
+        flex: 0 0 50%;
+        font-weight: bold;
+
+        &::after {
+          content: ':';
+          display: inline-block;
+          margin-left: 0.2rem;
+        }
+      }
+
+      &.dataValue {
+        flex: 2 0 auto;
+      }
+
+    }
+  }
+
+  .col-1 {
+    flex: 0 0 1;
+    margin-right: 0.2rem;
+  }
+
+  .col-2 {
+    flex: 0 0 1;
+  }
+}

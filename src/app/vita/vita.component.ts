@@ -29,16 +29,11 @@ export class VitaComponent implements OnInit {
 
         this.showBoxIndex.push(object);
       }
-      console.log(this.showBoxIndex);
-      console.log(this.vitas);
-
     });
 
   }
 
   showDialog(index) {
-    console.log(index);
     this.showBoxIndex[index].display = true;
-    console.log(this.showBoxIndex);
   }
 }

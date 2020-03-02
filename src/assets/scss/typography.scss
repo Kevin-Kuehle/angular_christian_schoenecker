@@ -131,5 +131,4 @@ h3 {
     @include fluid-type('margin-top', $min-ScreenSize, $max-ScreenSize, 1rem, 2rem);
     @include fluid-type('margin-bottom', $min-ScreenSize, $max-ScreenSize, 1rem, 2rem);
   }
-
 }

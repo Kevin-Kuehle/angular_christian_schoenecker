@@ -23,5 +23,9 @@ export class DatabaseService {
     return this.http.get(`${this.baseUrl}/vita`);
   }
 
+  getPersonData() {
+    return this.http.get(`${this.baseUrl}/personData`);
+  }
+
 
 }
