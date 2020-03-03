@@ -127,6 +127,17 @@ h3 {
     }
   }
 
+  &.btn-3 {
+    background-color: var(--akzent-color);
+    width: 152px;
+    height: 48px;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: var(--akzent-color-dark);
+    }
+  }
+
   &.spaceArround {
     @include fluid-type('margin-top', $min-ScreenSize, $max-ScreenSize, 1rem, 2rem);
     @include fluid-type('margin-bottom', $min-ScreenSize, $max-ScreenSize, 1rem, 2rem);

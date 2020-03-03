@@ -1,0 +1,13 @@
+<section class="gallery">
+  <div class="container">
+    <div class="title">
+      <h2>{{ 'Gallerie' | uppercase}}</h2>
+    </div>
+    <div class="gallery-container">
+
+      <ng-template ngFor [ngForOf]="images" let-i="index" let-img let-c="count">
+        <img  (click)="showImage(i)" *ngIf="i <= 7" class="gallery-item" src=" {{ img.source }} " alt="{{ img.alt }}">
+      </ng-template>
+    </div>
+  </div>
+</section>

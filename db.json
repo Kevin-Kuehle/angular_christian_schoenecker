@@ -270,5 +270,150 @@
       "name": "Fähigkeiten",
       "value": "Segelfliegen"
     }
+  ],
+  "galleryImages": [
+    {
+      "id": 0,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_01.jpg",
+      "source": "assets/images/gallerie-bilder/actor_00.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 1,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_02.jpg",
+      "source": "assets/images/gallerie-bilder/actor_01.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 2,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_03.jpg",
+      "source": "assets/images/gallerie-bilder/actor_02.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 3,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_04.jpg",
+      "source": "assets/images/gallerie-bilder/actor_03.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 4,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_05.jpg",
+      "source": "assets/images/gallerie-bilder/actor_04.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 5,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_06.jpg",
+      "source": "assets/images/gallerie-bilder/actor_05.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 6,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_07.jpg",
+      "source": "assets/images/gallerie-bilder/actor_06.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 7,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_08.jpg",
+      "source": "assets/images/gallerie-bilder/actor_07.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 8,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_09.jpg",
+      "source": "assets/images/gallerie-bilder/actor_08.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 9,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_010.jpg",
+      "source": "assets/images/gallerie-bilder/actor_09.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 10,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_011.jpg",
+      "source": "assets/images/gallerie-bilder/actor_10.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 11,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_012.jpg",
+      "source": "assets/images/gallerie-bilder/actor_11.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 12,
+      "path": "C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\src\\assets\\images\\gallerie-bilder\\actor_013.jpg",
+      "source": "assets/images/gallerie-bilder/actor_12.jpg",
+      "fileName": "actor_01.jpg",
+      "alt": "lorem",
+      "title": "Ein Bild",
+      "description": "Ein Bild aus der Gallerie",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    }
   ]
 }

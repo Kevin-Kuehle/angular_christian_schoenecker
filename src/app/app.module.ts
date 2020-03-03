@@ -20,6 +20,9 @@ import { VirtualScrollerModule } from 'primeng/virtualscroller';
 import { DataViewModule } from 'primeng/dataview';
 import { PersonalDataComponent } from './personal-data/personal-data.component';
 import { DialogModule } from 'primeng/dialog';
+import { GalleryComponent } from './gallery/gallery.component';
+import { LightboxModule } from 'primeng/lightbox';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +34,8 @@ import { DialogModule } from 'primeng/dialog';
     NewsComponent,
     EventsComponent,
     VitaComponent,
-    PersonalDataComponent
+    PersonalDataComponent,
+    GalleryComponent
 
   ],
   imports: [
@@ -43,7 +47,8 @@ import { DialogModule } from 'primeng/dialog';
     TableModule,
     VirtualScrollerModule,
     DataViewModule,
-    DialogModule
+    DialogModule,
+    LightboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

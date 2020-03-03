@@ -27,5 +27,8 @@ export class DatabaseService {
     return this.http.get(`${this.baseUrl}/personData`);
   }
 
+  getGalleryImages() {
+    return this.http.get(`${this.baseUrl}/galleryImages`);
+  }
 
 }

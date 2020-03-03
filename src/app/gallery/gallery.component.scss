@@ -1,0 +1,27 @@
+@import '../../assets/scss/grid.scss';
+
+img {
+  &.gallery-item {
+    width: 100%;
+    height: auto;
+    align-self: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, calc(25% - 10px));
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  justify-content: center;
+  align-content: center;
+
+  @include BreakPoint(lg) {
+    grid-template-columns: repeat(auto-fill, calc(50% - 10px));
+  }
+}
