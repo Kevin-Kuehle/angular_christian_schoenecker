@@ -1,0 +1,68 @@
+@import '../../assets/scss/grid.scss';
+@import '../../assets/scss/fluid-type.scss';
+@import '../../assets/scss/grid.scss';
+
+img {
+  &.gallery-item {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 61%);
+    width: 100%;
+    height: auto;
+    align-self: center;
+    // filter: grayscale(70%), blur(90%);
+    filter: sepia(80%) brightness(0.5);
+    transition: filter 0.3s ease;
+
+
+
+    &:hover {
+      cursor: pointer;
+      filter: sepia(0) brightness(1);
+    }
+
+    @include BreakPoint(lg) {
+      filter: sepia(40%);
+    }
+  }
+
+  &.lightbox-item {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.lightBox-Container {
+  display: flex;
+  flex-flow: row;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2000;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  z-index: 300;
+
+
+
+  .image-container {
+    width: 59%;
+    height: auto;
+    transform: translatey(33px);
+
+    @include BreakPoint(md) {
+      width: 100%;
+      max-width: 98vw;
+    }
+
+  }
+}
+
+.gallery-container {
+  position: relative;
+}

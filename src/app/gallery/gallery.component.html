@@ -3,15 +3,20 @@
     <div class="title">
       <h2 class="light">{{ 'Gallerie' | uppercase}}</h2>
     </div>
-    <div  acLightbox class="lightBox">  </div>
+    <div acLightbox class="lightBox"> </div>
     <div class="gallery-container">
-      <!-- <div class="lightbox" acLightbox> </div> -->
+
+
+
       <ng-template ngFor [ngForOf]="images" let-i="index" let-img let-c="count">
-        <img (click)="showImage(i)" *ngIf="i < 8" class="gallery-item" src=" {{ img.source }} " alt="{{ img.alt }}">
+        <ac-lightbox *ngIf="i < toShow" [item]="img" [index]="i"></ac-lightbox>
       </ng-template>
+
+
+
     </div>
     <div class="footer">
-      <button class="button btn-1">
+      <button (click)="toShow = toShow + 4" class="button btn-1">
         Mehr Bilder
       </button>
     </div>

@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class GalleryComponent implements OnInit {
 
   public images;
+  public toShow = 8;
 
   constructor(private data: DatabaseService) { }
 

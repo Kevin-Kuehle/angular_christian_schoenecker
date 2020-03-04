@@ -1,0 +1,8 @@
+<div *ngIf="showLightBox" (click)="clickTrigger(openItem, $event)" class="lightBox-Container">
+
+  <div class="image-container">
+    <img #openItem class="lightbox-item" src=" {{ item.source }} " alt="{{ item.alt }}">
+  </div>
+
+</div>
+<img (click)="showImage(index)" class="gallery-item" src=" {{ item.source }} " alt="{{ item.alt }}">

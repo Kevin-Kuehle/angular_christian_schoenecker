@@ -6,32 +6,13 @@
 section.gallery {
   background-color: hsl(242, 34%, 8%);
   @include fluid-type('padding-bottom', $min-ScreenSize, $max-ScreenSize, 2rem, 8rem);
+  position: relative;
+  z-index: 100;
 
 }
 
 
-img {
-  &.gallery-item {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 61%);
-    width: 100%;
-    height: auto;
-    align-self: center;
-    // filter: grayscale(70%), blur(90%);
-    filter: sepia(80%) brightness(0.5);
-    transition: filter 0.3s ease;
 
-
-
-    &:hover {
-      cursor: pointer;
-      filter: sepia(0) brightness(1);
-    }
-
-    @include BreakPoint(lg) {
-      filter: sepia(40%);
-    }
-  }
-}
 
 
 .gallery-container {

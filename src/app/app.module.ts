@@ -22,6 +22,7 @@ import { PersonalDataComponent } from './personal-data/personal-data.component';
 import { DialogModule } from 'primeng/dialog';
 import { GalleryComponent } from './gallery/gallery.component';
 import { LightboxModule } from 'primeng/lightbox';
+import { LightboxComponent } from './lightbox/lightbox.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { LightboxModule } from 'primeng/lightbox';
     VitaComponent,
     PersonalDataComponent,
     GalleryComponent,
+    LightboxComponent,
 
   ],
   imports: [
