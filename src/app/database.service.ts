@@ -30,5 +30,7 @@ export class DatabaseService {
   getGalleryImages() {
     return this.http.get(`${this.baseUrl}/galleryImages`);
   }
-
+  getMediaVideos() {
+    return this.http.get(`${this.baseUrl}/media`);
+  }
 }

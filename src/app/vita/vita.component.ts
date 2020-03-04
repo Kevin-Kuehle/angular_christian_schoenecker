@@ -1,3 +1,4 @@
+import { MobileHandlerService } from './../mobile-handler.service';
 import { DatabaseService } from './../database.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -11,9 +12,12 @@ export class VitaComponent implements OnInit {
 
   public vitas;
   public showBoxIndex = [];
+  public isMobile;
+  public vitaRows = 3;
 
 
-  constructor(private database: DatabaseService) { }
+
+  constructor(private database: DatabaseService, private mobileHandler: MobileHandlerService) { }
 
   ngOnInit(): void {
 
@@ -29,6 +33,19 @@ export class VitaComponent implements OnInit {
 
         this.showBoxIndex.push(object);
       }
+    });
+
+
+    this.mobileHandler.isMobile.subscribe(data => {
+      this.isMobile = data;
+
+      if (this.isMobile === true) {
+        this.vitaRows = 3;
+      } else {
+        this.vitaRows = 6;
+      }
+
+      console.log(this.isMobile);
     });
 
   }

@@ -17,15 +17,6 @@ export class GalleryComponent implements OnInit {
 
     this.data.getGalleryImages().subscribe(data => {
       this.images = data;
-      console.log(this.images);
     });
-  }
-
-
-  showImage(index) {
-
-    console.log(this.images[index]);
-
-
   }
 }

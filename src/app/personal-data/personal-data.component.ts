@@ -17,7 +17,6 @@ export class PersonalDataComponent implements OnInit {
 
     this.db.getPersonData().subscribe(data => {
       this.personData = data;
-      console.log(this.personData);
 
     });
   }

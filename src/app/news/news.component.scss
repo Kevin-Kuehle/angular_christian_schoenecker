@@ -52,6 +52,7 @@ section.news {
     span {
       background-color: var(--akzent-color);
       padding: 0 1rem;
+      z-index: 1;
     }
 
     &::before {

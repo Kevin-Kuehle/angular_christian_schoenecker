@@ -23,6 +23,8 @@ import { DialogModule } from 'primeng/dialog';
 import { GalleryComponent } from './gallery/gallery.component';
 import { LightboxModule } from 'primeng/lightbox';
 import { LightboxComponent } from './lightbox/lightbox.component';
+import { MediaComponent } from './media/media.component';
+import { MediaViewComponent } from './media-view/media-view.component';
 
 
 @NgModule({
@@ -38,6 +40,8 @@ import { LightboxComponent } from './lightbox/lightbox.component';
     PersonalDataComponent,
     GalleryComponent,
     LightboxComponent,
+    MediaComponent,
+    MediaViewComponent,
 
   ],
   imports: [

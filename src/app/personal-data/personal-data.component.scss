@@ -1,4 +1,5 @@
 @import './../../assets/scss/grid.scss';
+@import './../../assets/scss/fluid-type.scss';
 
 section.personal-data {
   width: 100%;
@@ -57,21 +58,28 @@ table.personData {
       border-collapse: separate;
       font-family: var(--main-font);
       position: relative;
+      @include fluid-type('font-size', $min-ScreenSize, $max-ScreenSize, 13px, 16px);
+
+      @include BreakPoint(sm) {
+        padding: 0.8rem 1rem;
+      }
 
 
       &.dataName {
-        flex: 0 0 50%;
+        flex: 0 0 60%;
         font-weight: bold;
+        white-space: pre;
 
         &::after {
           content: ':';
           display: inline-block;
           margin-left: 0.2rem;
         }
+
       }
 
       &.dataValue {
-        flex: 2 0 auto;
+        flex: 1 1 auto;
       }
 
     }

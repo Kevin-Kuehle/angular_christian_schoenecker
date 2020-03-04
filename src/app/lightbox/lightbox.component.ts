@@ -22,11 +22,7 @@ export class LightboxComponent implements OnInit {
     this.showLightBox = !this.showLightBox;
   }
 
-
   clickTrigger(item, event) {
-    console.log(item);
-    console.log(event.target);
-
     if (event.target !== item) {
       this.showLightBox = false;
     }

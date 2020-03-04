@@ -415,5 +415,128 @@
       "uploadDate": "12.03.2020",
       "show": 1
     }
+  ],
+  "media": [
+    {
+      "id": 0,
+      "path": "/",
+      "source": "assets/videos/actor_video_00.mp4",
+      "fileName": "actor_01.mp4",
+      "alt": "lorem",
+      "title": "Ein Video",
+      "description": "Ein Bild aus der Mediathek",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 1,
+      "path": "/",
+      "source": "assets/videos/actor_video_01.mp4",
+      "fileName": "actor_01.mp4",
+      "alt": "lorem",
+      "title": "Ein Video",
+      "description": "Ein Bild aus der Mediathek",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 2,
+      "path": "/",
+      "source": "assets/videos/actor_video_02.mp4",
+      "fileName": "actor_01.mp4",
+      "alt": "lorem",
+      "title": "Ein Video",
+      "description": "Ein Bild aus der Mediathek",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 3,
+      "path": "/",
+      "source": "assets/videos/actor_video_03.mp4",
+      "fileName": "actor_01.mp4",
+      "alt": "lorem",
+      "title": "Ein Video",
+      "description": "Ein Bild aus der Mediathek",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 4,
+      "path": "/",
+      "source": "assets/videos/actor_video_04.mp4",
+      "fileName": "actor_01.mp4",
+      "alt": "lorem",
+      "title": "Ein Video",
+      "description": "Ein Bild aus der Mediathek",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 5,
+      "path": "/",
+      "source": "assets/videos/actor_video_05.mp4",
+      "fileName": "actor_01.mp4",
+      "alt": "lorem",
+      "title": "Ein Video",
+      "description": "Ein Bild aus der Mediathek",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 6,
+      "path": "/",
+      "source": "assets/videos/actor_video_06.mp4",
+      "fileName": "actor_01.mp4",
+      "alt": "lorem",
+      "title": "Ein Video",
+      "description": "Ein Bild aus der Mediathek",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 7,
+      "path": "/",
+      "source": "assets/videos/actor_video_07.mp4",
+      "fileName": "actor_01.mp4",
+      "alt": "lorem",
+      "title": "Ein Video",
+      "description": "Ein Bild aus der Mediathek",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 8,
+      "path": "/",
+      "source": "assets/videos/actor_video_08.mp4",
+      "fileName": "actor_01.mp4",
+      "alt": "lorem",
+      "title": "Ein Video",
+      "description": "Ein Bild aus der Mediathek",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 9,
+      "path": "/",
+      "source": "assets/videos/actor_video_09.mp4",
+      "fileName": "actor_01.mp4",
+      "alt": "lorem",
+      "title": "Ein Video",
+      "description": "Ein Bild aus der Mediathek",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    },
+    {
+      "id": 10,
+      "path": "/",
+      "source": "assets/videos/actor_video_010.mp4",
+      "fileName": "actor_01.mp4",
+      "alt": "lorem",
+      "title": "Ein Video",
+      "description": "Ein Bild aus der Mediathek",
+      "uploadDate": "12.03.2020",
+      "show": 1
+    }
   ]
 }

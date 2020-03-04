@@ -1,0 +1,13 @@
+<section class="media">
+  <div class="container">
+    <div class="title">
+      <h2>{{ 'Media' | uppercase }}</h2>
+
+    </div>
+    <div class="media-container">
+      <ng-template ngFor [ngForOf]="movies" let-movie let-i="index">
+        <ac-media-view *ngIf="i < toShow" [item]="movie" [index]="i"></ac-media-view>
+      </ng-template>
+    </div>
+  </div>
+</section>

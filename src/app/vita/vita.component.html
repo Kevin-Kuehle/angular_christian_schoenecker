@@ -5,7 +5,7 @@
 
   <div class="container">
     <div class="vita-container">
-      <p-dataView [value]="vitas" [paginator]="true" [rows]="5">
+      <p-dataView [value]="vitas" [paginator]="true" [rows]="vitaRows">
         <p-header>
           {{ "Christian Schönecker Lebenslauf" | titlecase }}
           <p-dataViewLayoutOptions> </p-dataViewLayoutOptions>
@@ -19,11 +19,11 @@
             {{ vita.longDescription }}
           </p-dialog>
           <div class="p-grid vitaListBox">
-            <div class="p-col-1 year">{{ vita.year }}</div>
-            <div class="p-col-2"> {{ vita.place }}</div>
-            <div class=" p-col-5">{{ vita.jobTitle }}</div>
-            <div class=" p-col ">{{ vita.role }}</div>
-            <div class=" p-col ">
+            <div class="  p-col-12 p-md-2 year">{{ vita.year }}</div>
+            <div class="  p-col-12 p-md-2"> {{ vita.place }}</div>
+            <div class="  p-col-12 p-md-4">{{ vita.jobTitle }}</div>
+            <div class="  p-col-12 p-md-2">{{ vita.role }}</div>
+            <div class="  p-col-12 p-md-2">
               <button class=" button btn-3" type="button" (click)="showDialog(i)" label="Show">
                 Mehr Infos
               </button>
