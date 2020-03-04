@@ -1,13 +1,19 @@
 <section class="gallery">
   <div class="container">
     <div class="title">
-      <h2>{{ 'Gallerie' | uppercase}}</h2>
+      <h2 class="light">{{ 'Gallerie' | uppercase}}</h2>
     </div>
+    <div  acLightbox class="lightBox">  </div>
     <div class="gallery-container">
-
+      <!-- <div class="lightbox" acLightbox> </div> -->
       <ng-template ngFor [ngForOf]="images" let-i="index" let-img let-c="count">
-        <img  (click)="showImage(i)" *ngIf="i <= 7" class="gallery-item" src=" {{ img.source }} " alt="{{ img.alt }}">
+        <img (click)="showImage(i)" *ngIf="i < 8" class="gallery-item" src=" {{ img.source }} " alt="{{ img.alt }}">
       </ng-template>
+    </div>
+    <div class="footer">
+      <button class="button btn-1">
+        Mehr Bilder
+      </button>
     </div>
   </div>
 </section>

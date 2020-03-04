@@ -35,7 +35,7 @@ import { LightboxModule } from 'primeng/lightbox';
     EventsComponent,
     VitaComponent,
     PersonalDataComponent,
-    GalleryComponent
+    GalleryComponent,
 
   ],
   imports: [
