@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 
 #All Videos
-/src/assets/videos
+/src/assets/videos/
