@@ -27,7 +27,6 @@ export class MediaComponent implements OnInit {
       this.movies = data;
     });
 
-
     this.mobileS.isMobile.subscribe(data => {
       this.isMobile = data;
 
@@ -38,8 +37,4 @@ export class MediaComponent implements OnInit {
       }
     });
   }
-
-
-
-
 }

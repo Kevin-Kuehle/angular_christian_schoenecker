@@ -18,4 +18,8 @@ export class HeaderComponent implements OnInit {
     this.data.isMobile.subscribe(status => this.isMobile = status);
   }
 
+  scroll(el: string) {
+    const toScroll = document.querySelector('#' + el);
+    toScroll.scrollIntoView({ behavior: 'smooth' });
+  }
 }
