@@ -1,0 +1,49 @@
+@import './../../assets/scss/fluid-type.scss';
+
+h2 {
+  @include fluid-type('margin-bottom', $min-ScreenSize, $max-ScreenSize, 4rem, 5rem);
+}
+
+.info {
+
+  p {
+    width: 100%;
+    max-width: 631px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.logos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  justify-items: center;
+
+  .icons {
+    height: 52px;
+    width: 52px;
+    margin-right: 1.3rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:last-of-type {
+      margin-right: initial;
+    }
+
+    &.instagram {
+      background-image: url('../../assets/images/svg/instagram_icon.svg');
+    }
+
+    &.youtube {
+      background-image: url('../../assets/images/svg/youtube_icon.svg');
+      height: 52px;
+      width: 69px
+    }
+  }
+}

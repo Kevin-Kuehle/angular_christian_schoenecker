@@ -25,6 +25,7 @@ import { LightboxModule } from 'primeng/lightbox';
 import { LightboxComponent } from './lightbox/lightbox.component';
 import { MediaComponent } from './media/media.component';
 import { MediaViewComponent } from './media-view/media-view.component';
+import { SocialsComponent } from './socials/socials.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { MediaViewComponent } from './media-view/media-view.component';
     LightboxComponent,
     MediaComponent,
     MediaViewComponent,
+    SocialsComponent,
 
   ],
   imports: [
