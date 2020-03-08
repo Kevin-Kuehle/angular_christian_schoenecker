@@ -8,7 +8,6 @@
       <p-dataView [value]="vitas" [paginator]="true" [rows]="vitaRows">
         <p-header>
           {{ "Christian Schönecker Lebenslauf" | titlecase }}
-          <p-dataViewLayoutOptions> </p-dataViewLayoutOptions>
         </p-header>
         <ng-template let-vita let-i="rowIndex" pTemplate="listItem">
           <p-dialog header="Mehr Informationen" [(visible)]="showBoxIndex[i].display" class="vitaDialog"

@@ -1,3 +1,5 @@
+import { BehaviorSubject } from 'rxjs';
+import { MobileHandlerService } from './../mobile-handler.service';
 import { DatabaseService } from './../database.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -11,15 +13,33 @@ export class MediaComponent implements OnInit {
   public movies;
   public item;
   public index;
-  public toShow = 6;
+  public isMobile;
 
-  constructor(private db: DatabaseService) { }
+
+  // tslint:disable-next-line:ban-types
+  public toShow;
+
+  constructor(private db: DatabaseService, private mobileS: MobileHandlerService) { }
 
   ngOnInit(): void {
 
     this.db.getMediaVideos().subscribe(data => {
       this.movies = data;
-      console.log(this.movies);
+    });
+
+
+    this.mobileS.isMobile.subscribe(data => {
+      this.isMobile = data;
+
+      if (this.isMobile) {
+        this.toShow = 3;
+      } else {
+        this.toShow = 6;
+      }
     });
   }
+
+
+
+
 }

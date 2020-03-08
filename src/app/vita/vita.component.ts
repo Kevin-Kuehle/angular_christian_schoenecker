@@ -44,8 +44,6 @@ export class VitaComponent implements OnInit {
       } else {
         this.vitaRows = 6;
       }
-
-      console.log(this.isMobile);
     });
 
   }

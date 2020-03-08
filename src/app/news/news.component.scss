@@ -73,10 +73,15 @@ section.news {
   }
 
   .body {
-    background-color: rgba(13, 61, 27, 0.16);
+    background-color: hsla(-224, 40%, 34%, 1);
     border-radius: 60px 0px 60px 6px;
     max-width: 512px;
     width: 100%;
     padding: 38px 50px;
+
+    @include BreakPoint(md) {
+      padding: 30px 25px;
+      border-radius: 30px 0px 30px 6px;
+    }
   }
 }

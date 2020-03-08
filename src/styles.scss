@@ -20,11 +20,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 
-  :focus {
+
+  &:focus {
     outline: 0 !important;
   }
 }
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 
 ac-root {
   display: grid;
@@ -48,9 +59,9 @@ ac-root {
 
   --light-color: rgba(225, 223, 223, 1);
   --dark-color: rgba(72, 72, 72, 1);
-  // --akzent-color: rgba(39, 152, 72, 1);
-  --akzent-color: rgb(78, 50, 104);
-  --akzent-color-dark: rgb(49, 29, 68);
+  --akzent-color: hsla(137, 64%, 14%, 1);
+  --akzent-color-dark: hsla(137, 64%, 9%, 1);
+  --akzent-color-light: hsla(137, 64%, 27%, 1);
   --secondary-color: rgba(140, 29, 29, 1);
   --site-background-color: rgb(250, 250, 244);
   --warn-color: rgb(230, 69, 69);
@@ -62,7 +73,7 @@ ac-root {
   sans-serif;
 }
 
-$akzent-color: rgb(101, 68, 133);
+$akzent-color: hsla(137, 64%, 14%, 1);
 $secondary-color: var(--secondary-color);
 
 html {
