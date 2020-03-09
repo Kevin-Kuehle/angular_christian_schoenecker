@@ -136,3 +136,75 @@ header {
     background-image: url('../../assets/images/svg/youtube_white.svg');
   }
 }
+
+
+ul.mobileMenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 80vw;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgba(0, 0, 0, 0.88);
+  padding: 2rem 0 2rem 1rem;
+  // transform: translateX(-100%);
+  transform: translateX(0);
+  transition: transform 0.4s ease;
+  list-style: none;
+
+  &.menuOn {
+    transform: translateX(-100%);
+    // transform: translateX(0);
+  }
+
+  li {
+    margin-bottom: 0.9rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    a {
+      padding: 0.3rem 0.6rem;
+      color: white;
+      font-family: var(--main-font);
+      font-size: 1.3rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  span.menuTitle {
+    color: white;
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .closeButton {
+    border: none;
+    width: auto;
+    white-space: nowrap;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: -o-max-content;
+    width: -ms-max-content;
+    display: table;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: none !important;
+    color: white;
+
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+
+}

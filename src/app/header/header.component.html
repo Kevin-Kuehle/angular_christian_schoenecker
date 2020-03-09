@@ -1,7 +1,6 @@
 <header class="header">
   <div class="container grid ">
-    <div *ngIf='isMobile' class="mobileButton">
-
+    <div *ngIf='isMobile' (click)="toggleMobileMenu()" class="mobileButton">
       <svg enable-background="new 0 0 384 384" version="1.1" viewBox="0 0 384 384" xml:space="preserve"
         xmlns="http://www.w3.org/2000/svg">
         <rect y="277.33" width="384" height="42.667" />
@@ -18,6 +17,23 @@
       <li> <a (click)="scroll('sectionMedia')">{{ 'Media' | uppercase }}</a> </li>
       <li> <a>{{ 'Kontakt' | uppercase }}</a> </li>
     </ul>
+    <!--  -->
+
+    <ul *ngIf="isMobile" class="mobileMenu" #mobileMenu>
+      <span class="menuTitle">{{ 'Menü' | uppercase }}</span>
+      <li> <a (click)="scroll('sectionBiografie')">{{ 'Biogafie' | uppercase }}</a> </li>
+      <li> <a (click)="scroll('sectionAktuell')">{{ 'Aktuell' | uppercase }}</a> </li>
+      <li> <a (click)="scroll('sectionVita')">{{ 'Vita' | uppercase }}</a> </li>
+      <li> <a (click)="scroll('sectionGallerie')">{{ 'Gallerie' | uppercase }}</a> </li>
+      <li> <a (click)="scroll('sectionMedia')">{{ 'Media' | uppercase }}</a> </li>
+      <li> <a>{{ 'Kontakt' | uppercase }}</a> </li>
+      <li> <a>{{ 'Impressum' | uppercase }}</a> </li>
+      <li> <a>{{ 'Datenschutz' | uppercase }}</a> </li>
+      <button (click)="toggleMobileMenu()" class="closeButton">X</button>
+
+    </ul>
+
+    <!--  -->
     <div class="socials">
       <div class="flex-container">
         <i class="instagram iconBox instagram"></i>
@@ -27,4 +43,3 @@
     </div>
   </div>
 </header>
-<!-- <h1>{{ isMobile }}</h1> -->

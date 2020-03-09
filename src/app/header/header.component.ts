@@ -1,5 +1,5 @@
 import { MobileHandlerService } from './../mobile-handler.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'ac-header',
@@ -10,8 +10,10 @@ export class HeaderComponent implements OnInit {
 
   public isMobile;
 
+  @ViewChild('mobileMenu') mobileMenu: ElementRef;
 
-  constructor(private data: MobileHandlerService) { }
+
+  constructor(private data: MobileHandlerService, private renderer: Renderer2) { }
 
   ngOnInit() {
 
@@ -21,5 +23,10 @@ export class HeaderComponent implements OnInit {
   scroll(el: string) {
     const toScroll = document.querySelector('#' + el);
     toScroll.scrollIntoView({ behavior: 'smooth' });
+    this.toggleMobileMenu();
+  }
+
+  toggleMobileMenu() {
+    this.mobileMenu.nativeElement.classList.toggle('menuOn');
   }
 }
