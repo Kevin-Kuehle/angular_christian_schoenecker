@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" [ngClass]="headerClasses">
   <div class="container grid ">
     <div *ngIf='isMobile' (click)="toggleMobileMenu()" class="mobileButton">
       <svg enable-background="new 0 0 384 384" version="1.1" viewBox="0 0 384 384" xml:space="preserve"
