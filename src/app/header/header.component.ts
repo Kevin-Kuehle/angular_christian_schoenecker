@@ -17,8 +17,6 @@ export class HeaderComponent implements OnInit {
     flyOut: false
   };
 
-
-
   constructor(private data: MobileHandlerService, private renderer: Renderer2) { }
 
   ngOnInit() {
@@ -36,7 +34,6 @@ export class HeaderComponent implements OnInit {
   toggleMobileMenu() {
     this.mobileMenu.nativeElement.classList.toggle('menuOn');
   }
-
 
   hideTopBarHandler() {
     let lastScrollTop = 0;

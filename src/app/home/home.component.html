@@ -6,13 +6,17 @@
       </div>
       <div *ngIf='!isTriggered' class="navigationBar">
         <ul class="secondaryMenu">
-          <li> <a> {{ 'Biografie' | uppercase }} </a> </li>
-          <li> <a> {{ 'Aktuelles' | uppercase }} </a> </li>
-          <li> <a> {{ 'Veranstaltung' | uppercase }} </a> </li>
-          <li> <a> {{ 'Vita' | uppercase }} </a> </li>
-          <li> <a> {{ 'Personenbeschreibung' | uppercase }} </a> </li>
-          <li> <a> {{ 'Gallerie' | uppercase }} </a> </li>
-          <li> <a> {{ 'Media' | uppercase }} </a> </li>
+
+
+          <li> <a (click)="scroll('sectionBiografie')">{{ 'Biogafie' | uppercase }}</a> </li>
+          <li> <a (click)="scroll('sectionAktuell')">{{ 'Aktuell' | uppercase }}</a> </li>
+          <li> <a (click)="scroll('sectionPersonenbeschreibung')"> {{ 'Personenbeschreibung' | uppercase }} </a> </li>
+          <li> <a (click)="scroll('sectionVeranstaltung')"> {{ 'Veranstaltung' | uppercase }} </a> </li>
+          <li> <a (click)="scroll('sectionVita')">{{ 'Vita' | uppercase }}</a> </li>
+          <li> <a (click)="scroll('sectionGallerie')">{{ 'Gallerie' | uppercase }}</a> </li>
+          <li> <a (click)="scroll('sectionMedia')">{{ 'Media' | uppercase }}</a> </li>
+
+
         </ul>
       </div>
     </div>

@@ -95,12 +95,10 @@ header {
 .socials {
   grid-area: socials;
 
-
   .flex-container {
     display: flex;
     flex-flow: row;
     align-content: center;
-
 
     @include BreakPoint(lg) {
       justify-content: center;
@@ -141,7 +139,6 @@ header {
     background-image: url('../../assets/images/svg/youtube_white.svg');
   }
 }
-
 
 ul.mobileMenu {
   position: fixed;
@@ -203,11 +200,8 @@ ul.mobileMenu {
     background: none !important;
     color: white;
 
-
     &:hover {
       cursor: pointer;
     }
-
   }
-
 }

@@ -40,4 +40,8 @@ export class HomeComponent implements OnInit {
       this.setWidth();
     });
   }
+  scroll(el: string) {
+    const toScroll = document.querySelector('#' + el);
+    toScroll.scrollIntoView({ behavior: 'smooth' });
+  }
 }
