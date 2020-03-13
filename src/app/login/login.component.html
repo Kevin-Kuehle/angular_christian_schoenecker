@@ -1,0 +1,25 @@
+<section class="section" id="sectionLogin">
+  <div class="container">
+
+    <div class="title">
+      <h2>{{ 'Login' | uppercase }}</h2>
+    </div>
+    <!-- <div>
+      <hr>
+      <p> {{ loginFormGroup.value | json }}</p>
+      <p> {{ loginFormGroup.status | json }}</p>
+      <hr>
+    </div> -->
+    <div class="body">
+      <form [formGroup]="loginFormGroup" (ngSubmit)="onSubmit()">
+        <label for="email"></label>
+        <input type="text" name="email" formControlName="email" placeholder="E-Mail">
+        <label for="passwort"></label>
+        <input type="password" name="passwort" formControlName="passwort" placeholder="Passwort">
+        <!--  -->
+        <input class="button center btn-1" type="submit" value="Einloggen">
+      </form>
+    </div>
+
+  </div>
+</section>

@@ -1,17 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BiografieComponent } from './biografie/biografie.component';
-
 import { HttpClientModule } from '@angular/common/http';
 import { NewsComponent } from './news/news.component';
 import { EventsComponent } from './events/events.component';
-
 import { AccordionModule } from 'primeng/accordion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableModule } from 'primeng/table';
@@ -26,6 +23,9 @@ import { LightboxComponent } from './lightbox/lightbox.component';
 import { MediaComponent } from './media/media.component';
 import { MediaViewComponent } from './media-view/media-view.component';
 import { SocialsComponent } from './socials/socials.component';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { InputTextModule } from 'primeng/inputtext';
 
 
 @NgModule({
@@ -44,6 +44,7 @@ import { SocialsComponent } from './socials/socials.component';
     MediaComponent,
     MediaViewComponent,
     SocialsComponent,
+    LoginComponent,
 
   ],
   imports: [
@@ -56,7 +57,11 @@ import { SocialsComponent } from './socials/socials.component';
     VirtualScrollerModule,
     DataViewModule,
     DialogModule,
-    LightboxModule
+    LightboxModule,
+    ReactiveFormsModule,
+    InputTextModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
