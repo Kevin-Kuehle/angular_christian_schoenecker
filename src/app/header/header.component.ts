@@ -37,13 +37,16 @@ export class HeaderComponent implements OnInit {
 
   hideTopBarHandler() {
     let lastScrollTop = 0;
+    let refValue = 0;
+
 
     addEventListener('scroll', (test) => {
       const siteYoffset = window.pageYOffset;
 
-      if (lastScrollTop < siteYoffset) {
+      if (lastScrollTop < siteYoffset && siteYoffset > 400) {
         this.headerClasses.flyOut = true;
-      } else {
+        refValue = siteYoffset;
+      } else if ((refValue - 100) > siteYoffset) {
         this.headerClasses.flyOut = false;
       }
 
