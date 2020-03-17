@@ -12,9 +12,9 @@
     </div> -->
     <div class="body">
       <form [formGroup]="loginFormGroup" (ngSubmit)="onSubmit()">
-        <label for="email"></label>
+        <label for="email"> {{ loginFormGroup.get('email').valid  }} </label>
         <input type="text" name="email" formControlName="email" placeholder="E-Mail">
-        <label for="passwort"></label>
+        <label for="passwort">{{ loginFormGroup.get('passwort').valid  }}</label>
         <input type="password" name="passwort" formControlName="passwort" placeholder="Passwort">
         <!--  -->
         <input class="button center btn-1" type="submit" value="Einloggen">
