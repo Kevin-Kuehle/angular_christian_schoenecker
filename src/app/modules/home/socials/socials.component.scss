@@ -1,4 +1,4 @@
-@import './../../assets/scss/fluid-type.scss';
+@import 'fluid-type';
 
 h2 {
   @include fluid-type('margin-bottom', $min-ScreenSize, $max-ScreenSize, 4rem, 5rem);
@@ -37,11 +37,11 @@ h2 {
     }
 
     &.instagram {
-      background-image: url('../../assets/images/svg/instagram_icon.svg');
+      background-image: url('../../../../assets/images/svg/instagram_icon.svg');
     }
 
     &.youtube {
-      background-image: url('../../assets/images/svg/youtube_icon.svg');
+      background-image: url('../../../../assets/images/svg/youtube_icon.svg');
       height: 34px;
       width: 45px;
     }

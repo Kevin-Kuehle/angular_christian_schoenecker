@@ -1,5 +1,5 @@
-@import '../../assets/scss/grid.scss';
-@import '../../assets/scss/fluid-type.scss';
+@import 'grid';
+@import 'fluid-type';
 
 .site-opening {
   width: 100%;
@@ -8,7 +8,7 @@
   position: relatives;
   top: 0;
   left: 0;
-  background-image: url('../../assets/images/png/header_background.png');
+  background-image: url('../../../assets/images/png/header_background.png');
   background-repeat: no-repeat;
   background-position: 50vw 0;
   background-size: auto 100%;
@@ -67,7 +67,7 @@ ul.secondaryMenu {
   transform: translateX(-90%);
 
   li {
-    list-style-image: url('../../assets/images/svg/list_arrow.svg');
+    list-style-image: url('../../../assets/images/svg/list_arrow.svg');
     margin-bottom: 10px;
     transition: all 0.1s ease-in;
 

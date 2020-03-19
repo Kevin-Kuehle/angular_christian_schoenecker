@@ -1,5 +1,5 @@
-import { MobileHandlerService } from './../mobile-handler.service';
-import { DatabaseService } from './../database.service';
+import { MobileHandlerService } from '../../../mobile-handler.service';
+import { DatabaseService } from '../../../database.service';
 import { Component, OnInit } from '@angular/core';
 
 

@@ -1,4 +1,4 @@
-import { MobileHandlerService } from './../mobile-handler.service';
+import { MobileHandlerService } from '../mobile-handler.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
