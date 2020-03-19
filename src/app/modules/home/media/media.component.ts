@@ -1,6 +1,6 @@
 import { BehaviorSubject } from 'rxjs';
-import { MobileHandlerService } from '../../../mobile-handler.service';
-import { DatabaseService } from '../../../database.service';
+import { MobileHandlerService } from '../../../core/services/mobile-handler.service';
+import { DatabaseService } from '../../../core/services/database.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

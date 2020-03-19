@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MobileHandlerService } from './mobile-handler.service';
+import { MobileHandlerService } from './core/services/mobile-handler.service';
 
 describe('MobileHandlerService', () => {
   let service: MobileHandlerService;

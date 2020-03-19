@@ -3,8 +3,9 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@shared/*": ["app/shared/*"],
-      "@assets/*": ["assets/*"]
+      "@actor/shared/*": ["app/shared/*"],
+      "@actor/core/*": ["app/core/*"],
+      "@actor/assets/*": ["assets/*"]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
