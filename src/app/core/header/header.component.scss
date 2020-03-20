@@ -1,6 +1,6 @@
 @import 'grid';
 @import 'animations';
-@import '../../styles.scss';
+@import '../../../styles.scss';
 
 header {
   position: fixed;
@@ -73,7 +73,7 @@ header {
         transform: translateY(-2px);
         width: 8px;
         height: 8px;
-        background: transparent url('../../assets/images/svg/menu_seperator.svg') 0% 0% no-repeat padding-box;
+        background: transparent url('../../../assets/images/svg/menu_seperator.svg') 0% 0% no-repeat padding-box;
       }
 
       a {
@@ -128,15 +128,15 @@ header {
   }
 
   .instagram {
-    background-image: url('../../assets/images/svg/instagram_white.svg');
+    background-image: url('../../../assets/images/svg/instagram_white.svg');
   }
 
   .facebook {
-    background-image: url('../../assets/images/svg/facebook_white.svg');
+    background-image: url('../../../assets/images/svg/facebook_white.svg');
   }
 
   .youtube {
-    background-image: url('../../assets/images/svg/youtube_white.svg');
+    background-image: url('../../../assets/images/svg/youtube_white.svg');
   }
 }
 
