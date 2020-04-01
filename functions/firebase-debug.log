@@ -1,0 +1,86 @@
+[debug] [2020-04-01T21:39:02.088Z] ----------------------------------------------------------------------
+[debug] [2020-04-01T21:39:02.091Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kevin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2020-04-01T21:39:02.091Z] CLI Version:   8.0.0
+[debug] [2020-04-01T21:39:02.092Z] Platform:      win32
+[debug] [2020-04-01T21:39:02.092Z] Node Version:  v13.9.0
+[debug] [2020-04-01T21:39:02.093Z] Time:          Wed Apr 01 2020 23:39:02 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2020-04-01T21:39:02.093Z] ----------------------------------------------------------------------
+[debug] [2020-04-01T21:39:02.093Z] 
+[debug] [2020-04-01T21:39:02.102Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-01T21:39:02.103Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[debug] [2020-04-01T21:39:04.167Z] [hub] writing locator at C:\Users\Kevin\AppData\Local\Temp\hub-christian-schoenecker.json
+[info] +  hub: emulator hub started at http://localhost:4400
+[warn] !  Your requested "node" version "8" doesn't match your global version "13"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Kevin\Desktop\christian_schoenecker\functions" for Cloud Functions...
+[debug] [2020-04-01T21:39:06.232Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-01T21:39:06.232Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-01T21:39:06.232Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-01T21:39:06.233Z] [worker-~diagnostic~-53c88d17-a3dc-41a6-9e87-543bc2da096b]: Assigning socketPath: \\?\pipe\C:\Users\Kevin\Desktop\christian_schoenecker\functions\22708 
+[debug] [2020-04-01T21:39:06.233Z] [worker-~diagnostic~-53c88d17-a3dc-41a6-9e87-543bc2da096b]: BUSY 
+[debug] [2020-04-01T21:39:06.757Z] [runtime-status] [22708] Functions runtime initialized. {"cwd":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions","node_version":"13.9.0"} 
+[debug] [2020-04-01T21:39:06.759Z] [runtime-status] [22708] Disabled runtime features: undefined 
+[debug] [2020-04-01T21:39:06.765Z] [runtime-status] [22708] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-01T21:39:06.767Z] [runtime-status] [22708] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-01T21:39:06.770Z] [runtime-status] [22708] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-01T21:39:06.826Z] [runtime-status] [22708] Checked functions.config() {"config":{}} 
+[debug] [2020-04-01T21:39:06.827Z] [runtime-status] [22708] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-01T21:39:06.829Z] [runtime-status] [22708] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-01T21:39:06.829Z] [runtime-status] [22708] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-01T21:39:06.830Z] [runtime-status] [22708] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[warn] !  Error: Cannot find module './permission.json'
+Require stack:
+- C:\Users\Kevin\Desktop\christian_schoenecker\functions\lib\index.js
+- C:\Users\Kevin\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:980:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:862:27)
+    at Module.require (internal/modules/cjs/loader.js:1040:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\Users\Kevin\Desktop\christian_schoenecker\functions\lib\index.js:8:24)
+    at Module._compile (internal/modules/cjs/loader.js:1151:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1171:10)
+    at Module.load (internal/modules/cjs/loader.js:1000:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:899:14)
+    at Module.require (internal/modules/cjs/loader.js:1040:19)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-04-01T21:39:07.012Z] [worker-~diagnostic~-53c88d17-a3dc-41a6-9e87-543bc2da096b]: exited 
+[debug] [2020-04-01T21:39:07.013Z] [worker-~diagnostic~-53c88d17-a3dc-41a6-9e87-543bc2da096b]: FINISHED 
+[debug] [2020-04-01T21:40:00.921Z] ----------------------------------------------------------------------
+[debug] [2020-04-01T21:40:00.924Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Kevin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2020-04-01T21:40:00.924Z] CLI Version:   8.0.0
+[debug] [2020-04-01T21:40:00.925Z] Platform:      win32
+[debug] [2020-04-01T21:40:00.925Z] Node Version:  v13.9.0
+[debug] [2020-04-01T21:40:00.926Z] Time:          Wed Apr 01 2020 23:40:00 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2020-04-01T21:40:00.926Z] ----------------------------------------------------------------------
+[debug] [2020-04-01T21:40:00.926Z] 
+[debug] [2020-04-01T21:40:00.935Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-01T21:40:00.936Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project christian-schoenecker. This may result in unexpected behavior.
+[debug] [2020-04-01T21:40:03.000Z] [hub] writing locator at C:\Users\Kevin\AppData\Local\Temp\hub-christian-schoenecker.json
+[info] +  hub: emulator hub started at http://localhost:4400
+[warn] !  Your requested "node" version "8" doesn't match your global version "13"
+[info] +  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "C:\Users\Kevin\Desktop\christian_schoenecker\functions" for Cloud Functions...
+[debug] [2020-04-01T21:40:05.068Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-01T21:40:05.069Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-01T21:40:05.069Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-01T21:40:05.069Z] [worker-~diagnostic~-c1957339-6bf4-411f-836b-0d193ab04449]: Assigning socketPath: \\?\pipe\C:\Users\Kevin\Desktop\christian_schoenecker\functions\13572 
+[debug] [2020-04-01T21:40:05.070Z] [worker-~diagnostic~-c1957339-6bf4-411f-836b-0d193ab04449]: BUSY 
+[debug] [2020-04-01T21:40:05.576Z] [runtime-status] [13572] Functions runtime initialized. {"cwd":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions","node_version":"13.9.0"} 
+[debug] [2020-04-01T21:40:05.578Z] [runtime-status] [13572] Disabled runtime features: undefined 
+[debug] [2020-04-01T21:40:05.584Z] [runtime-status] [13572] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-01T21:40:05.586Z] [runtime-status] [13572] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-01T21:40:05.589Z] [runtime-status] [13572] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-01T21:40:05.643Z] [runtime-status] [13572] Checked functions.config() {"config":{}} 
+[debug] [2020-04-01T21:40:05.644Z] [runtime-status] [13572] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-01T21:40:05.645Z] [runtime-status] [13572] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions\\node_modules\\firebase-admin\\lib\\index.js"} 
+[debug] [2020-04-01T21:40:05.646Z] [runtime-status] [13572] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions\\node_modules\\firebase-functions\\lib\\index.js"} 
+[debug] [2020-04-01T21:40:05.646Z] [runtime-status] [13572] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"C:\\Users\\Kevin\\Desktop\\christian_schoenecker\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} 
+[debug] [2020-04-01T21:40:05.864Z] [runtime-status] [13572] initializeApp(DEFAULT) {"databaseURL":"https://christian-schoenecker.firebaseio.com","storageBucket":"christian-schoenecker.appspot.com","projectId":"christian-schoenecker","credential":{"implicit":false,"projectId":"christian-schoenecker","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1qKd9o01qeHFW\nwh6DWSugUbGSxv0GKnf9rH0Xp2qx6z3eGXZ2553eNVqwTtJ1XpwLdhKvFiELQBgN\nSFimvl5kZeO6U0HQDpFh65YWbUmP0wyvikU8zGYahu8TpEaJM0zFMPGydEPclQN/\nr8aNdKy5VOpYmqyY559bOfoLoStU1J7M81AgtrYe4Rtx491iTl/fqEhWFI/rlwdB\nMMTm8TH3u5zjwmRAO/d1yEQG/pN+AGFHJcc16X82xemMl3lMnPB0ib2/bwb44N6V\nzrQG/noCd5+30dChWaufWxSp8/H3rC5YBc1pcpw25VXOP5tXLv3GXPkCgJRRdTrk\njFtdxQqXAgMBAAECggEAAdkkNOIHrUYxGQLDCWESw1VcHNCEXBCzNylkb4jXEys4\nw5XT2J0vxBuNv26TM5XVKwvLfKWni77Bv+ODUn/eAG5iSKUhUUkkqGi3+haoj7fu\nwlSszv6MDLm1nMSL4daUxwqaxZYkIGOfu2C6x91uzccFugW39Az4H1AKsY9f42AL\nV+U6MZD4pT2YiLuLiCpq2sOHcn7sx70FI1Pdz7uCb4ukCzFn5RSk41PrGqP5ilwy\n8rOgoLDhLPxU3GLCRgnKkgNl0OQXhixsTUtru3kWDTnIB40iag0e/tsOF4PjDUbW\nFFfXqhS45cLjzrUdka0M4JsI+GNIjO48ya4+h1AHoQKBgQDr6dYDkbaFQ7NfV9KZ\nFGUaqgumU5E1bnVdfrieUZy3Sp8jE4JbEyB+Vj0AC9NAjZtVxkRaZLdQ69KWM1E0\nix1im3tKaMIUkfhvqFBhOnA/NN3SJ5RG3cqJkvBd1WScCp2g9SN87Qhf6Uh15ZG9\nfboiv4O5ezp7xRU53Kom5eudhwKBgQDFID1jNGnyqZnV09HF7ggw1XsFe3sOjlt4\nvQHYVDx7jQtmKyfbV/yOl33gEjfA9RoaC7rR1zrDkVCNj0G/3SjOjVkVwrmV21id\ntKY+EIoPmOUgiVoXMcGqp0BqgbkjOe3+iS39VEtmpiubw/qXHViSuRI7yFw3m47T\nCFcutWfucQKBgQDWB+Y0gsR3Dz7zZzgXzdsUX+YF1pdNRJOSaV+RszVdTYQnTJHd\nkvLN6+uX2SKl1FNzdFebMvjln64EuzYXV4cnaSxoC7bY9r3Qf4G9VEl17r645VOv\nH5WbTwZn+yw2LaNo3j5+HoaUjY9B9y9MHX77+4jEhLpAhEOHpV1xwPMMjQKBgBtU\nUu50D9RCyz8n9MdaLuyGTF4ANplYBzqACcdyNkhyz4fEp+vzEOK8AgmUvQIVeR7v\nTWFWU6FVfjOCDv2IreWlFxq7OnuaQ3jp2Lp2FI4BBpMyN7lLfqwoL/gUMBTALUzC\nvAuJKkL6+sTHsPBOcz80RWDgcFiNSonbeCrTn6shAoGBAK02y+03ewTCZjxvFX48\n/qFMZ6vvVu7vLM2FL6dr8gljz0++4GnXkpVEMZYJGKz5vKjNUdDsrdSnWl8eYSul\nHTzqDCK8U2CJvLJ4fUYeF66ebmzZLzC9jrzk25Yq2xbksQap7E4aAX6uOkpf7XIl\njMOtibxzJ2IDagr8y3ahWAVy\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-ikbhu@christian-schoenecker.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[info] +  functions[app]: http function initialized (http://localhost:5001/christian-schoenecker/us-central1/app).
+[info] +  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-04-01T21:40:05.870Z] [worker-~diagnostic~-c1957339-6bf4-411f-836b-0d193ab04449]: IDLE 
