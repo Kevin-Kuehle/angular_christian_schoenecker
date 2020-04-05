@@ -6,6 +6,6 @@
 typings/
 
 # exlude permission objekt
-permission.json
+**/permission.json
 
 node_modules/
