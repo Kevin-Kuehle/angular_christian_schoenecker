@@ -1,38 +1,13 @@
-steht noch an:
-
-
-  ☐ Bilder ansicht verbessern in quer und hoch ansicht.
-  ☐ Bilder schließen nutton hinzufügen
-  ☐ Impressum hinzufügen
-  ☐ Kontakt page hinzufügen
-  ☐ Lebenlauf popup Layouten
+Firebase:
+  ✔ Step 1: Create a Firebase project @done(20-04-02 20:01)
 
 
 
-  ☐ Datenbank entwerfen und mit Nodejs developen
-  ☐ Backend Anbindung
-  ☐ Login System
 
 
-DONE:
-  ✔ "Veranstaltungen" Layouten und responsive machen @done(20-02-20 21:30)
-  ✔ Dev-Database zum laufen bringen. @done(20-02-17 17:48)
-  ✔ Schriften implementieren @done(20-02-13 15:17)
-  ✔ Farben @done(20-02-13 15:17)
-  ✔ Fluid-Type @done(20-02-12 13:50)
-  ✔ Header @done(20-02-13 15:17)
-  ✔ Routing anlegen @done(20-02-13 15:17)
-  ✔ grund HTML Struktur schaffen @done(20-02-13 15:17)
-  ✔ Grid system @done(20-02-12 13:50)
-  ✔ Breakpoints @done(20-02-12 13:50)
-  ✔ Assets bereit stellen @done(20-02-11 12:56)
-  ✔ menu hover effekt @done(20-02-13 15:17)
-  ✔ socials hover effekt @done(20-02-13 15:18)
-  ✔ Text mit aufklappbare Funktion @done(20-02-20 21:31)
-  ✔ vita dialogboxen öffnen sich alle. Lösung finden das jemals immer nur die box geöffnet wird, die auch geklickt wurde. @done(20-03-09 15:05)
-  ✔ "Vita" layouten und responsive machen. Daten aus der dev-database beziehen @done(20-03-09 15:05)
-  ✔ "Personenbeschreibung" layouten + responsive @done(20-03-09 15:05)
-  ✔ "Gallerie" Layouten @done(20-03-09 15:05)
-  ✔ "Media" layouten @done(20-03-09 15:05)
-  ✔ "Social Media" Layouten @done(20-03-09 15:05)
-  ✔ Mobile Menü @done(20-03-09 15:05)
+  ☐ The firebase init command creates a firebase.json configuration file in the root of your project directory.
+  ☐ To deploy resources from a project directory, the project directory must have a firebase.json file. This file is automatically created for you by the firebase init command.
+
+
+
+  npm --prefix=functions install

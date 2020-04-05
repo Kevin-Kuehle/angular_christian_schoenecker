@@ -47,3 +47,6 @@ Thumbs.db
 
 #All Videos
 /src/assets/videos/
+
+#Ignore TODO´s
+TODO

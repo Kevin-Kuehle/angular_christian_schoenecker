@@ -5,4 +5,7 @@
 # Typescript v1 declaration files
 typings/
 
+# exlude permission objekt
+permission.json
+
 node_modules/
