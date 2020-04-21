@@ -16,13 +16,12 @@ const db = admin.firestore();
 app.use(cors({ origin: true }));
 
 
+// create event document
 app.post('/api/create', (req, res) => {
 
-
   void (async () => {
-
     try {
-      await db.collection('events').doc(`/${req.body.id}/`)
+      await db.collection('events').doc()
         .set({
           name: "First Post",
           id: req.body.id,
@@ -36,8 +35,17 @@ app.post('/api/create', (req, res) => {
       console.log(error);
       return res.status(500).send(error);
     }
-
   })();
+});
+// delete event
+app.delete('/api/delete/:id', (req, res) => {
+
+  try {
+    let deleteDoc = await db.collection('events').doc(req.params.id).delete();
+    // return res.send(` Delete pls ${req.params.id} `);
+  } catch (error) {
+    return res.status(500).send('Fehler: ' + error);
+  }
 });
 
 export const appFunction = functions.https.onRequest(app);

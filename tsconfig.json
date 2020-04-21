@@ -4,6 +4,7 @@
     "baseUrl": "src",
     "paths": {
       "@actor/shared/*": ["app/shared/*"],
+      "@actor/models/*": ["app/shared/models/*"],
       "@actor/core/*": ["app/core/*"],
       "@actor/assets/*": ["assets/*"]
     },

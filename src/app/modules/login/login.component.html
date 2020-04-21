@@ -11,6 +11,9 @@
       <hr>
     </div> -->
     <div class="body">
+      <p>User ist Eingeloggt als: {{ uid  | async }}</p>
+      <p>User ist Eingeloggt als: {{ isAdmin| async }}</p>
+      <hr>
       <form [formGroup]="loginFormGroup" (ngSubmit)="onSubmit()">
         <label for="email"> {{ loginFormGroup.get('email').valid  }} </label>
         <input type="text" name="email" formControlName="email" placeholder="E-Mail">
@@ -18,6 +21,7 @@
         <input type="password" name="passwort" formControlName="passwort" placeholder="Passwort">
         <!--  -->
         <input class="button center btn-1" type="submit" value="Einloggen">
+        <input class="button center btn-1" (click)="logout()" value="Ausloggen">
       </form>
     </div>
 

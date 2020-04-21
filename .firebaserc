@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "christian-schoenecker"
+  },
+  "targets": {
+    "christian-schoenecker": {
+      "hosting": {
+        "actorWebsite": [
+          "christian-schoenecker"
+        ]
+      }
+    }
   }
 }
