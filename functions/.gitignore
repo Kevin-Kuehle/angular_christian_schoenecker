@@ -7,6 +7,9 @@ typings/
 
 # exlude permission objekt
 **/permission.json
+<<<<<<< HEAD
 **/*permission.json
+=======
+>>>>>>> dbbd7b59eb5de347a9cff851aaf8590b0eb435ea
 
 node_modules/
