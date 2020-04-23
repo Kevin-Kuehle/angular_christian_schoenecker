@@ -21,6 +21,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { HomeRoutingModule } from './home-routing.module';
 
 import { SharedModule } from '../../shared/shared.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [

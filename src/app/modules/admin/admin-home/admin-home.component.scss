@@ -1,0 +1,45 @@
+.spacer {
+  display: block;
+  height: 68px;
+}
+
+body {
+  background-color: red;
+}
+
+.grid-dasboard {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "side content";
+}
+
+.content {
+  grid-area: content;
+
+  padding: 0 3rem;
+}
+
+
+
+.side-menu {
+  grid-area: side;
+
+  ul {
+    height: auto;
+    list-style: none;
+
+    li {
+      border: 1px red dotted;
+      padding: 2rem 1rem;
+      font-family: var(--main-font);
+      font-weight: 500;
+
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.02);
+      }
+    }
+  }
+}

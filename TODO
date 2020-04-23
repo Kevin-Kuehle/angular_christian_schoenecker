@@ -1,3 +1,6 @@
 Next Steps:
-  ☐ Auth
-  ☐ 
+  ✔ Module werden nicht richtig geladen -> SharedModule mehrfach verwedung wie ? @done(20-04-23 13:45)
+ ☐ Beim ersten einloggen kommt false als wert raus;
+ https://stackoverflow.com/questions/41912629/angular2-wait-until-observable-finishes-in-if-condition
+
+

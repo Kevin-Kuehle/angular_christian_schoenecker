@@ -1,0 +1,21 @@
+<div class="spacer"></div>
+<div class="grid-dasboard">
+  <div class="side-menu">
+    <ul>
+      <li [routerLink]="['biografie']"> Biografie</li>
+      <li [routerLink]="['aktuell']"> Aktuell</li>
+      <li [routerLink]="['vita']">Vita</li>
+      <li [routerLink]="['gallerie']">Gallerie</li>
+      <li [routerLink]="['media']">Media</li>
+      <li [routerLink]="['kontakt']">Kontakt</li>
+      <li [routerLink]="['social']">Social</li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2>Content</h2>
+    <P>uid: {{ uid | async}}</P>
+    <P>isAdmin: {{ isAdmin | async}}</P>
+    <hr>
+    <router-outlet></router-outlet>
+  </div>
+</div>

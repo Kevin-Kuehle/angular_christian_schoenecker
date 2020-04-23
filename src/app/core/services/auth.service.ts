@@ -30,11 +30,12 @@ export class AuthService {
     })
   );
 
+
+
   constructor(
     private afAuth: AngularFireAuth,
     private db: AngularFireDatabase
   ) { }
-
 
   login(email: string, passwort: string) {
     try {

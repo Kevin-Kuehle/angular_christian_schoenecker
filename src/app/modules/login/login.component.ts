@@ -2,22 +2,24 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { async } from '@angular/core/testing';
 import { AuthService } from '@actor/core/services/auth.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RouterLink, ActivatedRoute, Router } from '@angular/router';
+import { resolve } from 'dns';
 
 @Component({
   selector: 'ac-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnDestroy {
 
   uid: Observable<string> = this.auth.uid;
   isAdmin = this.auth.isAdmin;
   loginFormGroup: FormGroup;
+  adminHandler;
 
-  constructor(private fb: FormBuilder, private auth: AuthService, private routerLink: Router) {
+  constructor(private fb: FormBuilder, private auth: AuthService, private router: Router) {
 
     this.loginFormGroup = this.fb.group({
       email: ['', [Validators.required, Validators.nullValidator, Validators.email]],
@@ -25,20 +27,30 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
+
+  ngOnDestroy() {
+
+    console.log('Destroy');
+    if (this.adminHandler) {
+      this.adminHandler.unsubscribe();
+    }
+
   }
 
   onSubmit() {
     this.auth.login(this.loginFormGroup.get('email').value, this.loginFormGroup.get('passwort').value);
-    this.auth.uid.subscribe(uid => {
-      if (uid !== null && uid !== undefined) {
-        this.loginFormGroup.reset();
-        this.routerLink.navigate(['/']);
+
+    this.auth.isAdmin.subscribe(v => {
+      if (v) {
+        this.router.navigate(['/admin/home']);
+      } else {
+        this.router.navigate(['/home']);
       }
     });
   }
 
   logout() {
+    this.loginFormGroup.reset();
     this.auth.logout();
   }
 }
