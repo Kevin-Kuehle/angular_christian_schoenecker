@@ -1,9 +1,8 @@
-import { CoreModule } from '@actor/core/core.module';
-import { SharedModule } from '../../shared/shared.module';
+import { SharedModule } from '@actor/shared/shared.module';
 import { LoginComponent } from './login.component';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { LoginRoutingModule } from './login-routing.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,8 +10,10 @@ import { LoginRoutingModule } from './login-routing.module';
     LoginComponent
   ],
   imports: [
+    SharedModule,
     LoginRoutingModule,
-    SharedModule
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class LoginModule { }

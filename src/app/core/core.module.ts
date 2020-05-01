@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from '@actor/shared/shared.module';
 
 
 
@@ -8,8 +9,7 @@ import { CommonModule } from '@angular/common';
   declarations: [],
   providers: [],
   imports: [
-    CommonModule,
-    HttpClientModule,
+    HttpClientModule
   ],
   exports: [HttpClientModule]
 })

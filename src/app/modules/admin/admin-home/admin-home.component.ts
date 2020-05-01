@@ -17,12 +17,7 @@ export class AdminHomeComponent implements OnInit {
   constructor(private auth: AuthService, private router: Router) { }
 
   ngOnInit(): void {
-    this.isAdmin = this.auth.isAdmin;
-    this.uid = this.auth.uid;
-    this.auth.isAdmin.subscribe(status => {
-      if (!status) {
-        this.router.navigate(['/home'])
-      }
-    });
+
   }
+
 }

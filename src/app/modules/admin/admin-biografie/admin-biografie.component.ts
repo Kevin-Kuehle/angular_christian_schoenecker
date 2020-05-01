@@ -8,12 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminBiografieComponent implements OnInit {
 
-  // biografie$;
+  biografie$;
+  text: string;
 
   constructor(private db: DatabaseService) { }
 
   ngOnInit(): void {
-    // this.db.ft_getBiografie().subscribe(bio => this.biografie$ = bio);
+    this.db.ft_getBiografie().subscribe(bio => this.biografie$ = bio);
   }
 
 }

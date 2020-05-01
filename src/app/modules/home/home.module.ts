@@ -14,6 +14,14 @@ import { NgModule } from '@angular/core';
 import { HomeRoutingModule } from './home-routing.module';
 import { SharedModule } from '../../shared/shared.module';
 
+import { VirtualScrollerModule } from 'primeng/virtualscroller';
+import { DataViewModule } from 'primeng/dataview';
+import { DialogModule } from 'primeng/dialog';
+import { LightboxModule } from 'primeng/lightbox';
+import { InputTextModule } from 'primeng/inputtext';
+import { AccordionModule } from 'primeng/accordion';
+import { TableModule } from 'primeng/table';
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -29,9 +37,15 @@ import { SharedModule } from '../../shared/shared.module';
     VitaComponent
   ],
   imports: [
-    CommonModule,
     SharedModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    VirtualScrollerModule,
+    DataViewModule,
+    DialogModule,
+    LightboxModule,
+    InputTextModule,
+    AccordionModule,
+    TableModule
   ]
 })
 export class HomeModule { }

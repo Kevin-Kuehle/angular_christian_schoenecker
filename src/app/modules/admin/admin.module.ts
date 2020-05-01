@@ -1,5 +1,3 @@
-import { CommonModule } from '@angular/common';
-import { SharedModule } from './../../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminRoutingModule } from './admin-routing.module';
@@ -10,12 +8,20 @@ import { AdminGallerieComponent } from './admin-gallerie/admin-gallerie.componen
 import { AdminMediaComponent } from './admin-media/admin-media.component';
 import { AdminKontaktComponent } from './admin-kontakt/admin-kontakt.component';
 import { AdminSocialComponent } from './admin-social/admin-social.component';
-
-
+import { SharedModule } from '@actor/shared/shared.module';
 
 
 @NgModule({
-  declarations: [AdminHomeComponent, AdminBiografieComponent, AdminAktuellComponent, AdminVitaComponent, AdminGallerieComponent, AdminMediaComponent, AdminKontaktComponent, AdminSocialComponent],
+  declarations: [
+    AdminHomeComponent,
+    AdminBiografieComponent,
+    AdminAktuellComponent,
+    AdminVitaComponent,
+    AdminGallerieComponent,
+    AdminMediaComponent,
+    AdminKontaktComponent,
+    AdminSocialComponent
+  ],
   imports: [
     SharedModule,
     AdminRoutingModule
