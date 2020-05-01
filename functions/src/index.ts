@@ -16,37 +16,33 @@ const db = admin.firestore();
 app.use(cors({ origin: true }));
 
 
-// create event document
-app.post('/api/create', (req, res) => {
 
-  void (async () => {
+// change Biografie Data
+app.post('database/change/biografie', (req, res) => {
+
+  (async () => {
+
     try {
-      await db.collection('events').doc()
-        .set({
-          name: "First Post",
-          id: req.body.id,
-          description_: req.body.description,
-          price: req.body.price
-        });
+      // daten erfassen
+      // daten in object packen
+      // in datenbank updaten
 
-      return res.status(200).send();
 
+
+
+
+      console.log('In datenbank gespeichert');
     } catch (error) {
-      console.log(error);
-      return res.status(500).send(error);
-    }
-  })();
-});
-// delete event
-app.delete('/api/delete/:id', (req, res) => {
 
-  try {
-    let deleteDoc = await db.collection('events').doc(req.params.id).delete();
-    // return res.send(` Delete pls ${req.params.id} `);
-  } catch (error) {
-    return res.status(500).send('Fehler: ' + error);
-  }
+      if (error) {
+        console.log(error);
+      }
+    }
+  })()
 });
+
+
+
 
 export const appFunction = functions.https.onRequest(app);
 

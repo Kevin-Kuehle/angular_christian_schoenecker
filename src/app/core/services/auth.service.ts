@@ -3,7 +3,7 @@ import { AngularFireDatabase } from '@angular/fire/database';
 import { User } from '@actor/models/user';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { map, switchMap } from 'rxjs/operators';
+import { map, switchMap, first } from 'rxjs/operators';
 import { async } from '@angular/core/testing';
 
 @Injectable({ providedIn: 'root' })

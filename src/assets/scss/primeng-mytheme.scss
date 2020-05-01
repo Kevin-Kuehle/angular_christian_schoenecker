@@ -88,3 +88,7 @@ body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon {
     color: var(--warn-color);
   }
 }
+
+body .ui-paginator-bottom.ui-paginator.ui-widget.ui-widget-header.ui-unselectable-text.ui-helper-clearfix {
+  padding: 0.8rem 0 0.9rem 0;
+}

@@ -5,6 +5,7 @@ section.vita {
   ;
   @include fluid-type('padding-top', $min-ScreenSize, $max-ScreenSize, 1rem, 1rem);
   @include fluid-type('padding-bottom', $min-ScreenSize, $max-ScreenSize, 3rem, 5rem);
+
 }
 
 .listFlex-Container {
@@ -24,6 +25,7 @@ section.vita {
   margin: 0 !important;
   padding: 0.3rem 2rem;
   align-items: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
 
   .year {
     font-size: 1.4rem;
@@ -33,4 +35,11 @@ section.vita {
     background-color: hsla(121, 5%, 14%, 1);
     z-index: 5;
   }
+}
+
+
+.container {
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5);
+  padding: 2rem 1rem;
+
 }

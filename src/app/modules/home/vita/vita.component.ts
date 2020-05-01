@@ -11,30 +11,20 @@ import { Component, OnInit } from '@angular/core';
 export class VitaComponent implements OnInit {
 
   public vitas;
-  public showBoxIndex = [];
   public isMobile;
   public vitaRows = 3;
-
-
 
   constructor(private database: DatabaseService, private mobileHandler: MobileHandlerService) { }
 
   ngOnInit(): void {
 
-    this.database.getVitaData().subscribe((data) => {
+    this.database.ft_getVita()
+      .subscribe(vitas => {
 
-      this.vitas = data;
-      for (const e of this.vitas) {
+        console.log(vitas);
+        this.vitas = vitas;
 
-        const object = {
-          id: e.id,
-          display: false
-        };
-
-        this.showBoxIndex.push(object);
-      }
-    });
-
+      });
 
     this.mobileHandler.isMobile.subscribe(data => {
       this.isMobile = data;
@@ -45,10 +35,13 @@ export class VitaComponent implements OnInit {
         this.vitaRows = 6;
       }
     });
-
   }
 
-  showDialog(index) {
-    this.showBoxIndex[index].display = true;
+  showDialog(id) {
+    // @ts-ignore
+    const target: Object = Object.values(this.vitas).filter(vita => vita.id === id);
+    target[0].display = true;
+
+    console.log(target);
   }
 }

@@ -1,11 +1,9 @@
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { async } from '@angular/core/testing';
 import { AuthService } from '@actor/core/services/auth.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RouterLink, ActivatedRoute, Router } from '@angular/router';
-import { resolve } from 'dns';
 
 @Component({
   selector: 'ac-login',
@@ -37,8 +35,7 @@ export class LoginComponent implements OnDestroy {
 
   }
 
-  onSubmit() {
-    this.auth.login(this.loginFormGroup.get('email').value, this.loginFormGroup.get('passwort').value);
+  async onSubmit() {
 
     this.auth.isAdmin.subscribe(v => {
       if (v) {

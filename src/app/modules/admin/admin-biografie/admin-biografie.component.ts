@@ -1,3 +1,4 @@
+import { DatabaseService } from './../../../core/services/database.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminBiografieComponent implements OnInit {
 
-  constructor() { }
+  // biografie$;
+
+  constructor(private db: DatabaseService) { }
 
   ngOnInit(): void {
+    // this.db.ft_getBiografie().subscribe(bio => this.biografie$ = bio);
   }
 
 }

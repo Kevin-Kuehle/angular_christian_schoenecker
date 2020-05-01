@@ -1,6 +1,7 @@
 <div class="spacer"></div>
 <div class="grid-dasboard">
   <div class="side-menu">
+    <h3 class="sideMenuTitle">{{'MENÜ' | uppercase}}</h3>
     <ul>
       <li [routerLink]="['biografie']"> Biografie</li>
       <li [routerLink]="['aktuell']"> Aktuell</li>
@@ -12,10 +13,6 @@
     </ul>
   </div>
   <div class="content">
-    <h2>Content</h2>
-    <P>uid: {{ uid | async}}</P>
-    <P>isAdmin: {{ isAdmin | async}}</P>
-    <hr>
     <router-outlet></router-outlet>
   </div>
 </div>

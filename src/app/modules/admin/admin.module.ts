@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from './../../shared/shared.module';
+import { NgModule } from '@angular/core';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminBiografieComponent } from './admin-biografie/admin-biografie.component';
@@ -12,10 +13,11 @@ import { AdminSocialComponent } from './admin-social/admin-social.component';
 
 
 
+
 @NgModule({
   declarations: [AdminHomeComponent, AdminBiografieComponent, AdminAktuellComponent, AdminVitaComponent, AdminGallerieComponent, AdminMediaComponent, AdminKontaktComponent, AdminSocialComponent],
   imports: [
-    CommonModule,
+    SharedModule,
     AdminRoutingModule
   ]
 })

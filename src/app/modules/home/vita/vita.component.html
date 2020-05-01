@@ -10,8 +10,7 @@
           {{ "Christian Schönecker Lebenslauf" | titlecase }}
         </p-header>
         <ng-template let-vita let-i="rowIndex" pTemplate="listItem">
-          <p-dialog header="Mehr Informationen" [(visible)]="showBoxIndex[i].display" class="vitaDialog"
-            styleClass="vitaDialog">
+          <p-dialog header="Mehr Informationen" [(visible)]="vita.display" class="vitaDialog" styleClass="vitaDialog">
             {{ vita.description }}
             <hr />
             {{vita.year}}
@@ -23,7 +22,7 @@
             <div class="  p-col-12 p-md-4">{{ vita.jobTitle }}</div>
             <div class="  p-col-12 p-md-2">{{ vita.role }}</div>
             <div class="  p-col-12 p-md-2">
-              <button class=" button btn-3" type="button" (click)="showDialog(i)" label="Show">
+              <button class=" button btn-3" type="button" (click)="showDialog(vita.id)" label="Show">
                 Mehr Infos
               </button>
             </div>

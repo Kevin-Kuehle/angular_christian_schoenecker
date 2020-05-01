@@ -15,9 +15,13 @@ export class NewsComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.db.getAllNews().subscribe(
-      data => this.data = data
-    );
+    // this.db.getAllNews().subscribe(
+    //   data => this.data = data
+    // );
+
+    this.db.ft_getNews().subscribe(news => {
+      this.data = news;
+    });
 
   }
 

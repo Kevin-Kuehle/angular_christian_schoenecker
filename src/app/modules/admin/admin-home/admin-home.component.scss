@@ -12,33 +12,39 @@ body {
   grid-template-columns: 300px 1fr;
   grid-template-rows: auto;
   grid-template-areas: "side content";
+  height: 100vh;
 }
 
 .content {
   grid-area: content;
-
   padding: 0 3rem;
 }
 
-
-
 .side-menu {
   grid-area: side;
+  background-color: rgb(235, 235, 235);
+  height: 100%;
+
+  .sideMenuTitle {
+    padding: 1rem;
+  }
 
   ul {
     height: auto;
     list-style: none;
 
     li {
-      border: 1px red dotted;
-      padding: 2rem 1rem;
+      padding: 1rem 1rem;
       font-family: var(--main-font);
       font-weight: 500;
-
 
       &:hover {
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0.02);
+
+        .title {
+          background-color: red;
+        }
       }
     }
   }

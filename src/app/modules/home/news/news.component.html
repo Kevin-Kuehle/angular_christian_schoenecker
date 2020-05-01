@@ -14,9 +14,9 @@
               <div class="title">
                 <h3>{{ news.title }}</h3>
               </div>
-              <div class="date"> <span>{{ news.releaseDate }} </span></div>
+              <div class="date"> <span>{{ news.releaseDate.seconds*1000 | date: 'dd MMMM yyyy'}} </span></div>
               <div class="body">
-                <p class="light">{{ news.content }} </p>
+                <p class="light">{{ news.text }} </p>
               </div>
             </div>
 

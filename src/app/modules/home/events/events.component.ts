@@ -15,7 +15,7 @@ export class EventsComponent implements OnInit {
   constructor(private data: DatabaseService) { }
 
   ngOnInit(): void {
-    this.data.getAllEvents().subscribe(data => this.events = data);
+    this.data.ft_getEvents().subscribe(events => this.events = events)
   }
 
 }
