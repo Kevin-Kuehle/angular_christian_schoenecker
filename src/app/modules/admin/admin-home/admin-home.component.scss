@@ -1,3 +1,7 @@
+// :host {
+//   display: grid;
+// }
+
 .spacer {
   display: block;
   height: 68px;
@@ -12,7 +16,8 @@ body {
   grid-template-columns: 300px 1fr;
   grid-template-rows: auto;
   grid-template-areas: "side content";
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 }
 
 .content {
@@ -23,7 +28,7 @@ body {
 .side-menu {
   grid-area: side;
   background-color: rgb(235, 235, 235);
-  height: 100%;
+  height: calc(100% + 150px);
 
   .sideMenuTitle {
     padding: 1rem;

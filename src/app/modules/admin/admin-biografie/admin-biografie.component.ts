@@ -1,5 +1,6 @@
 import { DatabaseService } from './../../../core/services/database.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewChildren } from '@angular/core';
+
 
 @Component({
   selector: 'ac-admin-biografie',
@@ -8,13 +9,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminBiografieComponent implements OnInit {
 
+  editorStyle = {
+    'width': '100%',
+    'max-width': '900px',
+    'position': 'relative',
+    'display': 'block'
+  }
+
   biografie$;
-  text: string;
+  shortText: string = '';
+  longText: string = '';
 
   constructor(private db: DatabaseService) { }
 
   ngOnInit(): void {
-    this.db.ft_getBiografie().subscribe(bio => this.biografie$ = bio);
+    this.db.ft_getBiografie().subscribe(bio => {
+      this.biografie$ = bio[0];
+      console.log(bio);
+
+      this.shortText = this.biografie$.shortText;
+      this.longText = this.biografie$.longText;
+    });
   }
 
+  submitSaveBio() {
+
+    const data = {
+      shortText: this.shortText,
+      longText: this.longText
+    }
+
+    this.db.ft_editDoc('Biografie', 'JZEcqn3Qt2EavymWXEjL', data)
+  }
 }

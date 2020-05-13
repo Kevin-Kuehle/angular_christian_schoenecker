@@ -1,27 +1,41 @@
-# ActorWebsite
+# Dokumentation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
+## Einleitung
 
-## Development server
+Diese Web-App ist für einen Kunden der Schauspiel betreibt. Aufgrund der Corona Krise ist bis auf weiteres die Weiter Entwicklung dieser App Pausiert. Dennoch kann man einige Information zu meinen Fähigkeiten mit <b>JavaScript</b>, <b>TypeScript</b>, <b>SCSS</b>, <b>HTML</b>, <b>JSON</b>, <b>NPM</b>. <b>Git</b>, <b>Firebase</b>, <b>REST API</b>, <b>Observables</b>, und <b>Angular</b> erkennen.
+<br><br>
+Die App ist ein Portfolio angepasst auf wichtige Informationen die einen Schauspieler auszeichnet.
+Für den Kunden wurde im Vorfeld ein Prototyp in <b>Adobe XD</b> entwickelt und vorgeführt.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Verwendete Technologien und Software
 
-## Code scaffolding
+- Angular
+- TypeScript
+- JavaScript
+- NGPrime (CSS Framework)
+- SCSS
+- NPM
+- FireStore (None SQL Database)
+- Firebase ( Backend )
+- VS Code ( Code Editor )
+- JWT (JSON Web Tokens)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Angular spezifische Anwendungen
 
-## Build
+- Modularisierung
+- Verschachteltes Routing
+- Models für Typisierung ( Interfaces )
+- Skalierbare Ordner Struktur
+- Alias Pfade
+- Backend mit JWT Authentifizierung
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## ℹ Information
 
-## Running unit tests
+Wie in der Einleitung erwähnt, ist die Webapp noch nicht optimiert.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<b>Was noch überarbeitet werden muss:</b>
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Ladegeschwindigkeit
+- Authentifizierung Optimierung
+- Backend Darstellung
+- Micro Animation / Interaction

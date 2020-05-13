@@ -17,7 +17,7 @@ export class DatabaseService {
     private firestore: AngularFirestore
   ) { }
 
-
+  // Old getter
   getAllNews() {
     return this.http.get(`${this.baseUrl}/news`);
   }
@@ -40,7 +40,7 @@ export class DatabaseService {
     return this.http.get(`${this.baseUrl}/media`);
   }
 
-
+  //  Getter
   ft_getBiografie() {
     return this.firestore.collection('Biografie').snapshotChanges()
       .pipe(map(snaps => {
@@ -97,8 +97,8 @@ export class DatabaseService {
             ...snap.payload.doc.data()
           }
         });
-      }),
-        first())
+      })
+      )
   }
 
   ft_getPersonData() {
@@ -106,6 +106,35 @@ export class DatabaseService {
       .pipe(map(snaps => {
         return this.convertMaping(snaps);
       }), first())
+  }
+
+  // Setter
+  ft_addDoc(collection: String, data: Object) {
+    try {
+      this.firestore.collection(`${collection}`).add(data);
+    } catch (error) {
+      if (error) console.log(error);
+    }
+  }
+
+  ft_editDoc(collection: String, id: String, data: Object) {
+    try {
+      this.firestore.doc(`/${collection}/${id}`).ref.update(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  ft_delete_document(col: String, id: String) {
+    try {
+      if (id === '') {
+        console.log('Dokument nicht gefunden!');
+        return;
+      }
+      this.firestore.doc(`/${col}/${id}`).ref.delete();
+    } catch (error) {
+      console.log(error);
+    }
   }
 
 

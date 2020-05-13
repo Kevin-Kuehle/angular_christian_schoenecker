@@ -69,10 +69,10 @@ body .ui-dataview .ui-dataview-content {
   }
 }
 
-.body .ui-widget {
-  position: fixed;
-  z-index: 5000;
-}
+// .body .ui-widget {
+//   position: fixed;
+//   z-index: 5000;
+// }
 
 body .ui-dialog .ui-dialog-titlebar {
   background-color: var(--akzent-color-dark);
@@ -91,4 +91,17 @@ body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon {
 
 body .ui-paginator-bottom.ui-paginator.ui-widget.ui-widget-header.ui-unselectable-text.ui-helper-clearfix {
   padding: 0.8rem 0 0.9rem 0;
+}
+
+.ui-editor-container,
+.ui-editor-toolbar,
+.ui-editor-content {
+  max-width: 900px;
+}
+
+.ui-card,
+.admin-card {
+  flex: 0 0 30%;
+  margin-bottom: 4em;
+  margin-right: 1em;
 }

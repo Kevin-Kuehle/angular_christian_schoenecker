@@ -1,1 +1,132 @@
-<p>admin-vita works!</p>
+<div class="admin-container">
+  <div class="backend-title">{{ 'Vitas' | uppercase }}</div>
+  <div class="body">
+    <!-- Dialogbox  Edit-->
+    <p-dialog [(visible)]="showDialogEdit" header="Vita Bearbeiten">
+
+      <form #form="ngForm" [formGroup]="editForm" class="form add edit">
+        <span class=" ui-float-label">
+          <input formControlName="jobTitle" id="float-input" pInputText size="30" type="text">
+          <label for="float-input">Berufsbezeichnung</label>
+        </span>
+
+        <span class="ui-float-label">
+          <input formControlName="year" id="float-input" pInputText size="30" type="text">
+          <label for="float-input">Jahr</label>
+        </span>
+
+        <span class="ui-float-label">
+          <input formControlName="place" id="float-input" pInputText size="30" type="text">
+          <label for="float-input">Ort</label>
+        </span>
+
+        <span class="ui-float-label">
+          <input formControlName="additive" id="float-input" pInputText size="30" type="text">
+          <label for="float-input">Job Zusatz</label>
+        </span>
+
+        <div class="date-group">
+          <span class="ui-float-label">
+            <p-calendar [yearNavigator]="true" dateFormat="dd.mm.yy" formControlName="jobStart" view="month"
+              yearRange="1990:2030">
+            </p-calendar>
+            <label for="float-input">Von</label>
+          </span>
+
+          <span class="ui-float-label">
+            <p-calendar [yearNavigator]="true" dateFormat="dd.mm.yy" formControlName="jobEnd" view="month"
+              yearRange="1990:2030">
+            </p-calendar>
+            <label for="float-input">Bis</label>
+          </span>
+        </div>
+
+        <span class="ui-float-label">
+          <textarea [cols]="40" [rows]="10" formControlName="description" id="float-input" pInputTextarea></textarea>
+          <label for="float-input">Beschreibung</label>
+        </span>
+
+      </form>
+      <p-footer>
+        <p-button (click)="changeVita()" label=" Speichern" styleClass="ui-button-success"></p-button>
+      </p-footer>
+    </p-dialog>
+
+    <!-- Dialogbox  add-->
+    <p-dialog [(visible)]="showDialogAdd" header="Vita Hinzufügen">
+      
+      <form #form="ngForm" [formGroup]="addForm" class="form add">
+        <span class=" ui-float-label">
+          <input #test formControlName="jobTitle" id="float-input" pInputText size="30" type="text">
+          <label for="float-input">Berufsbezeichnung</label>
+        </span>
+
+        <span class="ui-float-label">
+          <input formControlName="year" id="float-input" pInputText size="30" type="text">
+          <label for="float-input">Jahr</label>
+        </span>
+
+        <span class="ui-float-label">
+          <input formControlName="place" id="float-input" pInputText size="30" type="text">
+          <label for="float-input">Ort</label>
+        </span>
+
+        <span class="ui-float-label">
+          <input formControlName="additive" id="float-input" pInputText size="30" type="text">
+          <label for="float-input">Job Zusatz</label>
+        </span>
+
+        <div class="date-group">
+          <span class="ui-float-label">
+            <p-calendar [yearNavigator]="true" dateFormat="dd.mm.yy" formControlName="jobStart" view="month"
+              yearRange="1990:2030">
+            </p-calendar>
+            <label for="float-input">Von</label>
+          </span>
+
+          <span class="ui-float-label">
+            <p-calendar [yearNavigator]="true" dateFormat="dd.mm.yy" formControlName="jobEnd" view="month"
+              yearRange="1990:2030">
+            </p-calendar>
+            <label for="float-input">Bis</label>
+          </span>
+        </div>
+
+        <span class="ui-float-label">
+          <textarea [cols]="40" [rows]="10" formControlName="description" id="float-input" pInputTextarea></textarea>
+          <label for="float-input">Beschreibung</label>
+        </span>
+
+      </form>
+      <p-footer>
+        <p-button class.disabled="editForm.invalid" [disabled]="editForm.invalid" (click)="addVita()" label="Speichern"
+          styleClass="ui-button-success">
+        </p-button>
+      </p-footer>
+    </p-dialog>
+
+    <!-- Hinzufügen Button -->
+    <p-button (click)="showDialogAdd = !showDialogAdd" class="addButton" label="Hinzufügen"></p-button>
+
+    <!-- Card Loop -->
+    <ng-container *ngFor="let vita of vitas$">
+      <p-card class="admin-card" header="{{ vita.year }}">
+        <h3 class="card">{{ vita.jobTitle }}</h3>
+        <p><b>Von: </b> {{ vita.jobStart.seconds*1000 | date: 'dd.MMMM.yyyy' }} <b>bis:</b>
+          {{ vita.jobEnd.seconds*1000 | date: 'dd.MMMM.yyyy' }}</p>
+        <span> <b>Ort: </b>{{ vita.place}} </span><br>
+        <span> <b>Job Zusatz: </b>{{ vita.additive}} </span><br>
+
+
+        <hr [ngStyle]="{'margin-top': '0.8em', 'margin-bottom': '0.8em'}">
+        <span> {{ vita.description }} </span>
+
+        <p-footer class="p-footer">
+          <p-button (click)="deleteVita(vita.id)" label="Löschen" styleClass="ui-button-danger mr-1"></p-button>
+          <p-button (click)="openDialogBoxEdit(vita.id)" label=" Bearbeiten" styleClass="ui-button-warning">
+          </p-button>
+        </p-footer>
+      </p-card>
+    </ng-container>
+  </div>
+</div>

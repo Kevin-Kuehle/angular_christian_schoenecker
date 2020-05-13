@@ -1,0 +1,61 @@
+.admin-container {
+
+  .body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+
+    .addButton {
+      flex: 1 0 100%;
+      justify-self: center;
+      margin-bottom: 3em;
+    }
+  }
+}
+
+.form {
+  width: 70vw;
+  height: 50vh;
+  max-width: 420px;
+  max-height: 600px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 1em;
+
+  textarea,
+  input[type] {
+    padding: 0.3em 0.7em;
+    border: 1px solid rgba($color: #000000, $alpha: 0.3);
+
+
+  }
+
+  &.add {
+    .ui-float-label {
+      display: block;
+      margin-bottom: 1.7em;
+    }
+  }
+}
+
+h3 {
+  &.card {
+    font-size: 20px;
+  }
+}
+
+.date-group {
+  display: flex;
+  flex-flow: row;
+
+  .ui-float-label {
+    &:first-of-type {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.disabled {
+  background-color: grey !important;
+}

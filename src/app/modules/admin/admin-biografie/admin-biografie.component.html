@@ -2,12 +2,16 @@
   <div class="backend-title">{{ 'Biografie' | uppercase }}</div>
   <div class="body">
 
-
-    <!-- <p-editor [(ngModel)]="text" [style]="{'height':'320px'}"></p-editor> -->
-
-
-
-
-
+    <div class="block-edit-longText pb-3">
+      <p>Kurztext</p>
+      <p-editor [(ngModel)]="shortText" [style]="editorStyle">
+      </p-editor>
+    </div>
+    <div class="block-edit-longText">
+      <p>Haupttext</p>
+      <p-editor [(ngModel)]="longText" [style]="editorStyle">
+      </p-editor>
+    </div>
+    <p-button class="pt-2" label="Speichern" (click)="submitSaveBio()"></p-button>
   </div>
 </div>

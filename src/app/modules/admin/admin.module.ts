@@ -9,7 +9,15 @@ import { AdminMediaComponent } from './admin-media/admin-media.component';
 import { AdminKontaktComponent } from './admin-kontakt/admin-kontakt.component';
 import { AdminSocialComponent } from './admin-social/admin-social.component';
 import { SharedModule } from '@actor/shared/shared.module';
-
+import { EditorModule } from 'primeng/editor';
+import { ButtonModule } from 'primeng/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CardModule } from 'primeng/card';
+import { DataViewModule } from 'primeng/dataview';
+import { DialogModule } from 'primeng/dialog';
+import { InputTextModule } from 'primeng/inputtext';
+import { CalendarModule } from 'primeng/calendar';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 @NgModule({
   declarations: [
@@ -20,11 +28,21 @@ import { SharedModule } from '@actor/shared/shared.module';
     AdminGallerieComponent,
     AdminMediaComponent,
     AdminKontaktComponent,
-    AdminSocialComponent
+    AdminSocialComponent,
   ],
   imports: [
     SharedModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    EditorModule,
+    ButtonModule,
+    CardModule,
+    DataViewModule,
+    DialogModule,
+    InputTextModule,
+    CalendarModule,
+    InputTextareaModule
   ]
 })
 export class AdminModule { }
