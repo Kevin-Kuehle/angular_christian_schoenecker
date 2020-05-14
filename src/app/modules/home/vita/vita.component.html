@@ -11,10 +11,14 @@
         </p-header>
         <ng-template let-vita let-i="rowIndex" pTemplate="listItem">
           <p-dialog header="Mehr Informationen" [(visible)]="vita.display" class="vitaDialog" styleClass="vitaDialog">
-            {{ vita.description }}
-            <hr />
-            {{vita.year}}
-            {{ vita.longDescription }}
+            <div class="title">
+              <span class="year"><b>Jahr: </b> {{vita.year}} </span>
+              <div class="time">
+                <span class="from"><b>Von: </b>{{vita.jobStart?.seconds*1000 | date: 'dd.MM.yyyy'}}</span>
+                <span class="to"> <b>Bis:</b> {{vita.jobEnd?.seconds*1000 | date: 'dd.MM.yyyy'}}</span>
+              </div>
+            </div>
+            <div class="body"> {{ vita.description }} </div>
           </p-dialog>
           <div class="p-grid vitaListBox">
             <div class="  p-col-12 p-md-2 year">{{ vita.year }}</div>

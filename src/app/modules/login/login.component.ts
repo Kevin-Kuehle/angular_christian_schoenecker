@@ -27,7 +27,6 @@ export class LoginComponent implements OnDestroy {
 
   ngOnDestroy() {
 
-    console.log('Destroy');
     if (this.adminHandler) {
       this.adminHandler.unsubscribe();
     }

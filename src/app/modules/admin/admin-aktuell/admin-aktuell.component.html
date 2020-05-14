@@ -45,7 +45,9 @@
         </select>
       </form>
       <p-footer>
-        <p-button (click)="addNews()" styleClass="ui-button-success" label=" Speichern"></p-button>
+        <p-button [disabled]="formAdd.invalid === true" (click)="addNews()" styleClass="ui-button-success"
+          label=" Speichern">
+        </p-button>
       </p-footer>
     </p-dialog>
 

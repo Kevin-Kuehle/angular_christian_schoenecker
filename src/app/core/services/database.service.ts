@@ -2,7 +2,8 @@ import { map, first } from 'rxjs/operators';
 import { Biografie } from './../../shared/models/biografie';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { AngularFirestore } from '@angular/fire/firestore'
+import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFireStorage } from '@angular/fire/storage';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,8 @@ export class DatabaseService {
 
   constructor(
     private http: HttpClient,
-    private firestore: AngularFirestore
+    private firestore: AngularFirestore,
+    private storage: AngularFireStorage
   ) { }
 
   // Old getter
@@ -72,7 +74,7 @@ export class DatabaseService {
   }
 
   ft_getEvents() {
-    return this.firestore.collection('Events').snapshotChanges()
+    return this.firestore.collection('Events', ref => ref.orderBy('eventDate', 'asc')).snapshotChanges()
       .pipe(map(snaps => {
 
         return snaps.map(snap => {
@@ -104,8 +106,18 @@ export class DatabaseService {
   ft_getPersonData() {
     return this.firestore.collection('PersonData').snapshotChanges()
       .pipe(map(snaps => {
+
         return this.convertMaping(snaps);
       }), first())
+  }
+  ft_getImages() {
+    return this.storage.storage.ref('images').listAll()/* .then(data => {
+      let obj = [];
+      for (let item of data.items) {
+        obj.push({ path: item })
+      }
+      return obj;
+    } )*/;
   }
 
   // Setter

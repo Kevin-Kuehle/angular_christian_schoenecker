@@ -39,3 +39,6 @@ Wie in der Einleitung erwähnt, ist die Webapp noch nicht optimiert.
 - Authentifizierung Optimierung
 - Backend Darstellung
 - Micro Animation / Interaction
+- Datenschutzerklärung
+- Impressum
+- Social-Links 

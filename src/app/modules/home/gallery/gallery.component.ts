@@ -11,12 +11,19 @@ export class GalleryComponent implements OnInit {
   public images;
   public toShow = 8;
 
-  constructor(private data: DatabaseService) { }
+  constructor(private db: DatabaseService) { }
 
   ngOnInit(): void {
 
-    this.data.getGalleryImages().subscribe(data => {
-      this.images = data;
-    });
-  }
+    // this.data.getGalleryImages().subscribe(data => {
+    //   this.images = data;
+    // });
+
+    this.db.ft_getImages().then(data => {
+      console.log(data);
+
+    })
+
+  };
 }
+
