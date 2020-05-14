@@ -21,7 +21,6 @@ export class VitaComponent implements OnInit {
     this.database.ft_getVita()
       .subscribe(vitas => {
 
-        console.log(vitas);
         this.vitas = vitas;
 
       });
@@ -41,7 +40,5 @@ export class VitaComponent implements OnInit {
     // @ts-ignore
     const target: Object = Object.values(this.vitas).filter(vita => vita.id === id);
     target[0].display = true;
-
-    console.log(target);
   }
 }

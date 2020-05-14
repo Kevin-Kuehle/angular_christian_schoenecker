@@ -2,10 +2,9 @@
 
 ## Einleitung
 
-Diese Web-App ist für einen Kunden der Schauspiel betreibt. Aufgrund der Corona Krise ist bis auf weiteres die Weiter Entwicklung dieser App Pausiert. Dennoch kann man einige Information zu meinen Fähigkeiten mit <b>JavaScript</b>, <b>TypeScript</b>, <b>SCSS</b>, <b>HTML</b>, <b>JSON</b>, <b>NPM</b>. <b>Git</b>, <b>Firebase</b>, <b>REST API</b>, <b>Observables</b>, und <b>Angular</b> erkennen.
+Diese Web-App ist für einen Kunden der Schauspiel betreibt. Aufgrund der Corona-Krise ist bis auf Weiteres die Weiterentwicklung dieser App pausiert. Dennoch kann man einige Information zu meinen Fähigkeiten mit <b>JavaScript, TypeScript, SCSS, HTML, JSON, NPM. Git, Firebase, REST API, Observables,</b> und <b>Angular</b> erkennen.
 <br><br>
-Die App ist ein Portfolio angepasst auf wichtige Informationen die einen Schauspieler auszeichnet.
-Für den Kunden wurde im Vorfeld ein Prototyp in <b>Adobe XD</b> entwickelt und vorgeführt.
+Die App ist ein Portfolio angepasst auf wichtige Informationen, die einen Schauspieler auszeichnet. Für den Kunden wurde im Vorfeld ein Prototyp in Adobe XD entwickelt und vorgeführt.
 
 ## Verwendete Technologien und Software
 
@@ -39,3 +38,6 @@ Wie in der Einleitung erwähnt, ist die Webapp noch nicht optimiert.
 - Authentifizierung Optimierung
 - Backend Darstellung
 - Micro Animation / Interaction
+- Datenschutzerklärung
+- Impressum
+- Social-Links 

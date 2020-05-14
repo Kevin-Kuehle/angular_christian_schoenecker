@@ -16,9 +16,27 @@ form {
   max-width: 400px;
   margin: 0 auto;
 
+  .body {
+    padding: 1em 0.4em;
+    margin-bottom: 1em;
+  }
+
+  span {
+    &.user-name {
+      margin-bottom: 0.9em;
+    }
+
+    &.ui-float-label {
+      display: flex;
+      flex-flow: column;
+      align-content: center;
+
+    }
+  }
+
   input {
     padding: 0.7rem 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem !important;
 
     &:last-of-type {
       margin-bottom: 0;

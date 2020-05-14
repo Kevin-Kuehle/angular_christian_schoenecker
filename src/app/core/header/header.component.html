@@ -17,7 +17,6 @@
       <li> <a (click)="scroll('sectionMedia')">{{ 'Media' | uppercase }}</a> </li>
       <li> <a>{{ 'Kontakt' | uppercase }}</a> </li>
     </ul>
-    <!--  -->
 
     <ul *ngIf="isMobile" class="mobileMenu" #mobileMenu>
       <span class="menuTitle">{{ 'Menü' | uppercase }}</span>
@@ -30,10 +29,8 @@
       <li> <a>{{ 'Impressum' | uppercase }}</a> </li>
       <li> <a>{{ 'Datenschutz' | uppercase }}</a> </li>
       <button (click)="toggleMobileMenu()" class="closeButton">X</button>
-
     </ul>
 
-    <!--  -->
     <div class="socials">
       <div class="flex-container">
         <i class="instagram iconBox instagram"></i>

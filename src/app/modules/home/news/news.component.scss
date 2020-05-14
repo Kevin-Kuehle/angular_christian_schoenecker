@@ -13,7 +13,7 @@ section.news {
   flex-flow: column nowrap;
   align-content: center;
   align-items: center;
-
+  padding-bottom: 20px;
 }
 
 .news-item {
@@ -78,10 +78,12 @@ section.news {
     max-width: 512px;
     width: 100%;
     padding: 38px 50px;
+    box-shadow: 5px 6px 0px 0px hsl(137, 54%, 10%);
+  }
 
-    @include BreakPoint(md) {
-      padding: 30px 25px;
-      border-radius: 30px 0px 30px 6px;
-    }
+
+  @include BreakPoint(md) {
+    padding: 30px 25px;
+    border-radius: 30px 0px 30px 6px;
   }
 }

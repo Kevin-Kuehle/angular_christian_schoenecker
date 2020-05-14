@@ -21,7 +21,7 @@ export class AdminAktuellComponent implements OnInit {
   formAdd = this.fb.group({
     title: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(40)]],
     releaseDate: ['', [Validators.required]],
-    text: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(200)]],
+    text: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(950)]],
     showPost: 'true'
   });
 
@@ -64,7 +64,6 @@ export class AdminAktuellComponent implements OnInit {
       text: this.formEdit.get('text').value,
       showPost: this.formEdit.get('showPost').value === 'true' ? true : false
     }
-    console.log(data);
     this.db.ft_editDoc('News', this.dialogDataEdit.id, data);
     this.showDialogEdit = false;
   }

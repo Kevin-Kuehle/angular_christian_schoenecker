@@ -1,6 +1,41 @@
 @import "../scss/grid.scss";
 
+
+//  Unter vita
+.vitaDialog {
+  z-index: 6000;
+  width: 90vw;
+  max-width: var(--site-width);
+  z-index: 12000 !important;
+
+  @include BreakPoint(md) {
+    height: auto;
+    max-height: 75vh;
+    top: 70px;
+    overflow-y: scroll;
+  }
+}
+
+.ui-editor-container,
+.ui-editor-toolbar,
+.ui-editor-content {
+  max-width: 900px;
+}
+
+.ui-card,
+.admin-card {
+  flex: 0 0 30%;
+  margin-bottom: 4em;
+  margin-right: 1em;
+}
+
+
 body {
+
+  .ui-paginator-bottom {
+    padding: 0.8rem 0 0.9rem 0;
+  }
+
   .ui-table {
     th {
       background: none !important;
@@ -30,78 +65,43 @@ body {
       background-color: var(--akzent-color) !important;
     }
   }
-}
 
-body .ui-dataview .ui-dataview-header {
-  background-color: hsl(118%, 40%, 30%);
-  color: white;
-  border: none;
+  .ui-dataview .ui-dataview-header {
+    background-color: hsl(118%, 40%, 30%);
+    color: white;
+    border: none;
 
-  p-header {
-    display: flex;
-    flex-flow: row;
-    align-content: center;
-    justify-content: space-between;
-    justify-items: start;
-    align-items: center;
-    width: 100%;
+    p-header {
+      display: flex;
+      flex-flow: row;
+      align-content: center;
+      justify-content: space-between;
+      justify-items: start;
+      align-items: center;
+      width: 100%;
+    }
   }
-}
 
-body .ui-dataview .ui-dataview-content {
-  padding: 0 !important;
-  border: none;
-  background-color: hsla(-239, -190%, 10%, 1);
-  color: white;
-}
+  .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon {
+    color: white;
 
-.vitaDialog {
-  z-index: 6000;
-  width: 90vw;
-  max-width: var(--site-width);
-  z-index: 12000 !important;
-
-  @include BreakPoint(md) {
-    height: auto;
-    max-height: 75vh;
-    top: 70px;
-    overflow-y: scroll;
+    &:hover {
+      color: var(--warn-color);
+    }
   }
-}
 
-// .body .ui-widget {
-//   position: fixed;
-//   z-index: 5000;
-// }
+  .ui-dialog .ui-dialog-titlebar {
+    background-color: var(--akzent-color-dark);
+    color: white;
+    border: none;
 
-body .ui-dialog .ui-dialog-titlebar {
-  background-color: var(--akzent-color-dark);
-  color: white;
-  border: none;
-
-}
-
-body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon {
-  color: white;
-
-  &:hover {
-    color: var(--warn-color);
   }
-}
 
-body .ui-paginator-bottom.ui-paginator.ui-widget.ui-widget-header.ui-unselectable-text.ui-helper-clearfix {
-  padding: 0.8rem 0 0.9rem 0;
-}
+  .ui-dataview .ui-dataview-content {
+    padding: 0 !important;
+    border: none;
+    background-color: hsla(-239, -190%, 10%, 1);
+    color: white;
+  }
 
-.ui-editor-container,
-.ui-editor-toolbar,
-.ui-editor-content {
-  max-width: 900px;
-}
-
-.ui-card,
-.admin-card {
-  flex: 0 0 30%;
-  margin-bottom: 4em;
-  margin-right: 1em;
 }

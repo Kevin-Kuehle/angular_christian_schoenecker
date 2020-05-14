@@ -27,7 +27,6 @@ export class LoginComponent implements OnDestroy {
 
   ngOnDestroy() {
 
-    console.log('Destroy');
     if (this.adminHandler) {
       this.adminHandler.unsubscribe();
     }
@@ -35,6 +34,8 @@ export class LoginComponent implements OnDestroy {
   }
 
   async onSubmit() {
+    console.log(this.loginFormGroup.get('email').value);
+
 
     this.auth.login(this.loginFormGroup.get('email').value, this.loginFormGroup.get('passwort').value);
 

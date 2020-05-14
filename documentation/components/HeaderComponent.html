@@ -1,0 +1,955 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>actor-website documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">actor-website documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>HeaderComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/core/header/header.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>ac-header</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./header.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./header.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#headerClasses">headerClasses</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isMobile">isMobile</a>
+                            </li>
+                            <li>
+                                <a href="#mobileMenu">mobileMenu</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#hideTopBarHandler">hideTopBarHandler</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#scroll">scroll</a>
+                            </li>
+                            <li>
+                                <a href="#toggleMobileMenu">toggleMobileMenu</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(data: <a href="../injectables/MobileHandlerService.html">MobileHandlerService</a>, renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/core/header/header.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>data</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MobileHandlerService.html" target="_self" >MobileHandlerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hideTopBarHandler"></a>
+                    <span class="name">
+                        <b>
+                            hideTopBarHandler
+                        </b>
+                        <a href="#hideTopBarHandler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>hideTopBarHandler()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/core/header/header.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/core/header/header.component.ts:22</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="scroll"></a>
+                    <span class="name">
+                        <b>
+                            scroll
+                        </b>
+                        <a href="#scroll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>scroll(el: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/core/header/header.component.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>el</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleMobileMenu"></a>
+                    <span class="name">
+                        <b>
+                            toggleMobileMenu
+                        </b>
+                        <a href="#toggleMobileMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleMobileMenu()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/app/core/header/header.component.ts:34</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="headerClasses"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            headerClasses</b>
+                            <a href="#headerClasses"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    flyOut: false
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/core/header/header.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isMobile"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            isMobile</b>
+                            <a href="#isMobile"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/core/header/header.component.ts:11</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="mobileMenu"></a>
+                        <span class="name">
+                            <b>
+                            mobileMenu</b>
+                            <a href="#mobileMenu"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;mobileMenu&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/core/header/header.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { MobileHandlerService } from &#x27;../services/mobile-handler.service&#x27;;
+import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;ac-header&#x27;,
+  templateUrl: &#x27;./header.component.html&#x27;,
+  styleUrls: [&#x27;./header.component.scss&#x27;]
+})
+export class HeaderComponent implements OnInit {
+
+  public isMobile;
+
+  @ViewChild(&#x27;mobileMenu&#x27;) mobileMenu: ElementRef;
+
+
+  public headerClasses &#x3D; {
+    flyOut: false
+  };
+
+  constructor(private data: MobileHandlerService, private renderer: Renderer2) { }
+
+  ngOnInit() {
+
+    this.data.isMobile.subscribe(status &#x3D;&gt; this.isMobile &#x3D; status);
+    this.hideTopBarHandler();
+  }
+
+  scroll(el: string) {
+    const toScroll &#x3D; document.querySelector(&#x27;#&#x27; + el);
+    toScroll.scrollIntoView({ behavior: &#x27;smooth&#x27; });
+    this.toggleMobileMenu();
+  }
+
+  toggleMobileMenu() {
+    this.mobileMenu.nativeElement.classList.toggle(&#x27;menuOn&#x27;);
+  }
+
+  hideTopBarHandler() {
+    let lastScrollTop &#x3D; 0;
+    let refValue &#x3D; 0;
+
+
+    addEventListener(&#x27;scroll&#x27;, (test) &#x3D;&gt; {
+      const siteYoffset &#x3D; window.pageYOffset;
+
+      if (lastScrollTop &lt; siteYoffset &amp;&amp; siteYoffset &gt; 400) {
+        this.headerClasses.flyOut &#x3D; true;
+        refValue &#x3D; siteYoffset;
+      } else if ((refValue - 100) &gt; siteYoffset) {
+        this.headerClasses.flyOut &#x3D; false;
+      }
+
+      lastScrollTop &#x3D; siteYoffset &lt;&#x3D; 0 ? 0 : siteYoffset;
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;header class&#x3D;&quot;header&quot; [ngClass]&#x3D;&quot;headerClasses&quot;&gt;
+  &lt;div class&#x3D;&quot;container grid &quot;&gt;
+    &lt;div *ngIf&#x3D;&#x27;isMobile&#x27; (click)&#x3D;&quot;toggleMobileMenu()&quot; class&#x3D;&quot;mobileButton&quot;&gt;
+      &lt;svg enable-background&#x3D;&quot;new 0 0 384 384&quot; version&#x3D;&quot;1.1&quot; viewBox&#x3D;&quot;0 0 384 384&quot; xml:space&#x3D;&quot;preserve&quot;
+        xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;rect y&#x3D;&quot;277.33&quot; width&#x3D;&quot;384&quot; height&#x3D;&quot;42.667&quot; /&gt;
+        &lt;rect y&#x3D;&quot;170.67&quot; width&#x3D;&quot;384&quot; height&#x3D;&quot;42.667&quot; /&gt;
+        &lt;rect y&#x3D;&quot;64&quot; width&#x3D;&quot;384&quot; height&#x3D;&quot;42.667&quot; /&gt;
+      &lt;/svg&gt;
+
+    &lt;/div&gt;
+    &lt;ul *ngIf&#x3D;&#x27;!isMobile&#x27; class&#x3D;&quot;main-menu&quot;&gt;
+      &lt;li&gt; &lt;a (click)&#x3D;&quot;scroll(&#x27;sectionBiografie&#x27;)&quot;&gt;{{ &#x27;Biogafie&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;a (click)&#x3D;&quot;scroll(&#x27;sectionAktuell&#x27;)&quot;&gt;{{ &#x27;Aktuell&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;a (click)&#x3D;&quot;scroll(&#x27;sectionVita&#x27;)&quot;&gt;{{ &#x27;Vita&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;a (click)&#x3D;&quot;scroll(&#x27;sectionGallerie&#x27;)&quot;&gt;{{ &#x27;Gallerie&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;a (click)&#x3D;&quot;scroll(&#x27;sectionMedia&#x27;)&quot;&gt;{{ &#x27;Media&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;a&gt;{{ &#x27;Kontakt&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;ul *ngIf&#x3D;&quot;isMobile&quot; class&#x3D;&quot;mobileMenu&quot; #mobileMenu&gt;
+      &lt;span class&#x3D;&quot;menuTitle&quot;&gt;{{ &#x27;Menü&#x27; | uppercase }}&lt;/span&gt;
+      &lt;li&gt; &lt;a (click)&#x3D;&quot;scroll(&#x27;sectionBiografie&#x27;)&quot;&gt;{{ &#x27;Biogafie&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;a (click)&#x3D;&quot;scroll(&#x27;sectionAktuell&#x27;)&quot;&gt;{{ &#x27;Aktuell&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;a (click)&#x3D;&quot;scroll(&#x27;sectionVita&#x27;)&quot;&gt;{{ &#x27;Vita&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;a (click)&#x3D;&quot;scroll(&#x27;sectionGallerie&#x27;)&quot;&gt;{{ &#x27;Gallerie&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;a (click)&#x3D;&quot;scroll(&#x27;sectionMedia&#x27;)&quot;&gt;{{ &#x27;Media&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;a&gt;{{ &#x27;Kontakt&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;a&gt;{{ &#x27;Impressum&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;li&gt; &lt;a&gt;{{ &#x27;Datenschutz&#x27; | uppercase }}&lt;/a&gt; &lt;/li&gt;
+      &lt;button (click)&#x3D;&quot;toggleMobileMenu()&quot; class&#x3D;&quot;closeButton&quot;&gt;X&lt;/button&gt;
+    &lt;/ul&gt;
+
+    &lt;div class&#x3D;&quot;socials&quot;&gt;
+      &lt;div class&#x3D;&quot;flex-container&quot;&gt;
+        &lt;i class&#x3D;&quot;instagram iconBox instagram&quot;&gt;&lt;/i&gt;
+        &lt;i class&#x3D;&quot;instagram iconBox facebook&quot;&gt;&lt;/i&gt;
+        &lt;i class&#x3D;&quot;instagram iconBox youtube&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./header.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;grid&#x27;;
+@import &#x27;animations&#x27;;
+@import &#x27;../../../styles.scss&#x27;;
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(41, 41, 41, 0.94) 0% 0% no-repeat padding-box;
+  width: 100%;
+  height: 68px;
+  display: flex;
+  align-content: center;
+  z-index: 1000 !important;
+  transition: transform 0.6s ease;
+
+  &amp;.flyOut {
+    transform: translateY(-100%);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: &quot;. menu socials .&quot;;
+    align-content: center;
+    align-items: center;
+
+    @include BreakPoint(lg) {
+      grid-template-columns: 20% 1fr 20% !important;
+      grid-template-areas: &quot;mobile socials .&quot;;
+      justify-content: center;
+    }
+  }
+
+  .mobileButton {
+    grid-area: mobile;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-right: 3rem;
+
+    svg {
+      height: 30px;
+      width: 30px;
+      fill: white;
+    }
+
+    cursor: pointer;
+
+    img {
+      display: block;
+      height: 30px;
+      width: auto;
+
+    }
+  }
+
+  ul.main-menu {
+    grid-area: menu;
+    display: flex;
+    width: auto;
+    flex-flow: row;
+
+    li {
+      margin-right: 0.5rem;
+      list-style: none;
+
+      &amp;::after {
+        content: &#x27;&#x27;;
+        display: inline-block;
+        margin: 0 22px;
+        transform: translateY(-2px);
+        width: 8px;
+        height: 8px;
+        background: transparent url(&#x27;../../../assets/images/svg/menu_seperator.svg&#x27;) 0% 0% no-repeat padding-box;
+      }
+
+      a {
+        color: var(--light-color);
+        padding: 0.2rem;
+        font-family: var(--title-font);
+        @include animation-1;
+
+
+        &amp;:hover {
+          cursor: pointer;
+          color: lighten($akzent-color, 29%);
+        }
+      }
+    }
+  }
+}
+
+.socials {
+  grid-area: socials;
+
+  .flex-container {
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+
+    @include BreakPoint(lg) {
+      justify-content: center;
+    }
+  }
+
+  .iconBox {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 1.2rem;
+
+    &amp;:last-child {
+      margin-right: 0;
+    }
+
+    &amp;:hover {
+      cursor: pointer;
+    }
+
+    i {
+      color: var(--light-color);
+    }
+  }
+
+  .instagram {
+    background-image: url(&#x27;../../../assets/images/svg/instagram_white.svg&#x27;);
+  }
+
+  .facebook {
+    background-image: url(&#x27;../../../assets/images/svg/facebook_white.svg&#x27;);
+  }
+
+  .youtube {
+    background-image: url(&#x27;../../../assets/images/svg/youtube_white.svg&#x27;);
+  }
+}
+
+ul.mobileMenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 80vw;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgba(0, 0, 0, 0.88);
+  padding: 2rem 0 2rem 1rem;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  list-style: none;
+
+  &amp;.menuOn {
+    transform: translateX(0);
+  }
+
+  li {
+    margin-bottom: 0.9rem;
+
+    &amp;:last-of-type {
+      margin-bottom: 0;
+    }
+
+    a {
+      padding: 0.3rem 0.6rem;
+      color: white;
+      font-family: var(--main-font);
+      font-size: 1.3rem;
+
+      &amp;:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  span.menuTitle {
+    color: white;
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .closeButton {
+    border: none;
+    width: auto;
+    white-space: nowrap;
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: -o-max-content;
+    width: -ms-max-content;
+    display: table;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: none !important;
+    color: white;
+
+    &amp;:hover {
+      cursor: pointer;
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><header class="header" [ngClass]="headerClasses">  <div class="container grid ">    <div *ngIf=\'isMobile\' (click)="toggleMobileMenu()" class="mobileButton">      <svg enable-background="new 0 0 384 384" version="1.1" viewBox="0 0 384 384" xml:space="preserve"        xmlns="http://www.w3.org/2000/svg">        <rect y="277.33" width="384" height="42.667" />        <rect y="170.67" width="384" height="42.667" />        <rect y="64" width="384" height="42.667" />      </svg>    </div>    <ul *ngIf=\'!isMobile\' class="main-menu">      <li> <a (click)="scroll(\'sectionBiografie\')">{{ \'Biogafie\' | uppercase }}</a> </li>      <li> <a (click)="scroll(\'sectionAktuell\')">{{ \'Aktuell\' | uppercase }}</a> </li>      <li> <a (click)="scroll(\'sectionVita\')">{{ \'Vita\' | uppercase }}</a> </li>      <li> <a (click)="scroll(\'sectionGallerie\')">{{ \'Gallerie\' | uppercase }}</a> </li>      <li> <a (click)="scroll(\'sectionMedia\')">{{ \'Media\' | uppercase }}</a> </li>      <li> <a>{{ \'Kontakt\' | uppercase }}</a> </li>    </ul>    <ul *ngIf="isMobile" class="mobileMenu" #mobileMenu>      <span class="menuTitle">{{ \'Menü\' | uppercase }}</span>      <li> <a (click)="scroll(\'sectionBiografie\')">{{ \'Biogafie\' | uppercase }}</a> </li>      <li> <a (click)="scroll(\'sectionAktuell\')">{{ \'Aktuell\' | uppercase }}</a> </li>      <li> <a (click)="scroll(\'sectionVita\')">{{ \'Vita\' | uppercase }}</a> </li>      <li> <a (click)="scroll(\'sectionGallerie\')">{{ \'Gallerie\' | uppercase }}</a> </li>      <li> <a (click)="scroll(\'sectionMedia\')">{{ \'Media\' | uppercase }}</a> </li>      <li> <a>{{ \'Kontakt\' | uppercase }}</a> </li>      <li> <a>{{ \'Impressum\' | uppercase }}</a> </li>      <li> <a>{{ \'Datenschutz\' | uppercase }}</a> </li>      <button (click)="toggleMobileMenu()" class="closeButton">X</button>    </ul>    <div class="socials">      <div class="flex-container">        <i class="instagram iconBox instagram"></i>        <i class="instagram iconBox facebook"></i>        <i class="instagram iconBox youtube"></i>      </div>    </div>  </div></header></div>'
+    var COMPONENTS = [{'name': 'AdminAktuellComponent', 'selector': 'ac-admin-aktuell'},{'name': 'AdminBiografieComponent', 'selector': 'ac-admin-biografie'},{'name': 'AdminGallerieComponent', 'selector': 'ac-admin-gallerie'},{'name': 'AdminHomeComponent', 'selector': 'ac-admin-home'},{'name': 'AdminKontaktComponent', 'selector': 'ac-admin-kontakt'},{'name': 'AdminMediaComponent', 'selector': 'ac-admin-media'},{'name': 'AdminSocialComponent', 'selector': 'ac-admin-social'},{'name': 'AdminVitaComponent', 'selector': 'ac-admin-vita'},{'name': 'AppComponent', 'selector': 'ac-root'},{'name': 'BiografieComponent', 'selector': 'ac-biografie'},{'name': 'EventsComponent', 'selector': 'ac-events'},{'name': 'FooterComponent', 'selector': 'ac-footer'},{'name': 'GalleryComponent', 'selector': 'ac-gallery'},{'name': 'HeaderComponent', 'selector': 'ac-header'},{'name': 'HomeComponent', 'selector': 'ac-home'},{'name': 'LightboxComponent', 'selector': 'ac-lightbox'},{'name': 'LoginComponent', 'selector': 'ac-login'},{'name': 'MediaComponent', 'selector': 'ac-media'},{'name': 'MediaViewComponent', 'selector': 'ac-media-view'},{'name': 'NewsComponent', 'selector': 'ac-news'},{'name': 'PersonalDataComponent', 'selector': 'ac-personal-data'},{'name': 'SocialsComponent', 'selector': 'ac-socials'},{'name': 'VitaComponent', 'selector': 'ac-vita'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HeaderComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HeaderComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

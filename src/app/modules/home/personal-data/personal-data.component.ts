@@ -1,5 +1,6 @@
 import { DatabaseService } from '../../../core/services/database.service';
 import { Component, OnInit } from '@angular/core';
+import { first } from 'rxjs/operators';
 
 @Component({
   selector: 'ac-personal-data',
@@ -14,10 +15,8 @@ export class PersonalDataComponent implements OnInit {
   constructor(private db: DatabaseService) { }
 
   ngOnInit(): void {
-
-    this.db.getPersonData().subscribe(data => {
+    this.db.ft_getPersonData().subscribe(data => {
       this.personData = data;
-
     });
   }
 }

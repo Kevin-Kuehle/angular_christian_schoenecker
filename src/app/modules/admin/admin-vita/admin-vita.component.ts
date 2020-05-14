@@ -44,14 +44,11 @@ export class AdminVitaComponent implements OnInit {
   ngOnInit(): void {
     this.db.ft_getVita().subscribe(vitas => {
       this.vitas$ = vitas;
-      console.log(this.vitas$);
 
     });
   }
 
   addVita() {
-    console.log('click');
-
     if (this.addForm.invalid) {
       confirm('Das Formular wurde nicht richtig ausgefüllt.');
       return
@@ -85,7 +82,7 @@ export class AdminVitaComponent implements OnInit {
         place: this.editForm.get('place').value,
         year: this.editForm.get('year').value
       }
-      
+
       this.db.ft_editDoc('Vitas', this.editForm.get('id').value, data);
       this.editForm.reset();
       this.showDialogEdit = !this.showDialogEdit;

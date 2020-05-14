@@ -1,29 +1,36 @@
 <section class="section" id="sectionLogin">
   <div class="container">
 
+    <button [routerLink]="['/home']" class="button btn-2">⬅ Zur Startseite</button>
     <div class="title">
-      <h2>{{ 'Login' | uppercase }}</h2>
-    </div>
-    <!-- <div>
-      <hr>
-      <p> {{ loginFormGroup.value | json }}</p>
-      <p> {{ loginFormGroup.status | json }}</p>
-      <hr>
-    </div> -->
-    <div class="body">
-      <p>User ist Eingeloggt als: {{ uid  | async }}</p>
-      <p>User ist Eingeloggt als: {{ isAdmin| async }}</p>
-      <hr>
-      <form [formGroup]="loginFormGroup" (ngSubmit)="onSubmit()">
-        <label for="email"> {{ loginFormGroup.get('email').valid  }} </label>
-        <input type="text" name="email" formControlName="email" placeholder="E-Mail">
-        <label for="passwort">{{ loginFormGroup.get('passwort').valid  }}</label>
-        <input type="password" name="passwort" formControlName="passwort" placeholder="Passwort">
-        <!--  -->
-        <input class="button center btn-1" type="submit" value="Einloggen">
-        <input class="button center btn-1" (click)="logout()" value="Ausloggen">
-      </form>
+      <h2>{{ 'Anmeldung' | uppercase }}</h2>
     </div>
 
+    <div class="body">
+      <form [formGroup]="loginFormGroup" (ngSubmit)="onSubmit()">
+
+
+        <div class="body">
+          <span class="ui-float-label user-name">
+            <input id="float-input" formControlName="email" type="text" size="30" pInputText>
+            <label for="float-input">Benutzername</label>
+          </span>
+
+          <span class="ui-float-label passwort">
+            <input feedback="false" formControlName="email" type="password" pPassword formControlName="passwort" />
+            <label for="float-input">Passwort</label>
+          </span>
+        </div>
+
+        <div class="footer">
+
+          <input class="button center btn-2" type="submit" value="Einloggen">
+          <input class="button center btn-2" (click)="logout()" value="Ausloggen">
+
+        </div>
+
+
+      </form>
+    </div>
   </div>
 </section>

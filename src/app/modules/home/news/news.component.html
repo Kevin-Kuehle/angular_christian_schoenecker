@@ -27,5 +27,6 @@
       </ng-container>
     </div>
     <button (click)="showMore()" class="button btn-2 spaceArround center"><b>Mehr</b> Anzeigen</button>
+    <button *ngIf="toShow >= 1" (click)="toShow = 0" class="button btn-4 spaceArround center"><b>Ausblenden</b></button>
   </div>
 </section>

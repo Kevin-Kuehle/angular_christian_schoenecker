@@ -1,41 +1,18 @@
-@font-face {
-  font-family: "geomanistregular";
-  src: url("/assets/fonts/geomanist-regular-webfont.eot");
-  src: url("/assets/fonts/geomanist-regular-webfont.eot?#iefix") format("embedded-opentype"),
-    url("/assets/fonts/geomanist-regular-webfont.woff2") format("woff2"),
-    url("/assets/fonts/geomanist-regular-webfont.woff") format("woff"),
-    url("/assets/fonts/geomanist-regular-webfont.ttf") format("truetype"),
-    url("/assets/fonts/geomanist-regular-webfont.svg#geomanistregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@import "assets/scss/grid.scss";
+@import "assets/scss/variables.scss";
 @import "assets/scss/fluid-type.scss";
+@import "assets/scss/grid.scss";
 @import "assets/scss/animations.scss";
-@import "assets/scss/helper.scss";
+
+@import "assets/scss/typography.scss";
+
+@import "assets/scss/globals.scss";
+@import "assets/scss/custom-classes.scss";
+
 @import "assets/scss/primeng-mytheme.scss";
 @import "assets/scss/admin-globals.scss";
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
+@import "assets/scss/helper.scss";
 
-
-  &:focus {
-    outline: 0 !important;
-  }
-}
-
-input,
-textarea,
-button,
-select,
-a {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
 
 
 ac-root {
@@ -56,9 +33,10 @@ ac-root {
 
   ac-footer {
     grid-area: footer;
-    
+
   }
 
+  // Colors CSS Varables
   --light-color: rgba(225, 223, 223, 1);
   --dark-color: rgba(72, 72, 72, 1);
   --akzent-color: hsla(137, 64%, 14%, 1);
@@ -74,57 +52,3 @@ ac-root {
   --main-font: "geomanistregular",
   sans-serif;
 }
-
-$akzent-color: hsla(137, 64%, 14%, 1);
-$secondary-color: var(--secondary-color);
-
-html {
-  overflow-x: hidden;
-}
-
-html,
-body {
-  font-family: var(--main-font);
-  height: 100%;
-  background-color: var(--site-background-color);
-}
-
-.container {
-  width: 100%;
-  max-width: var(--site-width);
-  margin: 0 auto;
-  padding: 0 1rem;
-  overflow-x: hidden;
-
-  >* {
-    overflow-x: hidden;
-  }
-
-  &.center {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    height: 100%;
-  }
-
-  &.topSpace {
-    padding-top: 4.5rem;
-  }
-}
-
-section {
-  @include fluid-type("margin-top",
-    $min-ScreenSize,
-    $max-ScreenSize,
-    30px,
-    120px);
-  @include fluid-type("margin-vottom",
-    $min-ScreenSize,
-    $max-ScreenSize,
-    30px,
-    120px);
-}
-
-@import "assets/scss/typography.scss";

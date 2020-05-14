@@ -1,0 +1,1112 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>actor-website documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">actor-website documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AdminVitaComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/admin/admin-vita/admin-vita.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>ac-admin-vita</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./admin-vita.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./admin-vita.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addForm">addForm</a>
+                            </li>
+                            <li>
+                                <a href="#additive">additive</a>
+                            </li>
+                            <li>
+                                <a href="#editForm">editForm</a>
+                            </li>
+                            <li>
+                                <a href="#showDialogAdd">showDialogAdd</a>
+                            </li>
+                            <li>
+                                <a href="#showDialogEdit">showDialogEdit</a>
+                            </li>
+                            <li>
+                                <a href="#vitas$">vitas$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addVita">addVita</a>
+                            </li>
+                            <li>
+                                <a href="#changeVita">changeVita</a>
+                            </li>
+                            <li>
+                                <a href="#deleteVita">deleteVita</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openDialogBoxEdit">openDialogBoxEdit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(db: <a href="../injectables/DatabaseService.html">DatabaseService</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/modules/admin/admin-vita/admin-vita.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>db</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DatabaseService.html" target="_self" >DatabaseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addVita"></a>
+                    <span class="name">
+                        <b>
+                            addVita
+                        </b>
+                        <a href="#addVita"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addVita()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/modules/admin/admin-vita/admin-vita.component.ts:51</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeVita"></a>
+                    <span class="name">
+                        <b>
+                            changeVita
+                        </b>
+                        <a href="#changeVita"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeVita()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/modules/admin/admin-vita/admin-vita.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteVita"></a>
+                    <span class="name">
+                        <b>
+                            deleteVita
+                        </b>
+                        <a href="#deleteVita"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteVita(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/modules/admin/admin-vita/admin-vita.component.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/modules/admin/admin-vita/admin-vita.component.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialogBoxEdit"></a>
+                    <span class="name">
+                        <b>
+                            openDialogBoxEdit
+                        </b>
+                        <a href="#openDialogBoxEdit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialogBoxEdit(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/modules/admin/admin-vita/admin-vita.component.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="addForm"></a>
+                        <span class="name">
+                            <b>
+                            addForm</b>
+                            <a href="#addForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.fb.group({
+    description: [&#x27;&#x27;, [Validators.required, Validators.minLength(10), Validators.maxLength(800)]],
+    jobStart: [&#x27;&#x27;, [Validators.required,]],
+    jobEnd: [&#x27;&#x27;, [Validators.required]],
+    jobTitle: [&#x27;&#x27;, [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
+    additive: [&#x27;&#x27;],
+    place: [&#x27;&#x27;, [Validators.required, Validators.maxLength(30)]],
+    year: [&#x27;&#x27;, [Validators.required]],
+  })</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/admin/admin-vita/admin-vita.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="additive"></a>
+                        <span class="name">
+                            <b>
+                            additive</b>
+                            <a href="#additive"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/modules/admin/admin-vita/admin-vita.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editForm"></a>
+                        <span class="name">
+                            <b>
+                            editForm</b>
+                            <a href="#editForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.fb.group({
+    id: [&#x27;&#x27;],
+    description: [&#x27;&#x27;, [Validators.required, Validators.minLength(10), Validators.maxLength(800)]],
+    jobStart: [&#x27;&#x27;, [Validators.required,]],
+    jobEnd: [&#x27;&#x27;, [Validators.required]],
+    jobTitle: [&#x27;&#x27;, [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
+    additive: [&#x27;&#x27;],
+    place: [&#x27;&#x27;, [Validators.required, Validators.maxLength(30)]],
+    year: [&#x27;&#x27;, [Validators.required]],
+  })</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/admin/admin-vita/admin-vita.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showDialogAdd"></a>
+                        <span class="name">
+                            <b>
+                            showDialogAdd</b>
+                            <a href="#showDialogAdd"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/admin/admin-vita/admin-vita.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showDialogEdit"></a>
+                        <span class="name">
+                            <b>
+                            showDialogEdit</b>
+                            <a href="#showDialogEdit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/modules/admin/admin-vita/admin-vita.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="vitas$"></a>
+                        <span class="name">
+                            <b>
+                            vitas$</b>
+                            <a href="#vitas$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/modules/admin/admin-vita/admin-vita.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { first, map } from &#x27;rxjs/operators&#x27;;
+import { FormBuilder, Validators } from &#x27;@angular/forms&#x27;;
+import { DatabaseService } from &#x27;@actor/core/services/database.service&#x27;;
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;ac-admin-vita&#x27;,
+  templateUrl: &#x27;./admin-vita.component.html&#x27;,
+  styleUrls: [&#x27;./admin-vita.component.scss&#x27;]
+})
+export class AdminVitaComponent implements OnInit {
+
+  vitas$;
+
+  showDialogEdit &#x3D; false;
+  showDialogAdd &#x3D; false;
+
+  addForm &#x3D; this.fb.group({
+    description: [&#x27;&#x27;, [Validators.required, Validators.minLength(10), Validators.maxLength(800)]],
+    jobStart: [&#x27;&#x27;, [Validators.required,]],
+    jobEnd: [&#x27;&#x27;, [Validators.required]],
+    jobTitle: [&#x27;&#x27;, [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
+    additive: [&#x27;&#x27;],
+    place: [&#x27;&#x27;, [Validators.required, Validators.maxLength(30)]],
+    year: [&#x27;&#x27;, [Validators.required]],
+  });
+
+  editForm &#x3D; this.fb.group({
+    id: [&#x27;&#x27;],
+    description: [&#x27;&#x27;, [Validators.required, Validators.minLength(10), Validators.maxLength(800)]],
+    jobStart: [&#x27;&#x27;, [Validators.required,]],
+    jobEnd: [&#x27;&#x27;, [Validators.required]],
+    jobTitle: [&#x27;&#x27;, [Validators.required, Validators.minLength(3), Validators.maxLength(30)]],
+    additive: [&#x27;&#x27;],
+    place: [&#x27;&#x27;, [Validators.required, Validators.maxLength(30)]],
+    year: [&#x27;&#x27;, [Validators.required]],
+  });
+
+  additive
+  constructor(
+    private db: DatabaseService,
+    private fb: FormBuilder) { }
+
+  ngOnInit(): void {
+    this.db.ft_getVita().subscribe(vitas &#x3D;&gt; {
+      this.vitas$ &#x3D; vitas;
+
+    });
+  }
+
+  addVita() {
+    if (this.addForm.invalid) {
+      confirm(&#x27;Das Formular wurde nicht richtig ausgefüllt.&#x27;);
+      return
+    }
+
+    let data &#x3D; {
+      description: this.addForm.get(&#x27;description&#x27;).value,
+      jobStart: this.addForm.get(&#x27;jobStart&#x27;).value,
+      jobEnd: this.addForm.get(&#x27;jobEnd&#x27;).value,
+      jobTitle: this.addForm.get(&#x27;jobTitle&#x27;).value,
+      additive: this.addForm.get(&#x27;additive&#x27;).value,
+      place: this.addForm.get(&#x27;place&#x27;).value,
+      year: this.addForm.get(&#x27;year&#x27;).value,
+    }
+
+    this.db.ft_addDoc(&#x27;Vitas&#x27;, data);
+    this.addForm.reset();
+    this.showDialogAdd &#x3D; !this.showDialogAdd;
+  }
+
+  changeVita() {
+
+    if (this.editForm.valid) {
+
+      let data &#x3D; {
+        description: this.editForm.get(&#x27;description&#x27;).value,
+        jobStart: this.editForm.get(&#x27;jobStart&#x27;).value,
+        jobEnd: this.editForm.get(&#x27;jobEnd&#x27;).value,
+        jobTitle: this.editForm.get(&#x27;jobTitle&#x27;).value,
+        additive: this.editForm.get(&#x27;additive&#x27;).value,
+        place: this.editForm.get(&#x27;place&#x27;).value,
+        year: this.editForm.get(&#x27;year&#x27;).value
+      }
+
+      this.db.ft_editDoc(&#x27;Vitas&#x27;, this.editForm.get(&#x27;id&#x27;).value, data);
+      this.editForm.reset();
+      this.showDialogEdit &#x3D; !this.showDialogEdit;
+    }
+  }
+
+  deleteVita(id: String) {
+
+    if (id &#x3D;&#x3D;&#x3D; null || id &#x3D;&#x3D;&#x3D; undefined || id &#x3D;&#x3D;&#x3D; &#x27;&#x27;) {
+      return;
+    }
+
+    this.db.ft_delete_document(&#x27;Vitas&#x27;, id);
+  }
+
+  openDialogBoxEdit(id: String) {
+
+    let getVita &#x3D; this.vitas$.find(i &#x3D;&gt; i.id &#x3D;&#x3D;&#x3D; id);
+
+    if (getVita !&#x3D;&#x3D; null || getVita !&#x3D;&#x3D; undefined) {
+      this.editForm.patchValue({
+        id: id,
+        description: getVita.description,
+        jobStart: new Date(getVita.jobStart.seconds * 1000),
+        jobEnd: new Date(getVita.jobEnd.seconds * 1000),
+        jobTitle: getVita.jobTitle,
+        additive: getVita.additive,
+        place: getVita.place,
+        year: getVita.year
+      });
+      this.showDialogEdit &#x3D; !this.showDialogEdit;
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;admin-container&quot;&gt;
+  &lt;div class&#x3D;&quot;backend-title&quot;&gt;{{ &#x27;Vitas&#x27; | uppercase }}&lt;/div&gt;
+  &lt;div class&#x3D;&quot;body&quot;&gt;
+    &lt;!-- Dialogbox  Edit--&gt;
+    &lt;p-dialog [(visible)]&#x3D;&quot;showDialogEdit&quot; header&#x3D;&quot;Vita Bearbeiten&quot;&gt;
+
+      &lt;form #form&#x3D;&quot;ngForm&quot; [formGroup]&#x3D;&quot;editForm&quot; class&#x3D;&quot;form add edit&quot;&gt;
+        &lt;span class&#x3D;&quot; ui-float-label&quot;&gt;
+          &lt;input formControlName&#x3D;&quot;jobTitle&quot; id&#x3D;&quot;float-input&quot; pInputText size&#x3D;&quot;30&quot; type&#x3D;&quot;text&quot;&gt;
+          &lt;label for&#x3D;&quot;float-input&quot;&gt;Berufsbezeichnung&lt;/label&gt;
+        &lt;/span&gt;
+
+        &lt;span class&#x3D;&quot;ui-float-label&quot;&gt;
+          &lt;input formControlName&#x3D;&quot;year&quot; id&#x3D;&quot;float-input&quot; pInputText size&#x3D;&quot;30&quot; type&#x3D;&quot;text&quot;&gt;
+          &lt;label for&#x3D;&quot;float-input&quot;&gt;Jahr&lt;/label&gt;
+        &lt;/span&gt;
+
+        &lt;span class&#x3D;&quot;ui-float-label&quot;&gt;
+          &lt;input formControlName&#x3D;&quot;place&quot; id&#x3D;&quot;float-input&quot; pInputText size&#x3D;&quot;30&quot; type&#x3D;&quot;text&quot;&gt;
+          &lt;label for&#x3D;&quot;float-input&quot;&gt;Ort&lt;/label&gt;
+        &lt;/span&gt;
+
+        &lt;span class&#x3D;&quot;ui-float-label&quot;&gt;
+          &lt;input formControlName&#x3D;&quot;additive&quot; id&#x3D;&quot;float-input&quot; pInputText size&#x3D;&quot;30&quot; type&#x3D;&quot;text&quot;&gt;
+          &lt;label for&#x3D;&quot;float-input&quot;&gt;Job Zusatz&lt;/label&gt;
+        &lt;/span&gt;
+
+        &lt;div class&#x3D;&quot;date-group&quot;&gt;
+          &lt;span class&#x3D;&quot;ui-float-label&quot;&gt;
+            &lt;p-calendar [yearNavigator]&#x3D;&quot;true&quot; dateFormat&#x3D;&quot;dd.mm.yy&quot; formControlName&#x3D;&quot;jobStart&quot; view&#x3D;&quot;month&quot;
+              yearRange&#x3D;&quot;1990:2030&quot;&gt;
+            &lt;/p-calendar&gt;
+            &lt;label for&#x3D;&quot;float-input&quot;&gt;Von&lt;/label&gt;
+          &lt;/span&gt;
+
+          &lt;span class&#x3D;&quot;ui-float-label&quot;&gt;
+            &lt;p-calendar [yearNavigator]&#x3D;&quot;true&quot; dateFormat&#x3D;&quot;dd.mm.yy&quot; formControlName&#x3D;&quot;jobEnd&quot; view&#x3D;&quot;month&quot;
+              yearRange&#x3D;&quot;1990:2030&quot;&gt;
+            &lt;/p-calendar&gt;
+            &lt;label for&#x3D;&quot;float-input&quot;&gt;Bis&lt;/label&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;span class&#x3D;&quot;ui-float-label&quot;&gt;
+          &lt;textarea [cols]&#x3D;&quot;40&quot; [rows]&#x3D;&quot;10&quot; formControlName&#x3D;&quot;description&quot; id&#x3D;&quot;float-input&quot; pInputTextarea&gt;&lt;/textarea&gt;
+          &lt;label for&#x3D;&quot;float-input&quot;&gt;Beschreibung&lt;/label&gt;
+        &lt;/span&gt;
+
+      &lt;/form&gt;
+      &lt;p-footer&gt;
+        &lt;p-button (click)&#x3D;&quot;changeVita()&quot; label&#x3D;&quot; Speichern&quot; styleClass&#x3D;&quot;ui-button-success&quot;&gt;&lt;/p-button&gt;
+      &lt;/p-footer&gt;
+    &lt;/p-dialog&gt;
+
+    &lt;!-- Dialogbox  add--&gt;
+    &lt;p-dialog [(visible)]&#x3D;&quot;showDialogAdd&quot; header&#x3D;&quot;Vita Hinzufügen&quot;&gt;
+      
+      &lt;form #form&#x3D;&quot;ngForm&quot; [formGroup]&#x3D;&quot;addForm&quot; class&#x3D;&quot;form add&quot;&gt;
+        &lt;span class&#x3D;&quot; ui-float-label&quot;&gt;
+          &lt;input #test formControlName&#x3D;&quot;jobTitle&quot; id&#x3D;&quot;float-input&quot; pInputText size&#x3D;&quot;30&quot; type&#x3D;&quot;text&quot;&gt;
+          &lt;label for&#x3D;&quot;float-input&quot;&gt;Berufsbezeichnung&lt;/label&gt;
+        &lt;/span&gt;
+
+        &lt;span class&#x3D;&quot;ui-float-label&quot;&gt;
+          &lt;input formControlName&#x3D;&quot;year&quot; id&#x3D;&quot;float-input&quot; pInputText size&#x3D;&quot;30&quot; type&#x3D;&quot;text&quot;&gt;
+          &lt;label for&#x3D;&quot;float-input&quot;&gt;Jahr&lt;/label&gt;
+        &lt;/span&gt;
+
+        &lt;span class&#x3D;&quot;ui-float-label&quot;&gt;
+          &lt;input formControlName&#x3D;&quot;place&quot; id&#x3D;&quot;float-input&quot; pInputText size&#x3D;&quot;30&quot; type&#x3D;&quot;text&quot;&gt;
+          &lt;label for&#x3D;&quot;float-input&quot;&gt;Ort&lt;/label&gt;
+        &lt;/span&gt;
+
+        &lt;span class&#x3D;&quot;ui-float-label&quot;&gt;
+          &lt;input formControlName&#x3D;&quot;additive&quot; id&#x3D;&quot;float-input&quot; pInputText size&#x3D;&quot;30&quot; type&#x3D;&quot;text&quot;&gt;
+          &lt;label for&#x3D;&quot;float-input&quot;&gt;Job Zusatz&lt;/label&gt;
+        &lt;/span&gt;
+
+        &lt;div class&#x3D;&quot;date-group&quot;&gt;
+          &lt;span class&#x3D;&quot;ui-float-label&quot;&gt;
+            &lt;p-calendar [yearNavigator]&#x3D;&quot;true&quot; dateFormat&#x3D;&quot;dd.mm.yy&quot; formControlName&#x3D;&quot;jobStart&quot; view&#x3D;&quot;month&quot;
+              yearRange&#x3D;&quot;1990:2030&quot;&gt;
+            &lt;/p-calendar&gt;
+            &lt;label for&#x3D;&quot;float-input&quot;&gt;Von&lt;/label&gt;
+          &lt;/span&gt;
+
+          &lt;span class&#x3D;&quot;ui-float-label&quot;&gt;
+            &lt;p-calendar [yearNavigator]&#x3D;&quot;true&quot; dateFormat&#x3D;&quot;dd.mm.yy&quot; formControlName&#x3D;&quot;jobEnd&quot; view&#x3D;&quot;month&quot;
+              yearRange&#x3D;&quot;1990:2030&quot;&gt;
+            &lt;/p-calendar&gt;
+            &lt;label for&#x3D;&quot;float-input&quot;&gt;Bis&lt;/label&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;span class&#x3D;&quot;ui-float-label&quot;&gt;
+          &lt;textarea [cols]&#x3D;&quot;40&quot; [rows]&#x3D;&quot;10&quot; formControlName&#x3D;&quot;description&quot; id&#x3D;&quot;float-input&quot; pInputTextarea&gt;&lt;/textarea&gt;
+          &lt;label for&#x3D;&quot;float-input&quot;&gt;Beschreibung&lt;/label&gt;
+        &lt;/span&gt;
+
+      &lt;/form&gt;
+      &lt;p-footer&gt;
+        &lt;p-button class.disabled&#x3D;&quot;editForm.invalid&quot; [disabled]&#x3D;&quot;editForm.invalid&quot; (click)&#x3D;&quot;addVita()&quot; label&#x3D;&quot;Speichern&quot;
+          styleClass&#x3D;&quot;ui-button-success&quot;&gt;
+        &lt;/p-button&gt;
+      &lt;/p-footer&gt;
+    &lt;/p-dialog&gt;
+
+    &lt;!-- Hinzufügen Button --&gt;
+    &lt;p-button (click)&#x3D;&quot;showDialogAdd &#x3D; !showDialogAdd&quot; class&#x3D;&quot;addButton&quot; label&#x3D;&quot;Hinzufügen&quot;&gt;&lt;/p-button&gt;
+
+    &lt;!-- Card Loop --&gt;
+    &lt;ng-container *ngFor&#x3D;&quot;let vita of vitas$&quot;&gt;
+      &lt;p-card class&#x3D;&quot;admin-card&quot; header&#x3D;&quot;{{ vita.year }}&quot;&gt;
+        &lt;h3 class&#x3D;&quot;card&quot;&gt;{{ vita.jobTitle }}&lt;/h3&gt;
+        &lt;p&gt;&lt;b&gt;Von: &lt;/b&gt; {{ vita.jobStart.seconds*1000 | date: &#x27;dd.MMMM.yyyy&#x27; }} &lt;b&gt;bis:&lt;/b&gt;
+          {{ vita.jobEnd.seconds*1000 | date: &#x27;dd.MMMM.yyyy&#x27; }}&lt;/p&gt;
+        &lt;span&gt; &lt;b&gt;Ort: &lt;/b&gt;{{ vita.place}} &lt;/span&gt;&lt;br&gt;
+        &lt;span&gt; &lt;b&gt;Job Zusatz: &lt;/b&gt;{{ vita.additive}} &lt;/span&gt;&lt;br&gt;
+
+
+        &lt;hr [ngStyle]&#x3D;&quot;{&#x27;margin-top&#x27;: &#x27;0.8em&#x27;, &#x27;margin-bottom&#x27;: &#x27;0.8em&#x27;}&quot;&gt;
+        &lt;span&gt; {{ vita.description }} &lt;/span&gt;
+
+        &lt;p-footer class&#x3D;&quot;p-footer&quot;&gt;
+          &lt;p-button (click)&#x3D;&quot;deleteVita(vita.id)&quot; label&#x3D;&quot;Löschen&quot; styleClass&#x3D;&quot;ui-button-danger mr-1&quot;&gt;&lt;/p-button&gt;
+          &lt;p-button (click)&#x3D;&quot;openDialogBoxEdit(vita.id)&quot; label&#x3D;&quot; Bearbeiten&quot; styleClass&#x3D;&quot;ui-button-warning&quot;&gt;
+          &lt;/p-button&gt;
+        &lt;/p-footer&gt;
+      &lt;/p-card&gt;
+    &lt;/ng-container&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./admin-vita.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.admin-container {
+
+  .body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+
+    .addButton {
+      flex: 1 0 100%;
+      justify-self: center;
+      margin-bottom: 3em;
+    }
+  }
+}
+
+.form {
+  width: 70vw;
+  height: 50vh;
+  max-width: 420px;
+  max-height: 600px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 1em;
+
+  textarea,
+  input[type] {
+    padding: 0.3em 0.7em;
+    border: 1px solid rgba($color: #000000, $alpha: 0.3);
+
+
+  }
+
+  &amp;.add {
+    .ui-float-label {
+      display: block;
+      margin-bottom: 1.7em;
+    }
+  }
+}
+
+h3 {
+  &amp;.card {
+    font-size: 20px;
+  }
+}
+
+.date-group {
+  display: flex;
+  flex-flow: row;
+
+  .ui-float-label {
+    &amp;:first-of-type {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.disabled {
+  background-color: grey !important;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="admin-container">  <div class="backend-title">{{ \'Vitas\' | uppercase }}</div>  <div class="body">    <!-- Dialogbox  Edit-->    <p-dialog [(visible)]="showDialogEdit" header="Vita Bearbeiten">      <form #form="ngForm" [formGroup]="editForm" class="form add edit">        <span class=" ui-float-label">          <input formControlName="jobTitle" id="float-input" pInputText size="30" type="text">          <label for="float-input">Berufsbezeichnung</label>        </span>        <span class="ui-float-label">          <input formControlName="year" id="float-input" pInputText size="30" type="text">          <label for="float-input">Jahr</label>        </span>        <span class="ui-float-label">          <input formControlName="place" id="float-input" pInputText size="30" type="text">          <label for="float-input">Ort</label>        </span>        <span class="ui-float-label">          <input formControlName="additive" id="float-input" pInputText size="30" type="text">          <label for="float-input">Job Zusatz</label>        </span>        <div class="date-group">          <span class="ui-float-label">            <p-calendar [yearNavigator]="true" dateFormat="dd.mm.yy" formControlName="jobStart" view="month"              yearRange="1990:2030">            </p-calendar>            <label for="float-input">Von</label>          </span>          <span class="ui-float-label">            <p-calendar [yearNavigator]="true" dateFormat="dd.mm.yy" formControlName="jobEnd" view="month"              yearRange="1990:2030">            </p-calendar>            <label for="float-input">Bis</label>          </span>        </div>        <span class="ui-float-label">          <textarea [cols]="40" [rows]="10" formControlName="description" id="float-input" pInputTextarea></textarea>          <label for="float-input">Beschreibung</label>        </span>      </form>      <p-footer>        <p-button (click)="changeVita()" label=" Speichern" styleClass="ui-button-success"></p-button>      </p-footer>    </p-dialog>    <!-- Dialogbox  add-->    <p-dialog [(visible)]="showDialogAdd" header="Vita Hinzufügen">            <form #form="ngForm" [formGroup]="addForm" class="form add">        <span class=" ui-float-label">          <input #test formControlName="jobTitle" id="float-input" pInputText size="30" type="text">          <label for="float-input">Berufsbezeichnung</label>        </span>        <span class="ui-float-label">          <input formControlName="year" id="float-input" pInputText size="30" type="text">          <label for="float-input">Jahr</label>        </span>        <span class="ui-float-label">          <input formControlName="place" id="float-input" pInputText size="30" type="text">          <label for="float-input">Ort</label>        </span>        <span class="ui-float-label">          <input formControlName="additive" id="float-input" pInputText size="30" type="text">          <label for="float-input">Job Zusatz</label>        </span>        <div class="date-group">          <span class="ui-float-label">            <p-calendar [yearNavigator]="true" dateFormat="dd.mm.yy" formControlName="jobStart" view="month"              yearRange="1990:2030">            </p-calendar>            <label for="float-input">Von</label>          </span>          <span class="ui-float-label">            <p-calendar [yearNavigator]="true" dateFormat="dd.mm.yy" formControlName="jobEnd" view="month"              yearRange="1990:2030">            </p-calendar>            <label for="float-input">Bis</label>          </span>        </div>        <span class="ui-float-label">          <textarea [cols]="40" [rows]="10" formControlName="description" id="float-input" pInputTextarea></textarea>          <label for="float-input">Beschreibung</label>        </span>      </form>      <p-footer>        <p-button class.disabled="editForm.invalid" [disabled]="editForm.invalid" (click)="addVita()" label="Speichern"          styleClass="ui-button-success">        </p-button>      </p-footer>    </p-dialog>    <!-- Hinzufügen Button -->    <p-button (click)="showDialogAdd = !showDialogAdd" class="addButton" label="Hinzufügen"></p-button>    <!-- Card Loop -->    <ng-container *ngFor="let vita of vitas$">      <p-card class="admin-card" header="{{ vita.year }}">        <h3 class="card">{{ vita.jobTitle }}</h3>        <p><b>Von: </b> {{ vita.jobStart.seconds*1000 | date: \'dd.MMMM.yyyy\' }} <b>bis:</b>          {{ vita.jobEnd.seconds*1000 | date: \'dd.MMMM.yyyy\' }}</p>        <span> <b>Ort: </b>{{ vita.place}} </span><br>        <span> <b>Job Zusatz: </b>{{ vita.additive}} </span><br>        <hr [ngStyle]="{\'margin-top\': \'0.8em\', \'margin-bottom\': \'0.8em\'}">        <span> {{ vita.description }} </span>        <p-footer class="p-footer">          <p-button (click)="deleteVita(vita.id)" label="Löschen" styleClass="ui-button-danger mr-1"></p-button>          <p-button (click)="openDialogBoxEdit(vita.id)" label=" Bearbeiten" styleClass="ui-button-warning">          </p-button>        </p-footer>      </p-card>    </ng-container>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AdminAktuellComponent', 'selector': 'ac-admin-aktuell'},{'name': 'AdminBiografieComponent', 'selector': 'ac-admin-biografie'},{'name': 'AdminGallerieComponent', 'selector': 'ac-admin-gallerie'},{'name': 'AdminHomeComponent', 'selector': 'ac-admin-home'},{'name': 'AdminKontaktComponent', 'selector': 'ac-admin-kontakt'},{'name': 'AdminMediaComponent', 'selector': 'ac-admin-media'},{'name': 'AdminSocialComponent', 'selector': 'ac-admin-social'},{'name': 'AdminVitaComponent', 'selector': 'ac-admin-vita'},{'name': 'AppComponent', 'selector': 'ac-root'},{'name': 'BiografieComponent', 'selector': 'ac-biografie'},{'name': 'EventsComponent', 'selector': 'ac-events'},{'name': 'FooterComponent', 'selector': 'ac-footer'},{'name': 'GalleryComponent', 'selector': 'ac-gallery'},{'name': 'HeaderComponent', 'selector': 'ac-header'},{'name': 'HomeComponent', 'selector': 'ac-home'},{'name': 'LightboxComponent', 'selector': 'ac-lightbox'},{'name': 'LoginComponent', 'selector': 'ac-login'},{'name': 'MediaComponent', 'selector': 'ac-media'},{'name': 'MediaViewComponent', 'selector': 'ac-media-view'},{'name': 'NewsComponent', 'selector': 'ac-news'},{'name': 'PersonalDataComponent', 'selector': 'ac-personal-data'},{'name': 'SocialsComponent', 'selector': 'ac-socials'},{'name': 'VitaComponent', 'selector': 'ac-vita'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AdminVitaComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AdminVitaComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -25,8 +25,6 @@ export class AdminBiografieComponent implements OnInit {
   ngOnInit(): void {
     this.db.ft_getBiografie().subscribe(bio => {
       this.biografie$ = bio[0];
-      console.log(bio);
-
       this.shortText = this.biografie$.shortText;
       this.longText = this.biografie$.longText;
     });

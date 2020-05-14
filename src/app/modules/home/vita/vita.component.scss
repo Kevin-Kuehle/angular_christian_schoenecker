@@ -37,9 +37,38 @@ section.vita {
   }
 }
 
+.vitaDialog {
+  // padding: 1.871em 2.3em;
+
+  .title {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+
+    span.year {
+      flex: 1 1 50%;
+      margin-right: 0.5em;
+    }
+
+    .time {
+      flex: 1;
+      justify-self: flex-end;
+
+      span.from {
+        margin-right: 0.5em;
+      }
+    }
+  }
+
+  .body {
+    padding-bottom: 1em;
+  }
+}
+
 
 .container {
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5);
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0 1rem;
 
 }
