@@ -1,0 +1,42 @@
+$bp-context: 16px;
+
+
+// em Converster
+@function em($to-size, $from-size: $font-size) {
+  @if $to-size==0px {
+    @return 0
+  }
+
+  @return $to-size / $from-size * 1em;
+}
+
+// rem Converster
+@function rem($to-size, $from-size: $font-size) {
+  @if $to-size==0px {
+    @return 0
+  }
+
+  @return $to-size / $from-size * 1rem;
+}
+
+// Map
+$breakPoints :('xs': em(456px, $bp-context),
+  'sm': em(640px, $bp-context),
+  'md': em(752px, $bp-context),
+  'lg': em(992px, $bp-context),
+  'xl': em(1168px, $bp-context),
+  'xxl': em(1366px, $bp-context));
+
+
+
+@mixin BreakPoint($Point) {
+  @if map-has-key($breakPoints, $Point) {
+    @media (max-width: map-get($breakPoints, $Point)) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "The breakpoint #{$point} is not in BreakPoints Map";
+  }
+}

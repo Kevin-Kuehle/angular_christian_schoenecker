@@ -2,16 +2,16 @@
   <div class="GridContainer">
 
     <div class="title">
-      <h2> {{'Biografie' | uppercase}} </h2>
+      <h2 data-aos="fade-up"> {{'Biografie' | uppercase}} </h2>
     </div>
-    <div class="text">
+    <div class="text" data-aos="slide-right" data-aos-delay="100">
       <div [innerHTML]="biografie?.shortText"></div>
       <div class="hideBox" #hideBox>
         <div [innerHTML]="biografie?.longText"></div>
       </div>
       <button (click)="hideBox.classList.toggle('open')" class="button btn-1"><b>Mehr</b>Lesen</button>
     </div>
-    <div class="image">
+    <div class="image" data-aos="slide-left">
 
     </div>
   </div>

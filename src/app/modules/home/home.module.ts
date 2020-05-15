@@ -22,6 +22,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { AccordionModule } from 'primeng/accordion';
 import { TableModule } from 'primeng/table';
 
+
 @NgModule({
   declarations: [
     HomeComponent,

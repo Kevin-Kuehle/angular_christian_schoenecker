@@ -1,19 +1,15 @@
-<section class="personal-data" id="sectionPersonenbeschreibung">
+<section class="personal-data" id="sectionPersonenbeschreibung" data-aos="fade-up" data-aos-delay="1200">
   <div class="container">
     <div class="title">
       <h2>{{ 'Personen Daten' | uppercase }}</h2>
     </div>
     <div class="table-container">
-
-
       <table class="personData">
         <ng-template ngFor [ngForOf]="personData" let-data let-i="index" let-c="count">
-
           <tr>
             <td class="dataName">{{data.name}}</td>
             <td class="dataValue">{{data.value}}</td>
           </tr>
-
         </ng-template>
       </table>
     </div>
