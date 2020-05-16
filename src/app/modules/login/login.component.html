@@ -8,39 +8,22 @@
 
     <div class="body">
       <form [formGroup]="loginFormGroup" (ngSubmit)="onSubmit()">
-
-
         <div class="body">
           <span class="ui-float-label user-name">
-<<<<<<< HEAD
+
             <input id="float-input" formControlName="email" type="text" size="30" pInputText>
             <label for="float-input">Benutzername</label>
           </span>
-
           <span class="ui-float-label passwort">
             <input feedback="false" formControlName="email" type="password" pPassword formControlName="passwort" />
             <label for="float-input">Passwort</label>
-=======
-            <input id="float-input" type="text" size="30" pInputText>
-            <label for="float-input" formControlName="email">Benutzername</label>
-          </span>
-
-          <span class="ui-float-label passwort">
-            <!-- <input [type]="password" id="float-input" formControlName="passwort" type="text" size="30" pInputText> -->
-            <input feedback="false" type="password" pPassword formControlName="passwort" />
-            <label for="float-input" formControlName="email">Passwort</label>
->>>>>>> 3eb183a9c7995dcd8046c46fb6ff4fead2eff585
           </span>
         </div>
 
         <div class="footer">
-
           <input class="button center btn-2" type="submit" value="Einloggen">
           <input class="button center btn-2" (click)="logout()" value="Ausloggen">
-
         </div>
-
-
       </form>
     </div>
   </div>
