@@ -27,7 +27,9 @@ export class MediaComponent implements OnInit {
       this.movies = data;
     });
 
-    this.mobileS.isMobile.subscribe(data => {
+
+    // TODO media disabled
+    /* this.mobileS.isMobile.subscribe(data => {
       this.isMobile = data;
 
       if (this.isMobile) {
@@ -35,6 +37,6 @@ export class MediaComponent implements OnInit {
       } else {
         this.toShow = 6;
       }
-    });
+    }); */
   }
 }

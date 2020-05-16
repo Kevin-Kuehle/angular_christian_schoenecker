@@ -19,10 +19,12 @@ export class GalleryComponent implements OnInit {
     //   this.images = data;
     // });
 
-    this.db.ft_getImages().then(data => {
-      console.log(data);
+    // todo gallery disabled
 
-    })
+    /*    this.db.ft_getImages().then(data => {
+         console.log(data);
+
+       }) */
 
   };
 }

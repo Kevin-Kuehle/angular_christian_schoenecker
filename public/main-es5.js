@@ -68,10 +68,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 
     var routes = [{
-      path: '',
-      pathMatch: 'full',
-      redirectTo: 'home'
-    }, {
       path: 'home',
       loadChildren: function loadChildren() {
         return Promise.all(
@@ -104,6 +100,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return m.AdminModule;
         });
       }
+    }, {
+      path: '',
+      pathMatch: 'full',
+      redirectTo: 'home'
+    }, {
+      path: '**',
+      redirectTo: 'home'
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -170,27 +173,50 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _core_header_header_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var aos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! aos */
+    "./node_modules/aos/dist/aos.js");
+    /* harmony import */
+
+
+    var aos__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_1__);
+    /* harmony import */
+
+
+    var _core_header_header_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./core/header/header.component */
     "./src/app/core/header/header.component.ts");
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
     /* harmony import */
 
 
-    var _core_footer_footer_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _core_footer_footer_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./core/footer/footer.component */
     "./src/app/core/footer/footer.component.ts");
 
-    var AppComponent = function AppComponent() {
-      _classCallCheck(this, AppComponent);
+    var AppComponent = /*#__PURE__*/function () {
+      function AppComponent() {
+        _classCallCheck(this, AppComponent);
 
-      this.title = 'actorWebsite';
-    };
+        this.title = 'actorWebsite';
+      }
+
+      _createClass(AppComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          aos__WEBPACK_IMPORTED_MODULE_1__["init"]({
+            duration: 800
+          });
+        }
+      }]);
+
+      return AppComponent;
+    }();
 
     AppComponent.ɵfac = function AppComponent_Factory(t) {
       return new (t || AppComponent)();
@@ -215,7 +241,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "ac-footer");
         }
       },
-      directives: [_core_header_header_component__WEBPACK_IMPORTED_MODULE_1__["HeaderComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"], _core_footer_footer_component__WEBPACK_IMPORTED_MODULE_3__["FooterComponent"]],
+      directives: [_core_header_header_component__WEBPACK_IMPORTED_MODULE_2__["HeaderComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterOutlet"], _core_footer_footer_component__WEBPACK_IMPORTED_MODULE_4__["FooterComponent"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"]
     });
     /*@__PURE__*/

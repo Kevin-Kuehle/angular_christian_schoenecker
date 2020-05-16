@@ -40,10 +40,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: '', pathMatch: 'full', redirectTo: 'home' },
     { path: 'home', loadChildren: () => Promise.all(/*! import() | modules-home-home-module */[__webpack_require__.e("default~modules-admin-admin-module~modules-home-home-module~modules-login-login-module"), __webpack_require__.e("default~modules-admin-admin-module~modules-home-home-module"), __webpack_require__.e("modules-home-home-module")]).then(__webpack_require__.bind(null, /*! ./modules/home/home.module */ "./src/app/modules/home/home.module.ts")).then(m => m.HomeModule) },
     { path: 'login', loadChildren: () => Promise.all(/*! import() | modules-login-login-module */[__webpack_require__.e("default~modules-admin-admin-module~modules-home-home-module~modules-login-login-module"), __webpack_require__.e("default~modules-admin-admin-module~modules-login-login-module"), __webpack_require__.e("modules-login-login-module")]).then(__webpack_require__.bind(null, /*! ./modules/login/login.module */ "./src/app/modules/login/login.module.ts")).then(m => m.LoginModule) },
-    { path: 'admin/home', loadChildren: () => Promise.all(/*! import() | modules-admin-admin-module */[__webpack_require__.e("default~modules-admin-admin-module~modules-home-home-module~modules-login-login-module"), __webpack_require__.e("default~modules-admin-admin-module~modules-login-login-module"), __webpack_require__.e("default~modules-admin-admin-module~modules-home-home-module"), __webpack_require__.e("modules-admin-admin-module")]).then(__webpack_require__.bind(null, /*! ./modules/admin/admin.module */ "./src/app/modules/admin/admin.module.ts")).then(m => m.AdminModule) }
+    { path: 'admin/home', loadChildren: () => Promise.all(/*! import() | modules-admin-admin-module */[__webpack_require__.e("default~modules-admin-admin-module~modules-home-home-module~modules-login-login-module"), __webpack_require__.e("default~modules-admin-admin-module~modules-login-login-module"), __webpack_require__.e("default~modules-admin-admin-module~modules-home-home-module"), __webpack_require__.e("modules-admin-admin-module")]).then(__webpack_require__.bind(null, /*! ./modules/admin/admin.module */ "./src/app/modules/admin/admin.module.ts")).then(m => m.AdminModule) },
+    { path: '', pathMatch: 'full', redirectTo: 'home' },
+    { path: '**', redirectTo: 'home' }
 ];
 class AppRoutingModule {
 }
@@ -73,9 +74,12 @@ AppRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _core_header_header_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./core/header/header.component */ "./src/app/core/header/header.component.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _core_footer_footer_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./core/footer/footer.component */ "./src/app/core/footer/footer.component.ts");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _core_header_header_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./core/header/header.component */ "./src/app/core/header/header.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+/* harmony import */ var _core_footer_footer_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./core/footer/footer.component */ "./src/app/core/footer/footer.component.ts");
+
 
 
 
@@ -85,6 +89,11 @@ class AppComponent {
     constructor() {
         this.title = 'actorWebsite';
     }
+    ngOnInit() {
+        aos__WEBPACK_IMPORTED_MODULE_1__["init"]({
+            duration: 800,
+        });
+    }
 }
 AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
 AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["ac-root"]], decls: 4, vars: 0, consts: [[1, "contentBody"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
@@ -93,7 +102,7 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "router-outlet");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "ac-footer");
-    } }, directives: [_core_header_header_component__WEBPACK_IMPORTED_MODULE_1__["HeaderComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"], _core_footer_footer_component__WEBPACK_IMPORTED_MODULE_3__["FooterComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"] });
+    } }, directives: [_core_header_header_component__WEBPACK_IMPORTED_MODULE_2__["HeaderComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterOutlet"], _core_footer_footer_component__WEBPACK_IMPORTED_MODULE_4__["FooterComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
