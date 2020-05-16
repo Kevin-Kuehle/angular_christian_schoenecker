@@ -6,7 +6,7 @@ import { NewsComponent } from './news/news.component';
 import { MediaViewComponent } from './media-view/media-view.component';
 import { MediaComponent } from './media/media.component';
 import { LightboxComponent } from './lightbox/lightbox.component';
-import { GalleryComponent } from './gallery/gallery.component';
+// import { GalleryComponent } from './gallery/gallery.component';
 import { EventsComponent } from './events/events.component';
 import { BiografieComponent } from './biografie/biografie.component';
 import { HomeComponent } from './home.component';
@@ -28,7 +28,7 @@ import { TableModule } from 'primeng/table';
     HomeComponent,
     BiografieComponent,
     EventsComponent,
-    GalleryComponent,
+    // GalleryComponent,
     LightboxComponent,
     MediaComponent,
     MediaViewComponent,
