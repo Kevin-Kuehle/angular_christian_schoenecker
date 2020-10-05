@@ -3,9 +3,9 @@
 ## Einleitung
 
 Diese Web-App ist für einen Kunden der Schauspiel betreibt. Aufgrund der Corona-Krise ist bis auf Weiteres die Weiterentwicklung dieser App pausiert. Dennoch kann man einige Information zu meinen Fähigkeiten mit <b>JavaScript, TypeScript, SCSS, HTML, JSON, NPM. Git, Firebase, REST API, Observables,</b> und <b>Angular</b> erkennen.
-<br><br>
+
 Die App ist ein Portfolio angepasst auf wichtige Informationen, die einen Schauspieler auszeichnet. Für den Kunden wurde im Vorfeld ein Prototyp in Adobe XD entwickelt und vorgeführt.
-=======
+
 Diese Web-App ist für einen Kunden der Schauspiel betreibt. Aufgrund der Corona-Krise ist bis auf Weiteres die Weiterentwicklung dieser App pausiert. Dennoch kann man einige Information zu meinen Fähigkeiten mit <b>JavaScript, TypeScript, SCSS, HTML, JSON, NPM. Git, Firebase, REST API, Observables,</b> und <b>Angular</b> erkennen.
 <br><br>
 Die App ist ein Portfolio angepasst auf wichtige Informationen, die einen Schauspieler auszeichnet. Für den Kunden wurde im Vorfeld ein Prototyp in Adobe XD entwickelt und vorgeführt.
