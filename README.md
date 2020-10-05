@@ -10,8 +10,6 @@ Diese Web-App ist für einen Kunden der Schauspiel betreibt. Aufgrund der Corona
 <br><br>
 Die App ist ein Portfolio angepasst auf wichtige Informationen, die einen Schauspieler auszeichnet. Für den Kunden wurde im Vorfeld ein Prototyp in Adobe XD entwickelt und vorgeführt.
 
->>>>>>> 3eb183a9c7995dcd8046c46fb6ff4fead2eff585
-
 ## Verwendete Technologien und Software
 
 - Angular
